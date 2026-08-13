@@ -27,6 +27,11 @@ The repository reserves:
 
 Repository paths are treated as durable public identifiers after publication and shall not be casually renumbered or repurposed.
 
+## Current examples
+
+1. [`COMPLETE-WORKED-STATE-TRANSITION-001A.md`](COMPLETE-WORKED-STATE-TRANSITION-001A.md) — complete illustrative P0–P9 agentic software-refactoring Transition with Verification failure, controlled repair and explicit boundary refusal.
+
+
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
