@@ -2,7 +2,7 @@
 
 > **Document:** `07-reference/GLOSSARY.md`  
 > **Title:** STATE Engineering Glossary  
-> **Version:** 0.6  
+> **Version:** 0.7  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -14,15 +14,31 @@ This glossary establishes the current working vocabulary of STATE Engineering.
 
 ## Acceptance
 
-An authorized decision about whether a Candidate State has sufficient basis to progress toward authoritative status.
+The authorized P8 decision about whether an identified Candidate State, under an explicit Acceptance basis and scope, may progress toward authoritative status.
 
 ## Acceptance Authority
 
-The authority to decide whether a Candidate State is accepted, rejected, requires repair or remains inconclusive.
+The authority to decide ACCEPT, REJECT, REPAIR REQUIRED or INCONCLUSIVE for a defined Candidate and scope.
 
 ## Acceptance Basis
 
-The claims, conditions, evidence and authority basis against which a Candidate State is evaluated at P8.
+The governing claims, conditions, evidence expectations, deviations, uncertainty tolerance and authority basis against which a Candidate is decided.
+
+## Acceptance Claim Set
+
+The set of Required, Supporting and Informational Claims governing an Acceptance decision.
+
+## Acceptance Record
+
+WP-08, recording Candidate identity, Contract identity, Acceptance scope, claims, evidence, deviations, residual uncertainty, authority, decision and rationale.
+
+## Acceptance Scope
+
+The explicit system, component, artifact, environment, purpose or state scope covered by an Acceptance decision.
+
+## Acceptance Sufficiency Condition
+
+A logical condition used to determine whether the basis for ACCEPT is sufficient.
 
 ## Actor
 
@@ -30,11 +46,19 @@ The human, synthetic or hybrid entity assigned to perform a Role.
 
 ## Actor Assignment
 
-The Work Product that binds an actual Actor to one or more logical Roles and applicable Authority Grants.
+The binding of an actual Actor to logical Roles and applicable Authority Grants.
 
-## Amendment History
+## Assurance
 
-The traceable record of material authorized changes to a Transition Contract.
+The evaluation of whether a Transition, claim, verification basis, evidence set, role arrangement or decision deserves the required degree of trust.
+
+## Authority
+
+The legitimate permission to decide, approve, delegate or modify within a defined boundary.
+
+## Authority Grant
+
+The bounded authority object governing legitimate engineering action or decision.
 
 ## Authoritative State
 
@@ -42,99 +66,115 @@ A sufficiently identified system state accepted and explicitly established as va
 
 ## Baseline
 
-The specific Authoritative State selected as the input state for a defined Transition.
+The specific Authoritative State selected as input to a Transition.
 
 ## Baseline Establishment
 
-The explicit act that makes an accepted Candidate State the next Authoritative State.
-
-## Boundary Breach
-
-A discovered condition in which a required or attempted action lies outside the authorized Transition Boundary.
+The explicit P9 act that makes an accepted Candidate State the next Authoritative State.
 
 ## Candidate State
 
 A produced system state that has not yet completed explicit baseline establishment.
 
-## Contract Amendment
+## Claim Dependency
 
-An explicit authorized change to one or more governing elements of a Transition Contract.
+A relationship in which evaluation or truth of one Verification Claim depends on one or more other claims.
+
+## Claim Scope
+
+The Work Package, component, interface, integrated Candidate, system or release level to which a Verification Claim applies.
+
+## Conditional Acceptance
+
+Not a canonical STATE outcome. If a condition is required before authoritative status, it remains part of the Acceptance basis and must be resolved before ACCEPT.
 
 ## Evidence
 
-Observable information used to support or challenge a claim about a system state, Transition, process or artifact.
+Observable information used to support or challenge an engineering claim.
 
 ## Evidence Item
 
-An identifiable observation, artifact, record or measurement used to support or challenge an engineering claim.
+An identifiable observation, artifact, record or measurement used to support or challenge a claim.
 
 ## Evidence Set
 
-The Work Product binding relevant Evidence Items to one or more engineering claims.
+WP-07, binding relevant Evidence Items to one or more engineering claims.
 
-## Gate
+## FAIL
 
-A logical decision condition establishing whether the control conditions required for progression are sufficiently satisfied.
+A Verification Result indicating that evidence contradicts the claim or demonstrates that the required property is not satisfied under the specified conditions.
+
+## INCONCLUSIVE
+
+A Verification or Acceptance outcome indicating that available basis is insufficient to establish the required conclusion.
 
 ## Integrated Candidate
 
-A Candidate State produced by combining or integrating results from one or more Work Packages.
+A Candidate State resulting from integration of one or more Work Package outputs.
 
-## Integration
+## Intent and Outcome Claim
 
-The engineering transformation that combines Work Package outputs into a Candidate State or a broader Candidate revision.
+CC-12, asserting that the Candidate satisfies the governing intended outcome or purpose.
 
-## Mutation Envelope
+## Method Fitness
 
-The bounded subset of a Transition Boundary within which a Work Package is authorized to mutate state.
+The degree to which a Verification Method can legitimately bear on the claim being evaluated.
 
-## Package Completion
+## PASS
 
-The condition in which a Work Package has satisfied its bounded objective and evidence obligations. Package Completion is not Transition Acceptance.
+A Verification Result indicating that identified evidence sufficiently supports an identified claim for an identified target and conditions at the required Assurance level.
 
-## Resume Point
+## Required Claim
 
-A reconstructed cycle position whose preceding gate conditions remain valid and from which a Transition can safely continue.
+ACS-01, a claim that must be sufficiently satisfied for ACCEPT under the current Acceptance basis.
 
-## Role
+## Residual Uncertainty
 
-A defined logical function within the engineering method, independent of the Actor assigned to perform it.
+Material uncertainty remaining after verification and evidence assembly and explicitly considered by Acceptance.
 
-## STATE Cycle
+## Supporting Claim
 
-The canonical P0–P9 logical process that carries a Transition from authorized Baseline through Candidate production, verification, evidence, Acceptance and explicit baseline establishment.
+ACS-02, a claim that supports the decision context but is not independently mandatory for ACCEPT.
 
 ## Transition
 
 A controlled transformation from a defined Authoritative State toward a Candidate State and, if accepted and established, a new Authoritative State.
 
-## Transition Boundary
-
-The explicit scope within which a Transition is authorized to operate.
-
 ## Transition Contract
 
-The authoritative logical composition of information required to govern one STATE Transition from identified Baseline through Candidate production, verification, Acceptance and baseline establishment.
-
-## Transition Contract Amendment
-
-A material authorized change to the governing Transition Contract that remains traceable and triggers re-evaluation of affected gate conditions.
+The reconstructable governing logical composition of baseline, intent, authority, scope, roles, dependencies, verification, evidence and Acceptance basis for one Transition.
 
 ## Verification
 
-The evaluation of an explicit claim using an identified method, observation basis and evidence.
+The evaluation of an explicit claim about an identified target using an identified method, conditions, observations and evidence.
+
+## Verification Adequacy
+
+The degree to which claim precision, target identity, method fitness, conditions, coverage, evidence, independence and limitations provide a sufficient verification basis.
+
+## Verification Claim
+
+A bounded proposition about an identified target under identified conditions.
+
+## Verification Independence
+
+The degree to which verification challenges production or prior conclusions through distinct actors, methods, tools, environments, organizations or decisions.
+
+## Verification Method
+
+The concrete means used to evaluate a Verification Claim.
+
+## Verification Record
+
+WP-06, recording claim identity, target, method, conditions, observation, evidence, result, limitations, verifier and dependencies.
+
+## Verification Result
+
+PASS, FAIL or INCONCLUSIVE for a bounded Verification Claim.
 
 ## Work Package
 
-A bounded unit of engineering execution performed under one governing Transition Contract with explicit scope, dependencies, role assignments, evidence obligations and completion conditions.
-
-## Work Package Dependency
-
-A state, information, execution, integration, environment or authority condition on which Work Package validity or progression depends.
-
-## Work Package State
-
-The logical execution status of a Work Package: PLANNED, READY, ACTIVE, BLOCKED, COMPLETED, FAILED, CANCELLED or SUPERSEDED.
+A bounded execution/control unit subordinate to one governing Transition Contract.
 
 ## Work Product
 
@@ -145,6 +185,6 @@ An identifiable information object produced, maintained or consumed by STATE Rol
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.6  
+Version: 0.7  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

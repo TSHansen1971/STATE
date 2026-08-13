@@ -2,7 +2,7 @@
 
 > **Document:** `03-how-logical/01-the-state-cycle.md`  
 > **Title:** The STATE Cycle  
-> **Version:** 0.6  
+> **Version:** 0.7  
 > **Status:** Normative Working Specification  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -483,6 +483,25 @@ Where execution is decomposed into multiple Work Packages, all packages remain s
 
 Package-level completion and verification shall not be substituted for Transition-level Acceptance.
 
+
+## Verification and Acceptance relationship
+
+P6 evaluates explicit claims.
+
+P7 assembles the Evidence Set required for decision.
+
+P8 applies Acceptance Authority to an identified Candidate and explicit Acceptance Claim Set.
+
+A Verification PASS is bounded by its claim, target, method, conditions and limitations.
+
+An Acceptance decision is bounded by Candidate identity, Acceptance scope, Required Claims, evidence, residual uncertainty and authority.
+
+Verification does not grant Acceptance.
+
+Acceptance does not rewrite Verification.
+
+ACCEPT permits progression to P9 but does not itself establish the new Authoritative State.
+
 ## Canonical cycle rule
 
 > **A Candidate State shall not become authoritative by implementation success, verification success, evidence accumulation or Acceptance alone. The state becomes authoritative only after explicit baseline establishment at P9.**
@@ -492,6 +511,6 @@ Package-level completion and verification shall not be substituted for Transitio
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.6  
+Version: 0.7  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

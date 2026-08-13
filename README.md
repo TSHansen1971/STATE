@@ -2,7 +2,7 @@
 
 > **Document:** `README.md`  
 > **Title:** STATE Engineering  
-> **Version:** 0.6  
+> **Version:** 0.7  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -22,81 +22,88 @@ STATE is documented through four abstraction levels:
 |---|---|---|
 | **WHY** | Contextual | Why does STATE Engineering exist, and what control problem makes it necessary? |
 | **WHAT** | Conceptual | What concepts, properties, roles, authority structures, Work Products and evidence relationships define STATE? |
-| **HOW** | Logical | How is a controlled Transition contracted, decomposed, executed, verified, evidenced, accepted and established? |
+| **HOW** | Logical | How is a controlled Transition contracted, executed, verified, accepted and established? |
 | **WITH WHAT** | Physical | With what human, synthetic, hybrid, hardware and software capabilities is the logical method realized? |
 
 The method is governed across implementation by Tailoring, Assurance and Reference.
 
 ## Canonical STATE Cycle
 
-STATE uses the ten-phase P0–P9 cycle:
-
 ```text
-P0 Authority & Baseline
-P1 Specification
-P2 Transition Boundary
-P3 Bounded Inspection & Context
-P4 Candidate Production
-P5 Execution & Observation
-P6 Verification
-P7 Evidence Assembly
-P8 Acceptance
-P9 Baseline Establishment
+P0  Establish Authority and Baseline
+P1  Specify Intent
+P2  Define Transition Boundary
+P3  Inspect Baseline and Establish Context
+P4  Produce Candidate
+P5  Execute and Observe
+P6  Verify Claims
+P7  Assemble Evidence
+P8  Decide Acceptance
+P9  Establish New Baseline
 ```
 
-## Transition Contract
+## Verification model
 
-A concrete STATE Transition is governed through a **Transition Contract**.
+STATE treats verification as explicit claim evaluation.
 
-The Transition Contract is a logical control object that binds together the information needed to answer:
+The basic relationship is:
 
-- what authoritative state is being changed;
-- why and toward what intended outcome;
-- under whose authority;
-- within what boundary;
-- by which assigned roles and actors;
-- subject to which invariants and dependencies;
-- using which verification and evidence obligations;
-- under which Acceptance basis;
-- with which failure, escalation and completion rules.
+```text
+CLAIM
+  ↓
+TARGET
+  ↓
+METHOD
+  ↓
+CONDITIONS
+  ↓
+OBSERVATION
+  ↓
+EVIDENCE
+  ↓
+RESULT
+  ↓
+LIMITATIONS
+```
 
-The Transition Contract is not a new mandatory file type. It may be represented through one or more existing Work Products, provided the required control information remains explicit and traceable.
+A PASS applies only to the identified claim, target and conditions.
 
-## Work Packages
+A PASS is not a general certificate that the Candidate is correct.
 
-A Transition may be executed as one Work Package or decomposed into multiple Work Packages.
+FAIL remains FAIL even if Acceptance Authority later authorizes a changed Acceptance basis. Old evidence does not change meaning retroactively.
 
-A **Work Package** is a bounded execution unit inside an authorized Transition.
+STATE defines twelve Claim Classes, eleven Verification Method Classes and eleven Verification Adequacy Properties.
 
-A Work Package may narrow inherited scope. It may not silently broaden:
+## Acceptance model
 
-- Transition intent;
-- Authority Grant;
-- Transition Boundary;
-- architectural permission;
-- Acceptance basis.
+Acceptance is an authorized decision over an identified Candidate and an explicit Acceptance Claim Set.
 
-Work Packages are not Work Products.
+The valid G8 outcomes remain:
 
-A Work Product is an information object. A Work Package is an execution/control unit.
+- **ACCEPT**
+- **REJECT**
+- **REPAIR REQUIRED**
+- **INCONCLUSIVE**
 
-## Concurrency and integration
+STATE does not define a fifth “conditional acceptance” outcome.
 
-Work Packages may execute sequentially or concurrently when dependencies, mutation boundaries, integration rules and evidence obligations are explicit.
+If a condition must be satisfied before the Candidate can legitimately become authoritative, that condition is part of the Acceptance basis and must be resolved before ACCEPT.
 
-Parallel execution does not create parallel authority universes.
+Acceptance is bounded:
 
-Integration of Work Package results is itself part of Candidate production and can create new behavior requiring integrated verification.
+> **Acceptance establishes only the claims and scope actually covered by the Acceptance basis. It is not a universal assertion about the Candidate.**
+
+P9 remains separate. ACCEPT does not itself create a new Authoritative State.
 
 ## Repository map
 
 - [`00-foundation/`](00-foundation/) — canonical method specification and architecture.
 - [`01-why-contextual/`](01-why-contextual/) — contextual problem and rationale.
 - [`02-what-conceptual/`](02-what-conceptual/) — conceptual models.
-- [`03-how-logical/`](03-how-logical/) — cycle, gates, failure handling, Transition Contract and Work Package model.
+- [`03-how-logical/`](03-how-logical/) — cycle, gates, failure handling, Transition Contract, Work Packages, verification and Acceptance.
 - [`04-with-what-physical/`](04-with-what-physical/) — physical realization.
 - [`05-tailoring/`](05-tailoring/) — contextual adaptation.
-- [`06-assurance/`](06-assurance/) — assurance and evidence sufficiency.
+- [`06-assurance/`](06-assurance/) — assurance, independence and evidence sufficiency.
 - [`07-reference/`](07-reference/) — glossary, catalogues and compact reference.
 
 See [`CHANGELOG.md`](CHANGELOG.md) for publication history.
@@ -106,6 +113,6 @@ See [`CHANGELOG.md`](CHANGELOG.md) for publication history.
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.6  
+Version: 0.7  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

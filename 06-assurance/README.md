@@ -2,7 +2,7 @@
 
 > **Document:** `06-assurance/README.md`  
 > **Title:** Assurance  
-> **Version:** 0.6  
+> **Version:** 0.7  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -10,63 +10,78 @@
 > **Co-authors:** None
 
 
-Assurance addresses whether a STATE Transition, its evidence, role arrangement, gate progression, Work Package decomposition and resulting claims deserve trust.
+Assurance addresses whether a STATE Transition, its claims, verification, evidence, role arrangement, gate progression, Work Package decomposition and resulting decisions deserve trust.
 
 Assurance is not identical to testing.
 
-## Process assurance
+## Claim assurance
+
+Assurance evaluates whether Verification Claims are:
+
+- sufficiently precise;
+- scoped to the correct target;
+- connected to the governing intent or Acceptance basis;
+- not decomposed in a way that loses the system-level assertion;
+- not silently changed after evidence is known.
+
+## Verification assurance
+
+Verification adequacy is evaluated through:
+
+- claim precision;
+- target identity;
+- method fitness;
+- condition representativeness;
+- coverage;
+- evidence quality;
+- independence;
+- reproducibility;
+- limitation visibility;
+- integration depth;
+- security-relevant depth.
+
+A large test count does not establish verification adequacy by itself.
+
+## Independence assurance
+
+Independence may be increased through:
+
+- different Actor;
+- different method;
+- different tool;
+- different environment;
+- organizational separation;
+- independent Acceptance Authority.
+
+The required combination is proportional to consequence and uncertainty.
+
+## Acceptance assurance
+
+Assurance asks whether G8 had a sufficient basis to decide.
 
 Relevant questions include:
 
-- was the governing Transition Contract sufficiently explicit;
-- were material Contract amendments authorized and traceable;
-- were required gate conditions actually established;
-- did Work Package decomposition preserve Transition-level control;
-- did authority remain valid through execution;
-- did repair or resumption begin at a justified phase.
-
-## Transition assurance
-
-Is the Evidence Set sufficient to support the claims made about this specific Transition?
-
-This includes whether:
-
-- claims are explicit;
-- Verification Records identify methods, observations and limitations;
-- Evidence Items are bound to the correct Baseline and Candidate;
-- package-local evidence is not misrepresented as integrated evidence;
-- Candidate revisions are not confused;
-- negative evidence is preserved where relevant;
-- production, verification, evidence stewardship and Acceptance are separated to the required degree.
+- was the exact Candidate identified;
+- was the current Transition Contract revision explicit;
+- were Required Claims resolved;
+- was negative evidence considered;
+- were deviations and residual uncertainty visible;
+- did Acceptance Authority have legitimate scope;
+- did role combination undermine the required independence;
+- was ACCEPT incorrectly used to conceal an unmet condition;
+- was Acceptance incorrectly treated as baseline establishment.
 
 ## Work Package assurance
 
-Where a Transition uses multiple Work Packages, Assurance considers:
+Package-local PASS shall not be treated as integrated Candidate PASS where the accepted claim depends on interaction.
 
-- whether each package inherits from one current Transition Contract;
-- whether Mutation Envelopes are bounded;
-- whether dependencies are explicit enough;
-- whether concurrent mutation is sufficiently isolated;
-- whether integration creates new claims requiring verification;
-- whether package-level PASS is being incorrectly substituted for integrated Candidate PASS;
-- whether package completion is being incorrectly treated as Acceptance.
-
-## Contract amendment assurance
-
-Material Contract amendments should be evaluated for:
-
-- appropriate authority;
-- traceability;
-- effect on prior gate validity;
-- effect on Work Packages;
-- effect on verification basis;
-- effect on existing evidence.
-
-An amendment performed only to make a failed Candidate appear compliant is not a valid assurance basis.
+Assurance evaluates whether decomposition preserved the original system-level claim.
 
 ## Resulting-state assurance
 
-P9 remains decisive: Acceptance evidence alone does not establish that the accepted state was correctly established as the new Authoritative State.
+P9 remains decisive.
+
+Acceptance evidence alone does not establish that the accepted Candidate was correctly established as the new Authoritative State.
 
 ## Evidence-quality assurance
 
@@ -89,6 +104,6 @@ Assurance requirements remain proportionate to consequence, uncertainty, reversi
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.6  
+Version: 0.7  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13
