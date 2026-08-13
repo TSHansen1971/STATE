@@ -1,0 +1,83 @@
+# STATE Engineering — Method Development
+
+> **Document:** `08-STATE-Engineering-methood-development/README.md`  
+> **Title:** STATE Engineering — Method Development  
+> **Version:** 1.0.0  
+> **Status:** Current Documentation  
+> **Created:** 2026-08-13  
+> **Last modified:** 2026-08-13  
+> **Author:** Tor-Ståle Hansen  
+> **Co-authors:** None
+
+
+This directory preserves the controlled development history and forward development backlog of the STATE Engineering method.
+
+It is distinct from the normative method corpus.
+
+Documents in this directory describe how the method itself was developed, stabilized, released and subsequently evolved. They do not become normative merely by being present here. Normative authority remains with the current STATE Engineering Method Specification and the normative precedence rules of the corpus.
+
+## Development-lineage rule
+
+A completed release epic may be documented retrospectively when the development history can be reconstructed from repository commits, specifications, verification records and release evidence.
+
+A retrospective development record shall:
+
+- identify itself explicitly as retrospective;
+- distinguish historical fact from later interpretation;
+- preserve the identifiers and sequence actually used;
+- avoid pretending that a planning artifact existed before it was created;
+- preserve immutable published release identities;
+- avoid rewriting historical failures, repairs or decision boundaries.
+
+A future epic is a Candidate planning and control artifact until explicitly accepted.
+
+## Epic index
+
+### STATE Engineering v1.0.0
+
+[`STATE-EPIC-V1.0.0-001A.md`](STATE-EPIC-V1.0.0-001A.md)
+
+Retrospective reconstruction of the development sequence that established the initial public method, matured the normative model through Specification 013A, stabilized the corpus, passed release-readiness review, established `v1.0.0-rc.1`, and promoted the unchanged method corpus to `v1.0.0`.
+
+### STATE Engineering v1.1.0
+
+[`STATE-EPIC-V1.1.0-001A.md`](STATE-EPIC-V1.1.0-001A.md)
+
+Candidate post-v1.0 consolidation, demonstration and operationalization epic. It begins from the immutable `v1.0.0` release baseline and does not obtain Transition or Acceptance Authority merely by being documented.
+
+## Historical continuity
+
+The development lineage represented here is:
+
+```text
+Initial public foundation
+        ↓
+Specifications 001A–013A
+        ↓
+Whole-method readiness audit
+        ↓
+Release stabilization
+        ↓
+Post-stabilization readiness audit
+        ↓
+v1.0.0-rc.1
+        ↓
+RC integrity and acceptance review
+        ↓
+v1.0.0
+        ↓
+Post-v1.0 development backlog
+        ↓
+Candidate v1.1.0
+```
+
+The published `v1.0.0` and `v1.0.0-rc.1` Git tags remain immutable historical release identifiers.
+
+---
+
+© Tor-Ståle Hansen, https://x.com/TSHansen1971
+
+CC BY-NC-ND 4.0  
+Version: 1.0.0  
+Initial publication: 2026-08-13  
+Last modified: 2026-08-13
