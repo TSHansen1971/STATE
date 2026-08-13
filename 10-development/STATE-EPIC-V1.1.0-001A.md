@@ -1,9 +1,10 @@
 # STATE Engineering v1.1.0 — Post-v1.0 Consolidation, Demonstration and Operationalization Epic
 
-> **Document:** `08-STATE-Engineering-methood-development/STATE-EPIC-V1.1.0-001A.md`  
+> **Document:** `10-development/STATE-EPIC-V1.1.0-001A.md`  
 > **Title:** STATE Engineering v1.1.0 — Post-v1.0 Consolidation, Demonstration and Operationalization Epic  
-> **Version:** 1.1.0-candidate  
-> **Status:** Current Documentation  
+> **Version:** 001A
+> **Status:** Current Documentation
+> **Development state:** Candidate
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  
@@ -14,7 +15,7 @@
 **Backlog ID:** `STATE-BACKLOG-V1.1.0-001A`  
 **Status of this epic:** Candidate  
 **Target:** First post-v1.0 release  
-**Proposed release:** `v1.1.0`, subject to explicit owner acceptance of the forward version policy  
+**Target release:** `v1.1.0`
 **Authoritative starting baseline:** `v1.0.0` / commit `23068ad4628c10001aa13b9963ed629b39645235`  
 **Baseline specification:** `STATE-ENGINEERING-METHOD-SPECIFICATION-013A`  
 **Baseline corpus identity:** `0.13`  
@@ -114,11 +115,34 @@ When evidence invalidates an earlier STATE Cycle assumption or Work Product, rep
 
 Control semantics shall remain invariant when an Actor is substituted by another Actor with sufficient capability and valid Authority.
 
+### 4.7 Authorized release-scope change
+
+The v1.1.0 work-package set is controlled scope, not an immutable claim that every planned package must remain in the release regardless of evidence or dependency.
+
+Only the owner exercising the applicable Intent, Architecture, Transition and Acceptance Authority may remove or defer a work package from the active release scope.
+
+An authorized release-scope change shall:
+
+1. identify the affected work package;
+2. state the reason for deferral or removal;
+3. identify the intended later release or explicitly state that no later release has yet been assigned;
+4. identify affected dependencies, release gates and Definition-of-Done criteria;
+5. update those affected planning and acceptance statements explicitly and prospectively;
+6. remain visible in method-development history and the applicable CHANGELOG.
+
+A work package shall not be descoped retrospectively merely to convert an observed FAIL or INCONCLUSIVE result into release readiness.
+
+A scope change shall not leave the Candidate corpus internally inconsistent or remove a control obligation required to preserve the accepted STATE architecture.
+
+Descoping is therefore an authorized scope transition, not a waiver, silent omission or implicit PASS.
+
 ## 5. Owner decisions required before affected work packages
+
+Owner decisions recorded on 2026-08-13 distinguish decisions that are already authorized from those that require evidence before they can be resolved.
 
 ### D1 — Public version policy
 
-Recommended:
+**Decision:** ACCEPTED.
 
 - close the historical internal `0.x` corpus-version sequence;
 - adopt release SemVer as the single public corpus version beginning with `1.1.0`;
@@ -129,23 +153,33 @@ Historical mapping:
 
 `v1.0.0 → corpus 0.13 → Specification 013A`
 
+This decision authorizes WP03 to implement the forward public-version policy after WP01 establishes the authoritative post-correction baseline.
+
 ### D2 — Next specification identifier
 
-The owner shall identify all specification-namespace identifiers already consumed privately and assign the next valid public identifier.
+**Decision:** PENDING EVIDENCE.
 
-No identifier shall be inferred, guessed or silently reused.
+The next public specification identifier shall not be inferred or guessed.
+
+WP01 shall inventory repository-observable specification identifiers. The owner shall additionally account for any privately consumed specification-namespace identifiers before WP07 begins.
+
+No privately consumed identifier may be silently reused.
 
 ### D3 — Documentation licence
 
-Recommended Candidate decision:
+**Decision:** ACCEPTED; IMPLEMENTATION DEFERRED TO WP19.
+
+The selected forward licence is:
 
 `CC BY-SA 4.0`
 
-Any accepted licence transition shall be described prospectively. Earlier licence grants shall not be represented as retroactively revoked.
+The transition shall apply prospectively from the accepted corpus revision implemented under WP19. Earlier licence grants shall not be represented as retroactively revoked.
+
+This planning correction records the decision only. It does not change the licence of the current corpus and therefore retains the existing `CC BY-NC-ND 4.0` footer.
 
 ### D4 — Canonical STATE name decomposition
 
-Proposed:
+**Decision:** ACCEPTED.
 
 - **S — Specification**
 - **T — Transition**
@@ -153,15 +187,19 @@ Proposed:
 - **T — Traceability**
 - **E — Evidence**
 
-Canonicalization requires explicit owner acceptance.
+The decomposition defines the name. It shall not be presented as a strict causal dependency chain unless such a relationship is separately established by the normative method semantics.
 
-The decomposition shall not be presented as a strict causal dependency chain unless such a relationship is normatively supportable.
+WP20 remains responsible for controlled corpus integration.
 
 ### D5 — v1.0.0 release-evidence publication
 
-Choose one:
+**Decision:** PENDING WP01 EVIDENCE.
 
-1. publish the original hash-bound release evidence;
+WP01 shall first establish what original release evidence, release references and hash bindings are actually observable.
+
+After that evidence is known, the owner shall select one of the bounded WP04 paths:
+
+1. publish the original hash-bound release evidence where publication is authorized; or
 2. retain it privately and explicitly scope public claims accordingly.
 
 No substitute artifact may be presented as the original evidence merely because it describes the same event.
@@ -183,6 +221,8 @@ The workstreams are ordered. A later workstream shall not silently repair unreso
 # WS1 — Release and Corpus Integrity
 
 ## WP01 — Authoritative post-v1.0 baseline capture
+
+**Precondition:** the pre-WP01 planning-baseline correction has established the stable top-level namespaces `08-examples/`, `09-releases/` and `10-development/`, corrected the historical development-directory spelling error without rewriting Git history, and committed that corrected planning state.
 
 **Objective:** Establish a reproducible starting state before corpus mutation.
 
@@ -578,9 +618,11 @@ Explain that STATE is not:
 
 ### Constraint
 
-Position STATE positively through its own semantics.
+Position STATE positively through its own control semantics and, where clarification is necessary, through generic distinctions between categories of engineering practice.
 
-Do not construct comparative crosswalks to prohibited external frameworks or meta-frameworks.
+Prohibited external frameworks, standards and meta-frameworks shall not be named, cited, referenced, mapped to, compared against or otherwise invoked for positioning purposes.
+
+STATE may explain generically how an engineering control method differs in purpose from categories such as lifecycle process catalogues, project-management methods, configuration-management practices, assurance notations, compliance frameworks or organizational maturity models without making an external framework a dependency or reference point.
 
 ---
 
@@ -1003,6 +1045,6 @@ That distinction is the intended outcome of the post-v1.0 epic.
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 1.1.0-candidate  
+Version: 001A  
 Initial publication: 2026-08-13  
 Last modified: 2026-08-13

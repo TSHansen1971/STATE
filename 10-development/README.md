@@ -1,11 +1,11 @@
 # STATE Engineering — Method Development
 
-> **Document:** `08-STATE-Engineering-methood-development/README.md`  
+> **Document:** `10-development/README.md`  
 > **Title:** STATE Engineering — Method Development  
 > **Version:** 1.0.0  
 > **Status:** Current Documentation  
 > **Created:** 2026-08-13  
-> **Last modified:** 2026-08-13  
+> **Last modified:** 2026-08-13
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
@@ -72,6 +72,19 @@ Candidate v1.1.0
 ```
 
 The published `v1.0.0` and `v1.0.0-rc.1` Git tags remain immutable historical release identifiers.
+
+## Repository directory namespace
+
+The post-v1.0 development baseline reserves the following durable top-level namespaces:
+
+- `08-examples/` — illustrative, non-normative examples;
+- `09-releases/` — release records and authorized public release evidence;
+- `10-development/` — method-development history, epics and controlled planning material.
+
+The former published development path contained a spelling error. The path is corrected prospectively through Git history rather than hidden through history rewriting.
+
+After this correction, these top-level numbers and purposes shall not be casually renumbered or repurposed. Any later structural change requires an explicit authorized repository transition.
+
 
 ---
 
