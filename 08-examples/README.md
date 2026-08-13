@@ -31,6 +31,9 @@ Repository paths are treated as durable public identifiers after publication and
 
 1. [`COMPLETE-WORKED-STATE-TRANSITION-001A.md`](COMPLETE-WORKED-STATE-TRANSITION-001A.md) — complete illustrative P0–P9 agentic software-refactoring Transition with Verification failure, controlled repair and explicit boundary refusal.
 2. [`AUTHORITY-GRANT-OPERATIONAL-PATTERNS-001A.md`](AUTHORITY-GRANT-OPERATIONAL-PATTERNS-001A.md) — non-normative operational patterns showing bounded Authority Grants for human, automated, AI, mixed and supplier Actors.
+3. [`STOCHASTIC-ACTOR-AND-AI-EVIDENCE-PATTERNS-001A.md`](STOCHASTIC-ACTOR-AND-AI-EVIDENCE-PATTERNS-001A.md) — non-normative Evidence and Verification patterns for stochastic and AI realization using general STATE semantics.
+4. [`TAILORING-PROFILES-BY-CONTROL-INTENSITY-001A.md`](TAILORING-PROFILES-BY-CONTROL-INTENSITY-001A.md) — illustrative low, standard and high-control Tailoring profiles showing Semantic Compression without Control Deletion.
+5. [`templates/`](templates/README.md) — reusable non-normative operational templates mapped explicitly to existing STATE Work Product and Tailoring semantics.
 
 
 ---
