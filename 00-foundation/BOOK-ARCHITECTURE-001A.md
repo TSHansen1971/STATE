@@ -3,7 +3,7 @@
 > **Document:** `00-foundation/BOOK-ARCHITECTURE-001A.md`  
 > **Title:** STATE Engineering Book Architecture 001A  
 > **Version:** 0.1  
-> **Status:** Foundation Architecture
+> **Status:** Current Documentation
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

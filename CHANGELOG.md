@@ -3,7 +3,7 @@
 > **Document:** `CHANGELOG.md`  
 > **Title:** STATE Engineering — Change Log  
 > **Version:** 0.13  
-> **Status:** Active  
+> **Status:** Current Documentation  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

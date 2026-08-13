@@ -7,6 +7,7 @@
 > **Created:** 2026-08-13
 > **Last modified:** 2026-08-13
 > **Author:** Tor-Ståle Hansen
+> **Co-authors:** None
 
 ## 1. Public v1.0.0 release-evidence location
 
