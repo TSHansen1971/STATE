@@ -2,7 +2,7 @@
 
 > **Document:** `README.md`  
 > **Title:** STATE Engineering  
-> **Version:** 0.11  
+> **Version:** 0.12  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -20,84 +20,73 @@ STATE is documented through four abstraction levels:
 
 | Level | Abstraction | Governing question |
 |---|---|---|
-| **WHY** | Contextual | Why does STATE Engineering exist, and what control problem makes it necessary? |
+| **WHY** | Contextual | Why does STATE Engineering exist? |
 | **WHAT** | Conceptual | What concepts and properties define STATE? |
 | **HOW** | Logical | How is a controlled Transition governed? |
-| **WITH WHAT** | Physical | With what actors, environments and tools is the logical method realized? |
+| **WITH WHAT** | Physical | With what actors, environments and tools is the method realized? |
 
 These are governed across application by **Tailoring**, **Assurance** and **Reference**.
 
-## Assurance
+## STATE Conformance
 
-Assurance asks whether the control basis for a claim, decision or state transition deserves the required degree of trust.
+STATE Conformance answers a narrow question:
 
-STATE Assurance does not create truth, Authority or correctness.
+> **Does this declared scope preserve the non-tailorable control semantics required by STATE Engineering?**
 
-It evaluates the strength of the basis on which those things are being asserted.
+Conformance does not ask whether the engineering outcome was successful.
 
-The canonical Assurance relationship is:
+A conformant Transition may legitimately end in:
 
 ```text
-ASSURANCE OBJECTIVE
-        ↓
-CLAIMS / DECISIONS IN SCOPE
-        ↓
-CONTROL BASIS
-        ↓
-VERIFICATION + EVIDENCE
-        ↓
-INDEPENDENT CHALLENGE WHERE REQUIRED
-        ↓
-WEAKNESSES + RESIDUAL UNCERTAINTY
-        ↓
-ASSURANCE CONCLUSION
+Verification FAIL
+Acceptance REJECT
+Acceptance REPAIR REQUIRED
+Acceptance INCONCLUSIVE
+P9 HOLD
+P9 FAILED
 ```
 
-## Assurance conclusion
+provided those outcomes are handled according to STATE semantics.
 
-STATE defines three canonical Assurance Conclusions:
+Conversely, a technically successful implementation is not STATE-conformant merely because it works.
+
+## Canonical Conformance Status
+
+STATE defines exactly three overall Conformance Status values:
 
 ```text
-SUFFICIENT
-INSUFFICIENT
+CONFORMANT
+NONCONFORMANT
 INCONCLUSIVE
 ```
 
-These are not Verification Results and are not Acceptance decisions.
+No partial-conformance status is defined.
 
-```text
-Verification PASS ≠ Assurance SUFFICIENT
-Assurance SUFFICIENT ≠ ACCEPT
-ACCEPT ≠ ESTABLISHED
-```
+A scope is CONFORMANT only when all applicable Conformance Requirements are satisfied.
 
-## Assurance Case
+## Conformance scopes
 
-An **Assurance Case** is the reconstructable structured reasoning that connects an Assurance Objective to the claims, evidence, challenge, weaknesses, uncertainty and conclusion that support it.
+STATE defines three internal conformance scopes:
 
-An Assurance Case may be one sentence for a compact low-consequence Transition or a substantial structured body of evidence for a high-consequence Transition.
+- **Transition Conformance** — one actual controlled Transition;
+- **Realization Conformance** — one recurring workflow, pipeline or physical realization pattern;
+- **Implementation Conformance** — a defined implementation of STATE across a project or engineering system.
 
-It is a logical composition, not a new mandatory Work Product class.
+A conformant Realization or Implementation demonstrates that the structure can preserve STATE semantics under its declared assumptions.
 
-## Independence
+It does not automatically prove that every individual Transition executed through it was conformant.
 
-Independence is a means of challenging common-cause error.
+## No certification claim
 
-More independence is not automatically more Assurance.
+STATE Conformance is an internal method property.
 
-Useful independence is independence from the failure source relevant to the claim.
+This revision does not establish:
 
-Two reviewers, agents or tools that share the same assumptions, model, oracle, environment or data may provide less independent challenge than their count suggests.
-
-## Assurance depth
-
-Assurance depth is selected through Tailoring.
-
-It increases where consequence, uncertainty, security relevance, irreversibility, distribution, autonomy, provenance need or external dependency require a stronger trust basis.
-
-The goal is not maximal process.
-
-The goal is a sufficient trust basis for the claim and decision.
+- organizational certification;
+- product certification;
+- tool certification;
+- accredited assessment;
+- third-party certification schemes.
 
 ## Repository map
 
@@ -107,8 +96,8 @@ The goal is a sufficient trust basis for the claim and decision.
 - [`03-how-logical/`](03-how-logical/) — logical method.
 - [`04-with-what-physical/`](04-with-what-physical/) — physical realization.
 - [`05-tailoring/`](05-tailoring/) — Tailoring.
-- [`06-assurance/`](06-assurance/) — Assurance Model, Assurance Case, confidence and independence.
-- [`07-reference/`](07-reference/) — compact reference.
+- [`06-assurance/`](06-assurance/) — Assurance.
+- [`07-reference/`](07-reference/) — reference and STATE Conformance material.
 
 See [`CHANGELOG.md`](CHANGELOG.md) for publication history.
 
@@ -117,6 +106,6 @@ See [`CHANGELOG.md`](CHANGELOG.md) for publication history.
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.11  
+Version: 0.12  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

@@ -2,7 +2,7 @@
 
 > **Document:** `07-reference/README.md`  
 > **Title:** Reference  
-> **Version:** 0.11  
+> **Version:** 0.12  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -21,7 +21,10 @@ The Reference layer is the stable lookup surface for applying STATE Engineering 
 - [`BASELINE-RELEASE-PROVENANCE-REFERENCE.md`](BASELINE-RELEASE-PROVENANCE-REFERENCE.md) — P9, Release and provenance reference.
 - [`PHYSICAL-REALIZATION-REFERENCE.md`](PHYSICAL-REALIZATION-REFERENCE.md) — Physical Realization reference.
 - [`TAILORING-REFERENCE.md`](TAILORING-REFERENCE.md) — Tailoring reference.
-- [`ASSURANCE-REFERENCE.md`](ASSURANCE-REFERENCE.md) — Assurance Objectives, Assurance Case, independence and Assurance Depth reference.
+- [`ASSURANCE-REFERENCE.md`](ASSURANCE-REFERENCE.md) — Assurance reference.
+- [`CONFORMANCE-MODEL.md`](CONFORMANCE-MODEL.md) — normative internal STATE Conformance Model.
+- [`CONFORMANCE-REFERENCE.md`](CONFORMANCE-REFERENCE.md) — compact Conformance reference.
+- [`STATE-CONFORMANCE-CHECKLIST.md`](STATE-CONFORMANCE-CHECKLIST.md) — practical internal assessment checklist.
 - [`WORK-PRODUCT-CATALOGUE.md`](WORK-PRODUCT-CATALOGUE.md) — canonical logical Work Product classes.
 - [`EVIDENCE-CATALOGUE.md`](EVIDENCE-CATALOGUE.md) — Evidence Classes and Evidence-Quality Properties.
 - [`DOCUMENT-METADATA-TEMPLATE.md`](DOCUMENT-METADATA-TEMPLATE.md) — visible metadata and publication-footer contract.
@@ -29,20 +32,21 @@ The Reference layer is the stable lookup surface for applying STATE Engineering 
 
 ## Planned reference material
 
-The Reference layer will later expand with:
+The Reference layer may later expand with:
 
 - role and authority catalogue;
-- conformance material;
+- reusable templates;
 - pattern catalogue;
 - anti-pattern catalogue;
-- templates and checklists;
 - worked reference examples.
+
+Internal STATE Conformance material does not establish an external certification scheme.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.11  
+Version: 0.12  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

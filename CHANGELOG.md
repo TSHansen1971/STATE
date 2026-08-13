@@ -2,7 +2,7 @@
 
 > **Document:** `CHANGELOG.md`  
 > **Title:** STATE Engineering — Change Log  
-> **Version:** 0.11  
+> **Version:** 0.12  
 > **Status:** Active  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -15,6 +15,11 @@ Editorial scratch material and private manuscript notes are explicitly excluded.
 
 | Date | Version | Component | Change Type | Description |
 |---|---:|---|---|---|
+| 2026-08-13 | 0.12 | Method Specification | Conformance Revision | Publishes Method Specification 012A and establishes the internal STATE Conformance Model. |
+| 2026-08-13 | 0.12 | Conformance | Normative Extension | Defines three Conformance scopes, sixteen Conformance Requirements, criterion dispositions and three overall statuses. |
+| 2026-08-13 | 0.12 | Conformance Assessment | Normative Extension | Defines sixteen Conformance Assessment Record fields without introducing a new Work Product class. |
+| 2026-08-13 | 0.12 | Tailoring / Assurance | Boundary Clarification | Separates Conformance from engineering success, Assurance sufficiency and certification while preserving Tailoring semantics. |
+| 2026-08-13 | 0.12 | Reference | Reference Extension | Publishes compact Conformance reference and checklist. |
 | 2026-08-13 | 0.11 | Method Specification | Assurance Revision | Publishes Method Specification 011A and establishes the Assurance Model, Assurance Case and Assurance Depth. |
 | 2026-08-13 | 0.11 | Assurance | Normative Extension | Defines twelve Assurance Objectives, three Assurance Conclusions and ten Assurance Sufficiency Properties. |
 | 2026-08-13 | 0.11 | Assurance Case | Normative Extension | Defines sixteen Assurance Case fields, confidence reasoning, challenge, weaknesses and residual uncertainty. |
@@ -73,6 +78,6 @@ Future entries will document normative revisions, clarifications, structural ext
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.11  
+Version: 0.12  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

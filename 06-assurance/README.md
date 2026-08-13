@@ -2,7 +2,7 @@
 
 > **Document:** `06-assurance/README.md`  
 > **Title:** Assurance  
-> **Version:** 0.11  
+> **Version:** 0.12  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -18,53 +18,37 @@ Its governing question is:
 
 ## Contents
 
-1. [`01-assurance-model.md`](01-assurance-model.md) — Assurance Objectives, Assurance Conclusions and the relationship among Verification, Evidence, Acceptance and Assurance.
-2. [`02-assurance-case-and-confidence.md`](02-assurance-case-and-confidence.md) — Assurance Case structure, confidence reasoning, weaknesses, challenge and residual uncertainty.
-3. [`03-independence-and-assurance-depth.md`](03-independence-and-assurance-depth.md) — independence, common-cause failure, Assurance Depth and proportional strengthening.
+1. [`01-assurance-model.md`](01-assurance-model.md) — Assurance Objectives, Conclusions and sufficiency properties.
+2. [`02-assurance-case-and-confidence.md`](02-assurance-case-and-confidence.md) — Assurance Case, confidence, challenge and uncertainty.
+3. [`03-independence-and-assurance-depth.md`](03-independence-and-assurance-depth.md) — independence and Assurance Depth.
 
-## Core distinctions
+## Assurance and Conformance
+
+Assurance and Conformance answer different questions.
 
 ```text
-Verification
-= evaluates an explicit engineering claim
+Conformance:
+Did the declared scope preserve required STATE semantics?
 
-Acceptance
-= makes an authorized decision about a Candidate
-
-Assurance
-= evaluates whether the basis for the claim or decision deserves the required trust
+Assurance:
+Does the basis for the claim or decision deserve the required trust?
 ```
 
-Assurance does not grant Authority.
+A Transition may be conformant while correctly concluding that Assurance is INSUFFICIENT or INCONCLUSIVE.
 
-Assurance does not rewrite Verification Results.
+That is not a defect in Conformance.
 
-Assurance does not convert insufficient evidence into sufficient evidence by declaration.
+It may demonstrate that the method correctly prevented unjustified authority progression.
 
-## Cross-cutting scope
+A nonconformant process cannot repair its missing STATE semantics merely by producing a strong technical result.
 
-Assurance may evaluate:
-
-- specification;
-- Authority;
-- Transition Boundary;
-- Physical Realization;
-- Tailoring;
-- Verification;
-- Evidence;
-- Acceptance;
-- Baseline Establishment;
-- Release;
-- provenance;
-- recovery and failure handling.
-
-Assurance is therefore cross-cutting rather than an additional P10 phase.
+Assurance does not create Conformance by declaration.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.11  
+Version: 0.12  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

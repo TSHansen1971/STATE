@@ -2,7 +2,7 @@
 
 > **Document:** `05-tailoring/README.md`  
 > **Title:** Tailoring  
-> **Version:** 0.10  
+> **Version:** 0.12  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -18,27 +18,31 @@ Its governing question is:
 
 ## Contents
 
-1. [`01-tailoring-model.md`](01-tailoring-model.md) — Tailoring Envelope, non-tailorable invariants, Semantic Compression and prohibited Control Deletion.
+1. [`01-tailoring-model.md`](01-tailoring-model.md) — Tailoring Envelope, non-tailorable invariants, Semantic Compression and Control Deletion.
 2. [`02-tailoring-decision-model.md`](02-tailoring-decision-model.md) — context factors, Tailoring Decision fields and re-tailoring triggers.
-3. [`03-scaling-profiles.md`](03-scaling-profiles.md) — four non-mandatory reference profiles illustrating compact through assurance-intensive realizations.
+3. [`03-scaling-profiles.md`](03-scaling-profiles.md) — non-mandatory reference profiles.
 
-## Core principle
+## Tailoring and Conformance
 
-> **Tailor physical form and control depth; do not tailor away the control semantics.**
+Tailoring is permitted only inside the Tailoring Envelope.
 
-STATE does not equate rigor with document count, meeting count, Actor count or process ceremony.
+Conformance therefore does not require identical physical implementations.
 
-A compact Transition can be rigorous.
+It requires preservation of non-tailorable semantics.
 
-A large process can be weak.
+A compact Transition may be CONFORMANT.
 
-The relevant question is whether the chosen realization preserves sufficient control, evidence, authority and Assurance for the claim being made.
+A highly documented Transition may be NONCONFORMANT.
+
+The decisive question is whether the required STATE controls are genuinely present and reconstructable.
+
+> **Semantic Compression preserves Conformance; Control Deletion breaks it.**
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.10  
+Version: 0.12  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

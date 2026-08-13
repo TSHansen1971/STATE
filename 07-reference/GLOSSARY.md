@@ -2,7 +2,7 @@
 
 > **Document:** `07-reference/GLOSSARY.md`  
 > **Title:** STATE Engineering Glossary  
-> **Version:** 0.11  
+> **Version:** 0.12  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -12,63 +12,55 @@
 
 This glossary establishes the current working vocabulary of STATE Engineering.
 
-## Assurance
+## Conformance Assessment
 
-The structured evaluation of whether the control, verification, evidence, independence and uncertainty basis supporting a defined engineering claim or decision is sufficient for the applicable consequence and Assurance Objective.
+The structured evaluation of a declared scope against the applicable internal STATE Conformance Requirements.
 
-## Assurance Basis
+## Conformance Assessment Record
 
-The claims, controls, Verification Records, Evidence, Authority, Tailoring, environment, challenge and provenance used to support an Assurance Conclusion.
+The logical record of assessment scope, requirement dispositions, evidence, nonconformities, inconclusive items, overall status and reassessment conditions.
 
-## Assurance Case
+## Conformance Claim
 
-The reconstructable structured argument connecting an Assurance Objective and scope to the claims, control basis, evidence, challenge, weaknesses, residual uncertainty and conclusion used to justify confidence.
+An assertion that a defined Transition, Realization or Implementation satisfies the applicable internal STATE Conformance Requirements.
 
-## Assurance Challenge
+## Conformance Requirement
 
-A deliberate attempt to identify why an engineering claim, evidence basis or confidence argument may be wrong.
+One of the sixteen non-tailorable internal requirements used to determine whether a declared scope preserves STATE control semantics.
 
-## Assurance Conclusion
+## Conformance Scope
 
-SUFFICIENT, INSUFFICIENT or INCONCLUSIVE for a defined Assurance Objective and scope.
+The explicit boundary of a Conformance assessment: Transition, Realization or Implementation.
 
-## Assurance Debt
+## Conformance Status
 
-A known unresolved weakness in the trust basis that remains explicit for future action and does not relabel a failed Required Claim.
+CONFORMANT, NONCONFORMANT or INCONCLUSIVE for a declared internal STATE Conformance scope.
 
-## Assurance Deficiency
+## Implementation Conformance
 
-A weakness that reduces justified confidence in an Assurance Basis.
+Conformance of a defined engineering-system or project implementation of STATE under declared assumptions and Tailoring.
 
-## Assurance Depth
+## Nonconformity
 
-The selected strength of evaluation, challenge, evidence and independence required to justify confidence for an Assurance Objective.
+An applicable Conformance Requirement assessed as NOT SATISFIED.
 
-## Assurance Objective
+## Realization Conformance
 
-A defined trust question whose adequacy is being evaluated by Assurance.
+Conformance of a recurring workflow, pipeline, toolchain or physical realization pattern intended to support STATE semantics.
 
-## Confidence
+## Transition Conformance
 
-Justified belief in the adequacy of an Assurance Basis for a defined objective and scope.
+Conformance of one actual controlled STATE Transition.
 
-## Independence Theater
+## Criterion Disposition
 
-Additional Actor, approval, reviewer or process separation that does not materially challenge the relevant common-cause failure source.
-
-## Residual Uncertainty
-
-Material uncertainty remaining after practical Verification and Assurance activity.
-
-## Tailoring Adequacy
-
-Confidence that the selected Tailoring remains within the Tailoring Envelope and preserves required STATE semantics.
+SATISFIED, NOT SATISFIED, INCONCLUSIVE or NOT APPLICABLE for an individual Conformance Requirement.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.11  
+Version: 0.12  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13
