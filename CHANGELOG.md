@@ -2,7 +2,7 @@
 
 > **Document:** `CHANGELOG.md`  
 > **Title:** STATE Engineering — Change Log  
-> **Version:** 0.2  
+> **Version:** 0.3  
 > **Status:** Active  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -15,6 +15,9 @@ Editorial scratch material and private manuscript notes are explicitly excluded.
 
 | Date | Version | Component | Change Type | Description |
 |---|---:|---|---|---|
+| 2026-08-13 | 0.3 | Method Specification | Foundational Revision | Publishes Method Specification 003A and establishes the canonical Role, Authority and Responsibility Model. |
+| 2026-08-13 | 0.3 | Conceptual Layer | Governance Extension | Defines five authority domains, six logical roles, Authority Grants, Actor Assignments and actor-independent role governance. |
+| 2026-08-13 | 0.3 | Assurance | Structural Clarification | Establishes logical role separation, proportional physical independence and separation-of-duties requirements. |
 | 2026-08-13 | 0.2 | Method Specification | Foundational Revision | Publishes Method Specification 002A and establishes the current universal engineering foundation. |
 | 2026-08-13 | 0.2 | Conceptual Layer | Normative Extension | Establishes twelve Universal Engineering Principles and strengthens the Foundational Properties. |
 | 2026-08-13 | 0.2 | Secure Engineering Foundation | Method Extension | Integrates secure engineering by construction, security-relevant transition logic and proportional verification into the method core. |
@@ -31,6 +34,6 @@ Future entries will document normative revisions, clarifications, structural ext
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.2  
+Version: 0.3  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

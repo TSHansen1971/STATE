@@ -2,17 +2,12 @@
 
 > **Document:** `02-what-conceptual/05-universal-engineering-principles.md`  
 > **Title:** Universal Engineering Principles  
-> **Version:** 0.2  
+> **Version:** 0.3  
 > **Status:** Foundational Working Specification  
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
-
-
-The Universal Engineering Principles are STATE-native principles for governing generally applicable engineering behavior across all four abstraction levels.
-
-They do not replace the Foundational Properties. They operationalize broad engineering qualities required to preserve those properties through repeated system change.
 
 ## UEP-01 — Clear and Controlled Abstraction
 
@@ -30,7 +25,10 @@ Minimization reduces the number of interactions that must be trusted, understood
 
 > **Every role, actor, component and execution context should receive only the authority necessary to perform its assigned function.**
 
-Least Authority includes, but is broader than, runtime privilege. It applies to repository mutation, architecture decisions, deployment, evidence handling and acceptance authority as well as technical access.
+Least Authority includes, but is broader than, runtime privilege. It applies to repository mutation, architecture decisions, transition authorization, deployment, evidence handling and acceptance authority as well as technical access.
+
+Authority should be bounded through an explicit or explicitly inherited Authority Grant. Technical capability, access or organizational seniority does not enlarge that grant.
+
 
 ## UEP-04 — Explicit Mediation and Permission
 
@@ -88,7 +86,10 @@ A functional PASS does not automatically establish that privilege, trust, exposu
 
 Actor independence does not mean actor equivalence.
 
-A local expert team, an external delivery team, deterministic automation and a generative system can perform the same logical role while requiring different controls, supervision, evidence or verification.
+A local expert team, an inshore or offshore delivery team, deterministic automation and a generative system can perform the same logical role while requiring different controls, supervision, evidence, verification independence or authority boundaries.
+
+Actor assignment shall therefore consider capability, authority, traceability and assurance obligations while preserving the logical definition of the role.
+
 
 ## UEP-12 — Proportional and Explicit Rigor
 
@@ -168,6 +169,6 @@ STATE absorbs only generally applicable engineering principles from these source
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.2  
+Version: 0.3  
 Initial publication: 2026-08-13  
 Last modified: 2026-08-13
