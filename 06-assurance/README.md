@@ -2,7 +2,7 @@
 
 > **Document:** `06-assurance/README.md`  
 > **Title:** Assurance  
-> **Version:** 0.7  
+> **Version:** 0.8  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -10,100 +10,80 @@
 > **Co-authors:** None
 
 
-Assurance addresses whether a STATE Transition, its claims, verification, evidence, role arrangement, gate progression, Work Package decomposition and resulting decisions deserve trust.
+Assurance addresses whether a STATE Transition, its claims, verification, evidence, Acceptance, Baseline Establishment, Release and provenance deserve the required degree of trust.
 
-Assurance is not identical to testing.
+## P9 assurance
 
-## Claim assurance
+Assurance of Baseline Establishment considers whether:
 
-Assurance evaluates whether Verification Claims are:
+- G8 actually produced ACCEPT;
+- the established target is the exact accepted Candidate;
+- Acceptance and Transition Contract identities correspond;
+- the resulting Authoritative State identity is sufficient;
+- no intervening change invalidated the establishment basis;
+- authority scope and effective condition are explicit;
+- previous authoritative continuity is preserved.
 
-- sufficiently precise;
-- scoped to the correct target;
-- connected to the governing intent or Acceptance basis;
-- not decomposed in a way that loses the system-level assertion;
-- not silently changed after evidence is known.
+A strong Acceptance basis cannot compensate for establishing the wrong Candidate.
 
-## Verification assurance
+## Authoritative State Chain assurance
 
-Verification adequacy is evaluated through:
+Assurance considers whether authoritative history is reconstructable without silent overwrite.
 
-- claim precision;
-- target identity;
-- method fitness;
-- condition representativeness;
-- coverage;
-- evidence quality;
-- independence;
-- reproducibility;
-- limitation visibility;
-- integration depth;
-- security-relevant depth.
+A return to an earlier content state after later authoritative change shall remain distinguishable as a new Transition and resulting Authoritative State.
 
-A large test count does not establish verification adequacy by itself.
+## Release assurance
 
-## Independence assurance
+Where Release is distinct, Assurance considers:
 
-Independence may be increased through:
+- Release Authority;
+- exact released object identity;
+- relationship to the established Authoritative State;
+- release transformation;
+- transformation environment where relevant;
+- release verification;
+- integrity and provenance evidence;
+- target or channel;
+- effective release condition.
 
-- different Actor;
-- different method;
-- different tool;
-- different environment;
-- organizational separation;
-- independent Acceptance Authority.
+## Provenance assurance
 
-The required combination is proportional to consequence and uncertainty.
+Provenance sufficiency is claim-relative.
 
-## Acceptance assurance
+For source-to-artifact claims, Assurance considers whether the evidence actually connects:
 
-Assurance asks whether G8 had a sufficient basis to decide.
+- accepted source;
+- established state;
+- transformation;
+- artifact;
+- Release decision.
 
-Relevant questions include:
+A digest alone may strongly identify an artifact while still being insufficient to establish its complete origin or authority chain.
 
-- was the exact Candidate identified;
-- was the current Transition Contract revision explicit;
-- were Required Claims resolved;
-- was negative evidence considered;
-- were deviations and residual uncertainty visible;
-- did Acceptance Authority have legitimate scope;
-- did role combination undermine the required independence;
-- was ACCEPT incorrectly used to conceal an unmet condition;
-- was Acceptance incorrectly treated as baseline establishment.
+## Reuse assurance
 
-## Work Package assurance
+Prior verification or release evidence may be reused only where the relevant:
 
-Package-local PASS shall not be treated as integrated Candidate PASS where the accepted claim depends on interaction.
+- source identity;
+- transformation;
+- artifact identity;
+- environment;
+- target assumptions;
+- claim;
 
-Assurance evaluates whether decomposition preserved the original system-level claim.
+remain applicable.
 
-## Resulting-state assurance
+## Existing assurance dimensions
 
-P9 remains decisive.
+Verification adequacy, evidence quality, independence, role separation and Acceptance assurance remain applicable.
 
-Acceptance evidence alone does not establish that the accepted Candidate was correctly established as the new Authoritative State.
-
-## Evidence-quality assurance
-
-Evidence quality remains evaluated through:
-
-- relevance;
-- identity;
-- integrity;
-- provenance;
-- sufficiency;
-- reproducibility;
-- independence;
-- timeliness;
-- preservation.
-
-Assurance requirements remain proportionate to consequence, uncertainty, reversibility, exposure and the cost of being wrong.
+Assurance requirements remain proportionate to consequence, uncertainty, reversibility, exposure, substitution risk and the cost of being wrong.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.7  
+Version: 0.8  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

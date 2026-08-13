@@ -2,7 +2,7 @@
 
 > **Document:** `07-reference/GLOSSARY.md`  
 > **Title:** STATE Engineering Glossary  
-> **Version:** 0.7  
+> **Version:** 0.8  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -14,55 +14,19 @@ This glossary establishes the current working vocabulary of STATE Engineering.
 
 ## Acceptance
 
-The authorized P8 decision about whether an identified Candidate State, under an explicit Acceptance basis and scope, may progress toward authoritative status.
+The authorized P8 decision about whether an identified Candidate State may progress toward authoritative status.
 
-## Acceptance Authority
+## Accepted Candidate
 
-The authority to decide ACCEPT, REJECT, REPAIR REQUIRED or INCONCLUSIVE for a defined Candidate and scope.
-
-## Acceptance Basis
-
-The governing claims, conditions, evidence expectations, deviations, uncertainty tolerance and authority basis against which a Candidate is decided.
-
-## Acceptance Claim Set
-
-The set of Required, Supporting and Informational Claims governing an Acceptance decision.
-
-## Acceptance Record
-
-WP-08, recording Candidate identity, Contract identity, Acceptance scope, claims, evidence, deviations, residual uncertainty, authority, decision and rationale.
-
-## Acceptance Scope
-
-The explicit system, component, artifact, environment, purpose or state scope covered by an Acceptance decision.
-
-## Acceptance Sufficiency Condition
-
-A logical condition used to determine whether the basis for ACCEPT is sufficient.
-
-## Actor
-
-The human, synthetic or hybrid entity assigned to perform a Role.
-
-## Actor Assignment
-
-The binding of an actual Actor to logical Roles and applicable Authority Grants.
-
-## Assurance
-
-The evaluation of whether a Transition, claim, verification basis, evidence set, role arrangement or decision deserves the required degree of trust.
-
-## Authority
-
-The legitimate permission to decide, approve, delegate or modify within a defined boundary.
-
-## Authority Grant
-
-The bounded authority object governing legitimate engineering action or decision.
+A Candidate State for which G8 has produced ACCEPT but which has not necessarily completed P9 Baseline Establishment.
 
 ## Authoritative State
 
-A sufficiently identified system state accepted and explicitly established as valid for a defined purpose.
+A sufficiently identified system state accepted and explicitly established as authoritative for a defined scope and purpose.
+
+## Authoritative State Chain
+
+The traceable sequence of Authoritative States and the controlled Transitions by which authority moved from one state to the next.
 
 ## Baseline
 
@@ -70,107 +34,79 @@ The specific Authoritative State selected as input to a Transition.
 
 ## Baseline Establishment
 
-The explicit P9 act that makes an accepted Candidate State the next Authoritative State.
+The explicit P9 act that assigns authoritative status to the exact accepted Candidate for a defined scope and purpose.
+
+## Baseline Establishment Record
+
+WP-09, preserving previous state, accepted Candidate, Acceptance, Contract, authority scope, resulting state identity and establishment result.
+
+## Baseline Scope
+
+The defined system, source, artifact, configuration, deployment or other state domain for which an Authoritative State has authority.
 
 ## Candidate State
 
-A produced system state that has not yet completed explicit baseline establishment.
+A produced system state that has not yet completed Baseline Establishment.
 
-## Claim Dependency
+## Effective Condition
 
-A relationship in which evaluation or truth of one Verification Claim depends on one or more other claims.
+The time, sequence, event or other condition at which a Baseline Establishment or Release becomes effective.
 
-## Claim Scope
+## Establishment Result
 
-The Work Package, component, interface, integrated Candidate, system or release level to which a Verification Claim applies.
+ESTABLISHED, HOLD or FAILED at P9.
 
-## Conditional Acceptance
+## Provenance
 
-Not a canonical STATE outcome. If a condition is required before authoritative status, it remains part of the Acceptance basis and must be resolved before ACCEPT.
+The traceable relationship among origin, authorized transformations, identities, Actors, evidence and decisions explaining how a state or artifact came to exist in its asserted form.
 
-## Evidence
+## Provenance Dimension
 
-Observable information used to support or challenge an engineering claim.
+A category of provenance information: source, authority, transformation, Actor, environment, evidence, decision or distribution provenance.
 
-## Evidence Item
+## Release
 
-An identifiable observation, artifact, record or measurement used to support or challenge a claim.
+An authorized post-cycle act that makes an identified representation of an established Authoritative State available to a defined target, channel, environment or audience.
 
-## Evidence Set
+## Release Authority
 
-WP-07, binding relevant Evidence Items to one or more engineering claims.
+The authority to distribute, deploy, publish or otherwise release an established state or representation.
 
-## FAIL
+## Release Record
 
-A Verification Result indicating that evidence contradicts the claim or demonstrates that the required property is not satisfied under the specified conditions.
+WP-10, recording Release identity, source Authoritative State, authority, target, released object, transformation, verification, provenance, integrity and result.
 
-## INCONCLUSIVE
+## Release Result
 
-A Verification or Acceptance outcome indicating that available basis is insufficient to establish the required conclusion.
+RELEASED, HOLD or FAILED.
 
-## Integrated Candidate
+## Release Transformation
 
-A Candidate State resulting from integration of one or more Work Package outputs.
+A build, packaging, signing, configuration, deployment or other transformation performed between an established Authoritative State and a released representation.
 
-## Intent and Outcome Claim
+## Released Object
 
-CC-12, asserting that the Candidate satisfies the governing intended outcome or purpose.
+The exact artifact, package, deployment, publication or other representation made available by a Release.
 
-## Method Fitness
+## Rollback
 
-The degree to which a Verification Method can legitimately bear on the claim being evaluated.
+A colloquial term for reversal or restoration. When the Authoritative State itself has already changed, STATE treats rollback as a new controlled Transition toward a new Authoritative State, even when the resulting content is equivalent to an earlier state.
 
-## PASS
+## Source-to-Artifact Provenance
 
-A Verification Result indicating that identified evidence sufficiently supports an identified claim for an identified target and conditions at the required Assurance level.
+The evidentiary relationship connecting an accepted source state through establishment and release transformation to a specific released artifact.
 
-## Required Claim
+## Superseded Authoritative State
 
-ACS-01, a claim that must be sufficiently satisfied for ACCEPT under the current Acceptance basis.
-
-## Residual Uncertainty
-
-Material uncertainty remaining after verification and evidence assembly and explicitly considered by Acceptance.
-
-## Supporting Claim
-
-ACS-02, a claim that supports the decision context but is not independently mandatory for ACCEPT.
+A previously authoritative state replaced for the same defined scope by a later established Authoritative State while remaining part of historical provenance.
 
 ## Transition
 
-A controlled transformation from a defined Authoritative State toward a Candidate State and, if accepted and established, a new Authoritative State.
-
-## Transition Contract
-
-The reconstructable governing logical composition of baseline, intent, authority, scope, roles, dependencies, verification, evidence and Acceptance basis for one Transition.
+A controlled transformation from one Authoritative State toward a Candidate State and, if accepted and established, a new Authoritative State.
 
 ## Verification
 
 The evaluation of an explicit claim about an identified target using an identified method, conditions, observations and evidence.
-
-## Verification Adequacy
-
-The degree to which claim precision, target identity, method fitness, conditions, coverage, evidence, independence and limitations provide a sufficient verification basis.
-
-## Verification Claim
-
-A bounded proposition about an identified target under identified conditions.
-
-## Verification Independence
-
-The degree to which verification challenges production or prior conclusions through distinct actors, methods, tools, environments, organizations or decisions.
-
-## Verification Method
-
-The concrete means used to evaluate a Verification Claim.
-
-## Verification Record
-
-WP-06, recording claim identity, target, method, conditions, observation, evidence, result, limitations, verifier and dependencies.
-
-## Verification Result
-
-PASS, FAIL or INCONCLUSIVE for a bounded Verification Claim.
 
 ## Work Package
 
@@ -185,6 +121,6 @@ An identifiable information object produced, maintained or consumed by STATE Rol
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.7  
+Version: 0.8  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

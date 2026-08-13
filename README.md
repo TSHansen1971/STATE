@@ -2,7 +2,7 @@
 
 > **Document:** `README.md`  
 > **Title:** STATE Engineering  
-> **Version:** 0.7  
+> **Version:** 0.8  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -22,88 +22,107 @@ STATE is documented through four abstraction levels:
 |---|---|---|
 | **WHY** | Contextual | Why does STATE Engineering exist, and what control problem makes it necessary? |
 | **WHAT** | Conceptual | What concepts, properties, roles, authority structures, Work Products and evidence relationships define STATE? |
-| **HOW** | Logical | How is a controlled Transition contracted, executed, verified, accepted and established? |
+| **HOW** | Logical | How is a controlled Transition contracted, executed, verified, accepted, established and, where applicable, released? |
 | **WITH WHAT** | Physical | With what human, synthetic, hybrid, hardware and software capabilities is the logical method realized? |
 
 The method is governed across implementation by Tailoring, Assurance and Reference.
 
-## Canonical STATE Cycle
+## P9 — Baseline establishment
+
+Acceptance at P8 authorizes progression.
+
+It does not itself change which state is authoritative.
+
+P9 completes the authority transition:
 
 ```text
-P0  Establish Authority and Baseline
-P1  Specify Intent
-P2  Define Transition Boundary
-P3  Inspect Baseline and Establish Context
-P4  Produce Candidate
-P5  Execute and Observe
-P6  Verify Claims
-P7  Assemble Evidence
-P8  Decide Acceptance
-P9  Establish New Baseline
+Previous Authoritative State
+          │
+          ▼
+      Transition
+          │
+          ▼
+   Candidate State
+          │
+       G8 ACCEPT
+          │
+          ▼
+  Accepted Candidate
+          │
+          ▼
+   P9 / G9 Baseline
+     Establishment
+          │
+          ▼
+ New Authoritative State
 ```
 
-## Verification model
+Baseline establishment preserves an explicit continuity relationship between the prior Authoritative State, the accepted Candidate and the new Authoritative State.
 
-STATE treats verification as explicit claim evaluation.
+## Authoritative State Chain
 
-The basic relationship is:
+STATE treats authoritative history as a chain of controlled state transitions rather than as overwritten history.
+
+A previous baseline may become superseded for the active purpose, but it does not cease to have existed.
+
+A later return to an earlier state is therefore a **new controlled Transition** from the current Authoritative State toward a Candidate equivalent to or derived from the earlier state.
+
+Rollback is not time travel.
+
+## Release
+
+Release remains an optional post-cycle act.
+
+An accepted and established state may be:
+
+- unreleased;
+- released once;
+- released through several channels or artifact variants;
+- superseded before release.
+
+Release Authority is distinct from Acceptance Authority unless explicitly combined.
+
+A released artifact shall be traceable to the accepted and established state to the degree required by the release claim.
+
+## Provenance
+
+STATE provenance connects the relevant authority and transformation chain:
 
 ```text
-CLAIM
+Intent
   ↓
-TARGET
+Baseline
   ↓
-METHOD
+Transition Contract
   ↓
-CONDITIONS
+Work Packages / Transformation
   ↓
-OBSERVATION
+Candidate
   ↓
-EVIDENCE
+Verification
   ↓
-RESULT
+Evidence
   ↓
-LIMITATIONS
+Acceptance
+  ↓
+Baseline Establishment
+  ↓
+Authoritative State
+  ↓
+Release, when applicable
 ```
 
-A PASS applies only to the identified claim, target and conditions.
-
-A PASS is not a general certificate that the Candidate is correct.
-
-FAIL remains FAIL even if Acceptance Authority later authorizes a changed Acceptance basis. Old evidence does not change meaning retroactively.
-
-STATE defines twelve Claim Classes, eleven Verification Method Classes and eleven Verification Adequacy Properties.
-
-## Acceptance model
-
-Acceptance is an authorized decision over an identified Candidate and an explicit Acceptance Claim Set.
-
-The valid G8 outcomes remain:
-
-- **ACCEPT**
-- **REJECT**
-- **REPAIR REQUIRED**
-- **INCONCLUSIVE**
-
-STATE does not define a fifth “conditional acceptance” outcome.
-
-If a condition must be satisfied before the Candidate can legitimately become authoritative, that condition is part of the Acceptance basis and must be resolved before ACCEPT.
-
-Acceptance is bounded:
-
-> **Acceptance establishes only the claims and scope actually covered by the Acceptance basis. It is not a universal assertion about the Candidate.**
-
-P9 remains separate. ACCEPT does not itself create a new Authoritative State.
+Provenance is claim-relative. The required identity depth depends on what is being asserted.
 
 ## Repository map
 
 - [`00-foundation/`](00-foundation/) — canonical method specification and architecture.
 - [`01-why-contextual/`](01-why-contextual/) — contextual problem and rationale.
 - [`02-what-conceptual/`](02-what-conceptual/) — conceptual models.
-- [`03-how-logical/`](03-how-logical/) — cycle, gates, failure handling, Transition Contract, Work Packages, verification and Acceptance.
+- [`03-how-logical/`](03-how-logical/) — complete logical Transition control including P9 and release/provenance.
 - [`04-with-what-physical/`](04-with-what-physical/) — physical realization.
 - [`05-tailoring/`](05-tailoring/) — contextual adaptation.
-- [`06-assurance/`](06-assurance/) — assurance, independence and evidence sufficiency.
+- [`06-assurance/`](06-assurance/) — assurance and evidence sufficiency.
 - [`07-reference/`](07-reference/) — glossary, catalogues and compact reference.
 
 See [`CHANGELOG.md`](CHANGELOG.md) for publication history.
@@ -113,6 +132,6 @@ See [`CHANGELOG.md`](CHANGELOG.md) for publication history.
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.7  
+Version: 0.8  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

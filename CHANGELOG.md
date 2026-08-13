@@ -2,7 +2,7 @@
 
 > **Document:** `CHANGELOG.md`  
 > **Title:** STATE Engineering — Change Log  
-> **Version:** 0.7  
+> **Version:** 0.8  
 > **Status:** Active  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -15,6 +15,11 @@ Editorial scratch material and private manuscript notes are explicitly excluded.
 
 | Date | Version | Component | Change Type | Description |
 |---|---:|---|---|---|
+| 2026-08-13 | 0.8 | Method Specification | Logical Revision | Publishes Method Specification 008A and establishes Baseline Establishment, Release and Provenance semantics. |
+| 2026-08-13 | 0.8 | Baseline Establishment | Normative Extension | Defines fourteen WP-09 fields, P9 result semantics, Authoritative State Chain, supersession and controlled rollback. |
+| 2026-08-13 | 0.8 | Release | Normative Extension | Defines fourteen WP-10 Release fields, Release outcomes, release transformation and multiple-release semantics. |
+| 2026-08-13 | 0.8 | Provenance | Normative Extension | Defines eight Provenance Dimensions and source-to-artifact provenance requirements. |
+| 2026-08-13 | 0.8 | Reference | Reference Extension | Publishes the Baseline, Release and Provenance compact reference. |
 | 2026-08-13 | 0.7 | Method Specification | Logical Revision | Publishes Method Specification 007A and establishes the Verification and Acceptance Model. |
 | 2026-08-13 | 0.7 | Verification Model | Normative Extension | Defines twelve Claim Classes, eleven Verification Method Classes, Verification Record semantics, adequacy properties and independence dimensions. |
 | 2026-08-13 | 0.7 | Acceptance Model | Normative Extension | Defines Acceptance Claim Sets, fourteen Acceptance Record fields, ten Acceptance Sufficiency Conditions and strict G8 decision semantics. |
@@ -53,6 +58,6 @@ Future entries will document normative revisions, clarifications, structural ext
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.7  
+Version: 0.8  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

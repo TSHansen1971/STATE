@@ -2,7 +2,7 @@
 
 > **Document:** `03-how-logical/01-the-state-cycle.md`  
 > **Title:** The STATE Cycle  
-> **Version:** 0.7  
+> **Version:** 0.8  
 > **Status:** Normative Working Specification  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -502,6 +502,27 @@ Acceptance does not rewrite Verification.
 
 ACCEPT permits progression to P9 but does not itself establish the new Authoritative State.
 
+
+## Baseline Establishment and Release relationship
+
+P9 transfers authoritative status to the exact Candidate accepted at P8.
+
+P9 shall preserve the continuity relationship among:
+
+- previous Authoritative State;
+- governing Transition Contract;
+- accepted Candidate;
+- Acceptance Record;
+- resulting Authoritative State.
+
+A P9 HOLD or FAILED result leaves the previous Authoritative State unchanged.
+
+Once a state has become authoritative, returning to content equivalent to an earlier baseline is a new controlled Transition rather than a deletion of history.
+
+Release remains an optional post-cycle act.
+
+Where a released representation is produced through packaging, build, signing, deployment or another transformation, the release claim shall be supported by provenance and verification appropriate to that transformation.
+
 ## Canonical cycle rule
 
 > **A Candidate State shall not become authoritative by implementation success, verification success, evidence accumulation or Acceptance alone. The state becomes authoritative only after explicit baseline establishment at P9.**
@@ -511,6 +532,6 @@ ACCEPT permits progression to P9 but does not itself establish the new Authorita
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.7  
+Version: 0.8  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

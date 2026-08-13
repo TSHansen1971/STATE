@@ -2,7 +2,7 @@
 
 > **Document:** `07-reference/README.md`  
 > **Title:** Reference  
-> **Version:** 0.7  
+> **Version:** 0.8  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -17,7 +17,8 @@ The Reference layer is the stable lookup surface for applying STATE Engineering 
 - [`GLOSSARY.md`](GLOSSARY.md) — normative working terminology.
 - [`STATE-CYCLE-REFERENCE.md`](STATE-CYCLE-REFERENCE.md) — compact P0–P9 cycle and G0–G9 gate reference.
 - [`TRANSITION-CONTRACT-REFERENCE.md`](TRANSITION-CONTRACT-REFERENCE.md) — Transition Contract and Work Package reference.
-- [`VERIFICATION-ACCEPTANCE-REFERENCE.md`](VERIFICATION-ACCEPTANCE-REFERENCE.md) — Claim Classes, Verification Methods, adequacy, independence and Acceptance reference.
+- [`VERIFICATION-ACCEPTANCE-REFERENCE.md`](VERIFICATION-ACCEPTANCE-REFERENCE.md) — Verification and Acceptance reference.
+- [`BASELINE-RELEASE-PROVENANCE-REFERENCE.md`](BASELINE-RELEASE-PROVENANCE-REFERENCE.md) — P9, Authoritative State Chain, Release and provenance reference.
 - [`WORK-PRODUCT-CATALOGUE.md`](WORK-PRODUCT-CATALOGUE.md) — canonical logical Work Product classes.
 - [`EVIDENCE-CATALOGUE.md`](EVIDENCE-CATALOGUE.md) — canonical Evidence Classes and Evidence-Quality Properties.
 - [`DOCUMENT-METADATA-TEMPLATE.md`](DOCUMENT-METADATA-TEMPLATE.md) — visible metadata and publication-footer contract.
@@ -41,6 +42,6 @@ Reference material supports the method without replacing the explanatory WHY, WH
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.7  
+Version: 0.8  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13
