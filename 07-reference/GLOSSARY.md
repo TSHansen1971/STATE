@@ -2,7 +2,7 @@
 
 > **Document:** `07-reference/GLOSSARY.md`  
 > **Title:** STATE Engineering Glossary  
-> **Version:** 0.9  
+> **Version:** 0.10  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -12,95 +12,63 @@
 
 This glossary establishes the current working vocabulary of STATE Engineering.
 
-## Access
+## Control Deletion
 
-A physical mechanism allowing an Actor or tool to reach, observe or mutate a system surface. Access does not itself establish Authority.
+Removal of a required STATE control semantic under the guise of simplification. Control Deletion is not conformant Tailoring.
 
-## Actor
+## Downward Tailoring
 
-The human, synthetic or hybrid entity assigned to perform a logical STATE Role.
+Reduction in physical representation or control depth while remaining inside the Tailoring Envelope.
 
-## Actor Independence
+## Inherited Tailoring
 
-The property by which logical Roles and responsibilities remain defined independently of Actor type.
+Application of an established Tailoring profile or policy to a Transition whose context remains within the profile's assumptions.
 
-## Actor Realization Pattern
+## Re-tailoring
 
-A common physical form through which a logical STATE Role may be performed, such as an individual human, distributed team, supplier, deterministic automation, synthetic Actor or hybrid arrangement.
+Reassessment of the selected Tailoring when material context change invalidates or weakens the original Tailoring basis.
 
-## Authorized Execution Envelope
+## Scaling Profile
 
-The subset of effective physical capability that may legitimately be exercised under the applicable Authority Grant and Transition Boundary.
+A non-mandatory reference pattern illustrating a coherent physical realization of STATE at a particular control depth or execution context.
 
-## Authority
+## Semantic Compression
 
-The legitimate permission to decide, approve, delegate or mutate within a defined scope.
+Physical combination of multiple logical STATE control objects or stages into a smaller number of physical records, operations or mechanisms while preserving their logical distinctions.
 
-## Capability
+## Tailoring
 
-What an Actor, tool or environment is actually able to do.
+The authorized selection of representation, depth, automation, separation and evidence controls within the Tailoring Envelope while preserving the defining semantics of STATE Engineering.
 
-## Effective Capability Envelope
+## Tailoring Authority
 
-The capabilities actually available through the intersection of Actor capability, tool capability, environment capability and available access.
+The authority to establish or approve a Tailoring decision for a defined scope.
 
-## Environment Drift
+## Tailoring Decision
 
-A material change in hardware, software, configuration, dependency, external service, data or other Execution Environment condition between relevant engineering activities.
+The controlled decision defining how STATE will be physically and procedurally realized for a Transition or class of Transitions.
 
-## Execution Environment
+## Tailoring Envelope
 
-The relevant physical and software context in which a STATE Role, Work Package, verification activity, transformation or Release action is performed.
+The permitted range of physical and procedural variation within which Foundational Properties and required control semantics remain intact.
 
-## Externalized State
+## Tailoring Factor
 
-Material state outside the immediate local environment that can affect execution, such as remote configuration, service-side policy or hosted model version.
+A context property used to determine appropriate control depth, such as consequence, complexity, uncertainty, reversibility, security relevance or distribution.
 
-## False Independence
+## Tailoring Invariant
 
-The appearance of independent verification where Actors or methods still share a material common failure source.
+A non-tailorable operational semantic that shall remain true across all conformant STATE realizations.
 
-## Hybrid Actor Arrangement
+## Upward Tailoring
 
-A physical realization in which human and synthetic Actors jointly perform STATE Roles or Work Packages.
-
-## Isolation Mechanism
-
-A physical or logical mechanism reducing unintended interference among Work Packages, Actors, environments or mutable state.
-
-## Mutation Surface
-
-The physical system surface that an Actor or tool can actually change.
-
-## Physical Realization
-
-The concrete assignment of Actors, execution environments, tools, access and evidence mechanisms to the logical Roles and control obligations of a STATE Transition.
-
-## Physical Realization Binding
-
-The reconstructable relationship among logical Role, Actor Assignment, capability, Authority, Execution Environment, tool capability, access, evidence mechanism and Assurance control.
-
-## Synthetic Actor
-
-A non-human computational Actor, such as an AI model, agent or multi-agent system, assigned to perform one or more logical STATE functions.
-
-## Tool Capability
-
-The concrete transformation, verification, execution, analysis, release, evidence or coordination capability provided by a physical tool.
-
-## Toolchain
-
-The set of physical software tools and dependencies used to author, transform, construct, verify, execute, package or release state.
-
-## Work Package
-
-A bounded execution/control unit subordinate to one governing Transition Contract.
+Increase in control depth, independence, evidence, isolation or verification because context requires stronger Assurance.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.9  
+Version: 0.10  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

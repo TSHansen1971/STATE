@@ -2,7 +2,7 @@
 
 > **Document:** `README.md`  
 > **Title:** STATE Engineering  
-> **Version:** 0.9  
+> **Version:** 0.10  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -25,104 +25,84 @@ STATE is documented through four abstraction levels:
 | **HOW** | Logical | How is a controlled Transition governed from Baseline through Candidate, Verification, Acceptance and Baseline Establishment? |
 | **WITH WHAT** | Physical | With what actors, hardware, software, environments, toolchains and execution mechanisms is the logical method realized? |
 
-The method is governed across implementation by Tailoring, Assurance and Reference.
+The four abstraction levels are governed across application by **Tailoring**, **Assurance** and **Reference**.
 
-## Physical realization
+## Tailoring
 
-The Physical layer binds logical STATE structures to concrete execution capacity.
+Tailoring adapts the physical depth, representation and control intensity of STATE to the actual engineering context.
 
-The binding is:
+Tailoring may change:
 
-```text
-Logical Role
-    │
-    ▼
-Actor Assignment
-    │
-    ├── Actor capability
-    ├── Authority Grant
-    ├── Execution Environment
-    ├── Tool capability
-    ├── Access / credentials
-    ├── Evidence mechanisms
-    └── Assurance controls
-```
+- Work Product granularity;
+- whether several logical records share one physical representation;
+- whether gates are manual, automated or hybrid;
+- how many physical Actors realize the logical Roles;
+- verification depth;
+- independence depth;
+- environment identity depth;
+- evidence volume and preservation depth;
+- isolation mechanisms;
+- Work Package decomposition;
+- release controls.
 
-No physical actor class, hardware platform, operating system, programming language, development environment, repository product, cloud service, local execution model or AI system is constitutive of STATE Engineering.
+Tailoring may not remove the semantics that make the method STATE.
 
-## Actor realization
+## Semantic compression
 
-A STATE Role may be realized by, among other patterns:
-
-- an individual human;
-- a co-located human team;
-- a distributed, inshore, nearshore or offshore team;
-- a specialist supplier;
-- deterministic automation;
-- an AI model used as a bounded execution actor;
-- an autonomous agent or agentic system;
-- a multi-agent system;
-- a hybrid human–synthetic arrangement.
-
-These are physical realization patterns, not different STATE methods.
-
-## Capability and authority
-
-Physical reach is not authority.
-
-STATE distinguishes the actor's **Effective Capability Envelope** from the **Authorized Execution Envelope**.
+STATE explicitly permits **Semantic Compression**:
 
 ```text
-Effective Capability Envelope
-= what the assigned actor + tools + environment + access can actually do
-
-Authorized Execution Envelope
-= the subset the actor is permitted to exercise for the Transition
+Many logical control objects
+        ↓
+one compact physical representation
 ```
 
-Therefore:
+provided the logical distinctions remain reconstructable.
 
-```text
-AuthorizedExecutionEnvelope
-    ⊆ EffectiveCapabilityEnvelope
-    ∩ TransitionBoundary
-```
+For example, one small Transition record may physically contain:
 
-Technical ability to mutate more of the system does not widen the Transition Boundary.
+- specification;
+- Authority Grant reference;
+- Actor Assignment;
+- Baseline identity;
+- verification result;
+- evidence references;
+- Acceptance decision;
+- Baseline Establishment identity.
 
-## Execution Environment
+This can be fully conformant.
 
-The Execution Environment includes the relevant hardware, operating system or runtime, toolchain, dependencies, workspace, configuration, credentials, network dependencies, external services and evidence-capture mechanisms under which a STATE activity occurs.
+The opposite is **Control Deletion**: removing the underlying control obligation merely because a separate document is inconvenient.
 
-Environment identity is claim-relative. STATE does not require exhaustive capture of irrelevant machine details.
+Control Deletion is not Tailoring.
 
-It requires enough identity to support the claims being made.
+## Tailoring Envelope
 
-## Synthetic actors
+The **Tailoring Envelope** is the permitted range of physical and procedural variation within which the Foundational Properties and required control semantics remain intact.
 
-AI and agentic systems are treated as physical Actor realizations.
+A small one-person change and a distributed high-assurance Transition may therefore look very different physically while implementing the same method.
 
-Where their characteristics matter, the Actor Assignment may identify:
+## Scaling principle
 
-- model or system identity;
-- provider or local runtime;
-- instruction / context basis;
-- tool permissions;
-- external-service dependencies;
-- persistent or session state;
-- stochastic or configuration settings;
-- evidence-capture mechanisms.
+STATE scales by changing **depth and representation**, not by changing the meaning of:
 
-These properties do not create a separate AI variant of STATE.
+- Authority;
+- Candidate;
+- Verification;
+- Evidence;
+- Acceptance;
+- Baseline Establishment;
+- failure;
+- provenance.
 
 ## Repository map
 
 - [`00-foundation/`](00-foundation/) — canonical specification.
 - [`01-why-contextual/`](01-why-contextual/) — contextual problem.
 - [`02-what-conceptual/`](02-what-conceptual/) — conceptual models.
-- [`03-how-logical/`](03-how-logical/) — complete logical Transition control.
-- [`04-with-what-physical/`](04-with-what-physical/) — physical realization, Actor patterns, environments and toolchains.
-- [`05-tailoring/`](05-tailoring/) — contextual adaptation.
+- [`03-how-logical/`](03-how-logical/) — logical method.
+- [`04-with-what-physical/`](04-with-what-physical/) — physical realization.
+- [`05-tailoring/`](05-tailoring/) — Tailoring model, decisions and scaling profiles.
 - [`06-assurance/`](06-assurance/) — assurance and trust.
 - [`07-reference/`](07-reference/) — compact reference.
 
@@ -133,6 +113,6 @@ See [`CHANGELOG.md`](CHANGELOG.md) for publication history.
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.9  
+Version: 0.10  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

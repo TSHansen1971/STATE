@@ -2,7 +2,7 @@
 
 > **Document:** `06-assurance/README.md`  
 > **Title:** Assurance  
-> **Version:** 0.9  
+> **Version:** 0.10  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -10,95 +10,68 @@
 > **Co-authors:** None
 
 
-Assurance addresses whether a STATE Transition and its Physical Realization deserve the required degree of trust.
+Assurance addresses whether a STATE Transition and its selected Tailoring deserve the required degree of trust.
 
-## Physical realization assurance
+## Tailoring assurance
 
-Assurance considers whether the assigned physical realization is fit for the logical obligation.
+Assurance evaluates whether the chosen Tailoring remains inside the Tailoring Envelope.
 
 Relevant questions include:
 
-- does the Actor have sufficient capability;
-- does the Actor have only appropriate authority;
-- is physical access broader than authority and, if so, is that controlled;
-- is the Execution Environment sufficiently identified;
-- can required evidence actually be captured;
-- do selected tools introduce common-cause failure;
-- does Actor or tool substitution affect prior verification;
-- are external services part of the trusted basis;
-- is isolation sufficient for concurrent or high-consequence work.
+- are all Foundational Properties preserved;
+- are Tailoring Invariants preserved;
+- is physical compression being mistaken for removal of control;
+- are combined Roles still logically distinguishable;
+- does gate automation preserve gate semantics and Authority;
+- is Verification depth sufficient for the Required Claims;
+- is evidence depth sufficient for the Acceptance decision;
+- is environment identity sufficient for the claim;
+- are Actor and tool common-cause failures understood;
+- is Release control proportionate to the release claim.
 
-## Actor assurance
+## Over-tailoring assurance
 
-Actor independence does not mean Actor equivalence.
+More process is not automatically more Assurance.
 
-Assurance considers Actor-specific failure modes for:
+Assurance should challenge controls that:
 
-- humans;
-- teams;
-- suppliers;
-- deterministic automation;
-- synthetic Actors;
-- autonomous agents;
-- multi-agent systems;
-- hybrid arrangements.
+- add ceremony without improving evidence or control;
+- duplicate records without increasing traceability;
+- delay feedback;
+- create stale documentation;
+- obscure real decision authority.
 
-The Actor class does not determine Assurance by itself.
+## Under-tailoring assurance
 
-The relevant capability, failure sources, authority and evidence do.
+Assurance should challenge Tailoring that:
 
-## False independence
+- removes known Baseline identity;
+- weakens Authority boundaries;
+- turns Candidate into assumed Authority;
+- suppresses FAIL or INCONCLUSIVE;
+- relies on package-level PASS for system claims;
+- removes decision-relevant negative evidence;
+- weakens security-relevant verification;
+- destroys provenance required by the claim.
 
-Different Actors may still share:
+## Profile assurance
 
-- the same model;
-- the same tool;
-- the same environment;
-- the same test oracle;
-- the same source assumption;
-- the same provider;
-- the same data.
+Reference profiles are starting points.
 
-Actor count alone is not evidence of independence.
+Assurance considers whether:
 
-## Environment assurance
+- profile assumptions match the actual Transition;
+- any deviation is justified;
+- re-tailoring triggers have occurred;
+- claim-specific strengthening is required.
 
-Environment Assurance considers:
+## Re-tailoring assurance
 
-- identity depth;
-- material drift;
-- dependency state;
-- access;
-- mutable and persistent state;
-- remote dependencies;
-- evidence capture;
-- recovery and reset capability.
+When context changes materially, the Assurance basis shall consider whether prior Tailoring remains sufficient.
 
-## Tool assurance
+Tailoring is therefore not a one-time administrative label.
 
-A tool may be:
-
-- producer;
-- verifier;
-- evidence source;
-- release transformer;
-- authority mechanism.
-
-Its role in the trusted basis should be explicit where material.
-
-A tool verifying only its own output may require independent corroboration.
-
-## Substitution assurance
-
-Changing Actor, hardware, software, model, tool or environment requires reassessment where the change can affect:
-
-- Candidate identity;
-- verification meaning;
-- evidence comparability;
-- independence;
-- provenance;
-- security;
-- reproducibility.
+It remains a live control decision across the Transition.
 
 Assurance remains proportional to consequence, uncertainty, reversibility, exposure, substitution risk and the cost of being wrong.
 
@@ -107,6 +80,6 @@ Assurance remains proportional to consequence, uncertainty, reversibility, expos
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.9  
+Version: 0.10  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

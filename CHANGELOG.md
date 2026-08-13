@@ -2,7 +2,7 @@
 
 > **Document:** `CHANGELOG.md`  
 > **Title:** STATE Engineering — Change Log  
-> **Version:** 0.9  
+> **Version:** 0.10  
 > **Status:** Active  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -15,6 +15,11 @@ Editorial scratch material and private manuscript notes are explicitly excluded.
 
 | Date | Version | Component | Change Type | Description |
 |---|---:|---|---|---|
+| 2026-08-13 | 0.10 | Method Specification | Tailoring Revision | Publishes Method Specification 010A and establishes the Tailoring Model, Invariants and Scaling Profiles. |
+| 2026-08-13 | 0.10 | Tailoring | Normative Extension | Defines twelve Tailoring Invariants, Semantic Compression, Control Deletion and the Tailoring Envelope. |
+| 2026-08-13 | 0.10 | Tailoring Decision | Normative Extension | Defines twelve Tailoring Factors, sixteen Tailoring Decision fields and twelve re-tailoring triggers. |
+| 2026-08-13 | 0.10 | Scaling Profiles | Reference Extension | Defines four non-mandatory reference profiles from compact through assurance-intensive realization. |
+| 2026-08-13 | 0.10 | Reference | Reference Extension | Publishes the Tailoring compact reference. |
 | 2026-08-13 | 0.9 | Method Specification | Physical Revision | Publishes Method Specification 009A and establishes the Physical Realization, Actor and Execution Environment Model. |
 | 2026-08-13 | 0.9 | Physical Realization | Normative Extension | Defines fourteen Physical Realization dimensions and the Effective Capability / Authorized Execution Envelope distinction. |
 | 2026-08-13 | 0.9 | Actor Realization | Normative Extension | Defines nine non-exclusive human, supplier, automated, synthetic and hybrid Actor realization patterns. |
@@ -63,6 +68,6 @@ Future entries will document normative revisions, clarifications, structural ext
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.9  
+Version: 0.10  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13
