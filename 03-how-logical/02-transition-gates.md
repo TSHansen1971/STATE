@@ -5,7 +5,7 @@
 > **Version:** 0.5  
 > **Status:** Normative Specification
 > **Created:** 2026-08-13  
-> **Last modified:** 2026-08-13  
+> **Last modified:** 2026-08-13
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
@@ -210,6 +210,25 @@ Has the accepted state actually been established as the next Authoritative State
 - repository or state authority cannot be updated safely.
 
 Until G9 passes, the prior Authoritative State remains authoritative.
+
+## Sufficiency Governance
+
+Terms such as *sufficient*, *sufficiently specified*, *sufficient evidence* and equivalent expressions do not create discretionary authority outside the existing STATE control model.
+
+The governing rules are:
+
+1. **Threshold attachment.** Every sufficiency threshold belongs to the Acceptance basis or to the specific gate condition in which the threshold is used. A threshold is not an independent permission to progress.
+2. **Authority ownership.** Establishing or changing a sufficiency threshold requires the Authority already responsible for establishing the governing Acceptance basis, Contract condition or gate-relevant control decision. No separate Sufficiency Authority is created.
+3. **Prospective knowability.** A threshold shall be knowable to the degree required before it is relied upon to produce PASS. A threshold may be qualitative, quantitative or policy-derived, but it shall not be invented retrospectively from the observed Candidate or available evidence merely to justify progression.
+4. **Controlled weakening.** Weakening an established threshold changes the governing Acceptance basis or gate condition. Where that basis is part of the Transition Contract, the weakening is a controlled Contract amendment and shall be explicit, authorized, traceable and followed by re-evaluation of affected gates and claims.
+5. **No evidence-driven redefinition.** Weak evidence, incomplete evidence, an inconvenient FAIL or an INCONCLUSIVE result does not authorize a Realization Actor or evaluating mechanism to redefine what counts as sufficient.
+6. **Failure to establish sufficiency.** Where the applicable threshold cannot be established or evaluated under existing Authority, the gate shall not manufacture PASS. The Transition shall HOLD, fail, remain INCONCLUSIVE where that outcome applies, or return to the earliest phase required to establish the missing control basis.
+
+This rule does not create a new Gate, Authority Domain, Role, Work Product or method identifier.
+
+A physical Actor may participate in defining, evaluating or automating a threshold only within the Authority already granted for the underlying decision.
+
+> **Sufficiency is a property of an authorized decision basis, not a discretionary power created by the Actor evaluating available evidence.**
 
 ## Automated gates
 

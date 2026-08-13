@@ -5,7 +5,7 @@
 > **Version:** 0.7  
 > **Status:** Reference  
 > **Created:** 2026-08-13  
-> **Last modified:** 2026-08-13  
+> **Last modified:** 2026-08-13
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
@@ -139,6 +139,19 @@ INCONCLUSIVE
 | AS-08 | Assurance Sufficiency |
 | AS-09 | State Coherence |
 | AS-10 | Baseline Establishment Readiness |
+
+## Sufficiency Governance
+
+Sufficiency uses existing STATE control semantics.
+
+- a threshold belongs to the governing Acceptance basis or gate condition;
+- the Authority responsible for that basis or condition owns establishment and authorized change of the threshold;
+- the threshold shall be knowable before it is used to justify PASS;
+- weakening an established threshold is a controlled change to the governing basis;
+- weak or inconvenient evidence does not authorize a Realization Actor to redefine sufficiency;
+- absent an evaluable authorized threshold, PASS shall not be manufactured.
+
+No separate Sufficiency Authority, Gate, Role, Work Product or method identifier exists.
 
 ## G8 outcomes
 
