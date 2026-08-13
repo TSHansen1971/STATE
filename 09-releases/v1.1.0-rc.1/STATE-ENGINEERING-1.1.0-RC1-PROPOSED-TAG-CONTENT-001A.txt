@@ -1,0 +1,15 @@
+STATE Engineering v1.1.0-rc.1
+
+Release-State: CANDIDATE
+Publication-Authority: OWNER_CONTROLLED_WP23
+Candidate-Commit: WP22_COMMIT_ESTABLISHED_BY_THIS_CANDIDATE_STATE
+Specification: STATE-ENGINEERING-METHOD-SPECIFICATION-014A
+Public-Corpus-Version-On-Accepted-v1.1.0: 1.1.0
+Predecessor-Release: v1.0.0
+Predecessor-Commit: 23068ad4628c10001aa13b9963ed629b39645235
+Corpus-Hash-Inventory-SHA256: 55193dfef4237ab00182a8b985b23073ef7eeb07b62761a9d76a990c15ebd67f
+Verification-Report-SHA256: c2bd3a0e24191ef1a4c02ac63bb6a96433c9d6c0da058775ca8a3e9d6a54a440
+Release-Notes-SHA256: be26435c21f6bc8dd1f25f747b2fda34713a72a195b8bd9761a59dd9b95612db
+Release-Evidence-SHA256: 45d562cc31e30642a460a581a4b30161d8651b4bf25b34142243e41e404d73d8
+Licence: CC BY-SA 4.0
+Tag-Publication-Status: NOT_PUBLISHED

@@ -96,7 +96,7 @@ Foundational Properties are therefore constitutive. Universal Engineering Princi
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
-CC BY-NC-ND 4.0  
+CC BY-SA 4.0  
 Version: 0.2  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

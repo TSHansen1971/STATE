@@ -74,7 +74,7 @@ Metadata shall use consistent Markdown spacing. Tabs are not permitted in metada
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
-CC BY-NC-ND 4.0
+CC BY-SA 4.0
 Version: <version>
 Initial publication: <YYYY-MM-DD>
 Last modified: <YYYY-MM-DD>
@@ -90,7 +90,7 @@ Git history complements the page metadata; it does not replace it.
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
-CC BY-NC-ND 4.0  
+CC BY-SA 4.0  
 Version: 0.1  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

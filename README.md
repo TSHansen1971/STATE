@@ -13,6 +13,18 @@ STATE Engineering is an actor-independent engineering control method for authori
 
 It is built for engineering environments in which realization can be delegated to humans, teams, suppliers, deterministic automation, AI systems, autonomous agents or mixed arrangements without allowing technical Capability to become implicit Authority.
 
+## Canonical STATE name decomposition
+
+**STATE** is canonically decomposed as:
+
+- **S — Specification**
+- **T — Transition**
+- **A — Authority**
+- **T — Traceability**
+- **E — Evidence**
+
+The decomposition defines the name. It does not assert a strict causal chain or replace the four abstraction levels, the P0–P9 STATE Cycle or the existing normative control model.
+
 ## Start here — twelve questions
 
 ### 1. What is STATE Engineering?
@@ -95,9 +107,15 @@ The release Evidence material preserves the distinction between original Evidenc
 
 ### 10. How is the method licensed?
 
-The current authored documentation remains under **CC BY-NC-ND 4.0**, as stated in each current footer.
+The current authored STATE documentation is offered under **CC BY-SA 4.0** beginning with the v1.1.0 Candidate corpus revision that implements WP19.
 
-A prospective licence transition has been owner-approved for later implementation, but **WP19 has not yet implemented it**. No later licence is represented here as already effective.
+This is a prospective licence transition. Earlier revisions and historical release material distributed under `CC BY-NC-ND 4.0` are not represented as having their earlier grants revoked.
+
+CC BY-SA 4.0 permits sharing and adaptation, including commercial use, subject to its attribution and ShareAlike terms.
+
+The documentation licence applies to copyrightable expression. It does not purport to create copyright protection over ideas, facts, methods, systems or engineering concepts where copyright law does not protect them.
+
+See [`07-reference/LICENCE-HISTORY.md`](07-reference/LICENCE-HISTORY.md).
 
 ### 11. How does a practitioner begin?
 
@@ -200,7 +218,7 @@ See [`CHANGELOG.md`](CHANGELOG.md) for publication history.
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
-CC BY-NC-ND 4.0  
+CC BY-SA 4.0  
 Version: 0.13  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

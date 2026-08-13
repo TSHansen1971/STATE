@@ -13,6 +13,31 @@ Entries reflect normative releases, clarifications, structural additions and pub
 
 Editorial scratch material and private manuscript notes are explicitly excluded.
 
+## v1.1.0 Release Candidate preparation
+
+**Date:** 2026-08-13
+
+**State:** Candidate preparation; not an accepted release.
+
+The v1.1.0 Candidate consolidates the post-v1.0 workstream:
+
+- release/corpus identity reconciliation;
+- metadata and traceability closure;
+- Sufficiency Governance and Specification 014A;
+- complete P0–P9 worked Transition;
+- Authority Grant and stochastic/AI Evidence guidance;
+- Tailoring profiles and reusable templates;
+- method positioning and Source Register integrity;
+- explanatory whitepaper and public README;
+- Validation Protocol and pilot package;
+- prospective `CC BY-SA 4.0` documentation licence transition under WP19;
+- canonical STATE name decomposition under WP20;
+- repository-wide WP21 Verification.
+
+WP22 prepares Release Candidate evidence and proposed `v1.1.0-rc.1` tag content.
+
+No Release Candidate tag and no stable `v1.1.0` tag is created by this changelog entry.
+
 ## Version-identity interpretation
 
 The historical `0.x` values below are preserved publication and development labels from the pre-SemVer corpus history. They shall not all be interpreted as accepted release identities.
@@ -96,7 +121,7 @@ Future entries will document normative revisions, clarifications, structural ext
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
-CC BY-NC-ND 4.0  
+CC BY-SA 4.0  
 Version: 0.13  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

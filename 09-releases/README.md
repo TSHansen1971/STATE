@@ -41,11 +41,29 @@ The repository reserves:
 
 Published Git release tags remain immutable and are not controlled through directory changes.
 
+
+## v1.1.0-rc.1 Candidate preparation
+
+WP22 prepares a Candidate release state for owner Acceptance.
+
+The proposed tag name is:
+
+`v1.1.0-rc.1`
+
+The tag is **not published by WP22**.
+
+Candidate preparation material is under:
+
+`09-releases/v1.1.0-rc.1/`
+
+The immutable Candidate identity is the WP22 commit established after all Release Integrity controls pass.
+
+
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
-CC BY-NC-ND 4.0  
+CC BY-SA 4.0  
 Version: 001A  
 Initial publication: 2026-08-13  
 Last modified: 2026-08-13

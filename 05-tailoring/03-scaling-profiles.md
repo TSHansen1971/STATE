@@ -267,7 +267,7 @@ A lighter profile shall not be selected merely because:
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
-CC BY-NC-ND 4.0  
+CC BY-SA 4.0  
 Version: 0.10  
 Initial publication: 2026-08-13  
 Last modified: 2026-08-13

@@ -252,7 +252,7 @@ Quality depends on relevance to the claim and failure model.
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
-CC BY-NC-ND 4.0  
+CC BY-SA 4.0  
 Version: 0.11  
 Initial publication: 2026-08-13  
 Last modified: 2026-08-13

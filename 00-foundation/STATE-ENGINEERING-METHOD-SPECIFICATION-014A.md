@@ -31,6 +31,25 @@ It does not add:
 
 > **STATE Engineering is a specification-driven, actor-independent, human-governed, traceable and evidence-based engineering method for controlling transitions between authoritative system states.**
 
+### 2.1 Canonical STATE name decomposition
+
+The canonical decomposition of the name **STATE** is:
+
+- **S — Specification**
+- **T — Transition**
+- **A — Authority**
+- **T — Traceability**
+- **E — Evidence**
+
+The decomposition defines the method name and identifies five central control concerns already present in the normative corpus.
+
+It does not establish a strict causal dependency chain among those five terms, does not create five new lifecycle phases, and does not add a new normative identifier family.
+
+The existing method architecture, STATE Cycle, Authority Domains, Roles, Work Products, Evidence model and Conformance model remain unchanged.
+
+This canonicalization is a naming integration authorized by owner decision D4. It does not alter the Section 16 statement that WP06 Sufficiency Governance is the only method-semantic control change consolidated since Specification 013A.
+
+
 ## 3. Normative Precedence
 
 The current integrated specification is the highest integrated normative statement.
@@ -235,7 +254,7 @@ The four abstraction levels WHY / WHAT / HOW / WITH WHAT and the cross-cutting T
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
-CC BY-NC-ND 4.0  
+CC BY-SA 4.0  
 Version: 014A  
 Initial publication: 2026-08-13  
 Last modified: 2026-08-13

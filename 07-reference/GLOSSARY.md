@@ -705,11 +705,27 @@ The logical execution status of a Work Package: PLANNED, READY, ACTIVE, BLOCKED,
 
 An identifiable information object produced, maintained or consumed by STATE Roles to control, perform, verify, evidence or authorize a Transition.
 
+
+## STATE name decomposition
+
+The canonical decomposition of the method name:
+
+- **S — Specification**
+- **T — Transition**
+- **A — Authority**
+- **T — Traceability**
+- **E — Evidence**
+
+The decomposition names five central STATE control concerns.
+
+It is not a strict causal dependency chain and does not create a separate lifecycle, phase sequence, Authority Domain, Role, Work Product class, Evidence class or Conformance Requirement.
+
+
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
-CC BY-NC-ND 4.0  
+CC BY-SA 4.0  
 Version: 0.13  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

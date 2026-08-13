@@ -197,25 +197,31 @@ Claims in this paper are tied to the public STATE corpus and its recorded method
 
 ## 13. Licence status
 
-Owner decision D3 has accepted a prospective future licence transition, but implementation is explicitly deferred to WP19.
+Owner decision D3 selected `CC BY-SA 4.0`, and WP19 implements that decision prospectively for the current v1.1.0 Candidate corpus.
 
-Accordingly, this whitepaper and the current corpus remain under the licence shown in their current footers: `CC BY-NC-ND 4.0`.
+Earlier revisions and historical release material distributed under `CC BY-NC-ND 4.0` retain their historical licence provenance; WP19 does not represent those earlier grants as retroactively revoked.
 
-No retroactive licence change is claimed here.
+The selected forward licence supports redistribution, adaptations and translations, including commercial use, subject to attribution and ShareAlike.
 
-## 14. Owner-approved name decomposition status
+The licence governs copyrightable expression in the documentation to the extent copyright applies. It does not itself create exclusive rights over unprotectable ideas, facts, methods, systems or engineering concepts.
 
-Owner decision D4 has accepted the decomposition:
+Detailed licence provenance is recorded in `07-reference/LICENCE-HISTORY.md`.
 
-- S — Specification
-- T — Transition
-- A — Authority
-- T — Traceability
-- E — Evidence
+## 14. Canonical STATE name decomposition
 
-Canonical corpus integration is explicitly deferred to WP20.
+Owner decision D4 is integrated by WP20.
 
-This paper records the owner decision and its status; it does not claim that WP20 integration has already occurred or manufacture a strict causal chain among the five terms.
+The canonical decomposition is:
+
+- **S — Specification**
+- **T — Transition**
+- **A — Authority**
+- **T — Traceability**
+- **E — Evidence**
+
+The decomposition defines the name and highlights five central control concerns already present in STATE.
+
+It is not presented as a strict causal dependency chain and does not replace or extend the normative architecture.
 
 ## 15. Current development position
 
@@ -229,7 +235,7 @@ The purpose of v1.1 development is operationalization and demonstrability withou
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
-CC BY-NC-ND 4.0  
+CC BY-SA 4.0  
 Version: 001A  
 Initial publication: 2026-08-13  
 Last modified: 2026-08-13

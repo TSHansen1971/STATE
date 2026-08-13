@@ -171,19 +171,19 @@ A consumed Specification identifier shall not be silently reused.
 
 ### D3 — Documentation licence
 
-**Decision:** ACCEPTED; IMPLEMENTATION DEFERRED TO WP19.
+**Decision:** ACCEPTED; IMPLEMENTED BY WP19 IN THE v1.1.0 CANDIDATE CORPUS.
 
 The selected forward licence is:
 
 `CC BY-SA 4.0`
 
-The transition shall apply prospectively from the accepted corpus revision implemented under WP19. Earlier licence grants shall not be represented as retroactively revoked.
+The transition applies prospectively to current authored documentation beginning with the v1.1.0 Candidate corpus revision implementing WP19. Earlier licence grants are not represented as retroactively revoked.
 
-This planning correction records the decision only. It does not change the licence of the current corpus and therefore retains the existing `CC BY-NC-ND 4.0` footer.
+WP19 implements the decision by applying `CC BY-SA 4.0` uniformly to current authored documentation while preserving historical licence provenance.
 
 ### D4 — Canonical STATE name decomposition
 
-**Decision:** ACCEPTED.
+**Decision:** ACCEPTED; INTEGRATED BY WP20.
 
 - **S — Specification**
 - **T — Transition**
@@ -193,7 +193,7 @@ This planning correction records the decision only. It does not change the licen
 
 The decomposition defines the name. It shall not be presented as a strict causal dependency chain unless such a relationship is separately established by the normative method semantics.
 
-WP20 remains responsible for controlled corpus integration.
+WP20 performs the controlled corpus integration while preserving the rule that the decomposition does not manufacture a stronger logical dependency relation.
 
 ### D5 — v1.0.0 release-evidence publication
 
@@ -1051,7 +1051,7 @@ That distinction is the intended outcome of the post-v1.0 epic.
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
-CC BY-NC-ND 4.0  
+CC BY-SA 4.0  
 Version: 001A  
 Initial publication: 2026-08-13  
 Last modified: 2026-08-13

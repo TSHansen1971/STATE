@@ -45,7 +45,7 @@ Acceptance does not rewrite Verification and does not itself perform P9 Baseline
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
-CC BY-NC-ND 4.0  
+CC BY-SA 4.0  
 Version: 001A  
 Initial publication: 2026-08-13  
 Last modified: 2026-08-13
