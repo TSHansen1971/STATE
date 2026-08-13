@@ -2,10 +2,10 @@
 
 > **Document:** `10-development/README.md`  
 > **Title:** STATE Engineering — Method Development  
-> **Version:** 1.0.0  
+> **Version:** 1.1.0  
 > **Status:** Current Documentation  
 > **Created:** 2026-08-13  
-> **Last modified:** 2026-08-13
+> **Last modified:** 2026-08-14
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
@@ -43,7 +43,11 @@ Retrospective reconstruction of the development sequence that established the in
 
 [`STATE-EPIC-V1.1.0-001A.md`](STATE-EPIC-V1.1.0-001A.md)
 
-Candidate post-v1.0 consolidation, demonstration and operationalization epic. It begins from the immutable `v1.0.0` release baseline and does not obtain Transition or Acceptance Authority merely by being documented.
+Completed post-v1.0 consolidation, demonstration and operationalization epic. It began from the immutable `v1.0.0` release baseline, passed WP01–WP23 and RG1–RG6, and was owner-promoted to the stable `v1.1.0` release.
+
+[`STATE-V1.1.0-METHOD-DEVELOPMENT-CONFORMANCE-MANIFEST-001A.md`](STATE-V1.1.0-METHOD-DEVELOPMENT-CONFORMANCE-MANIFEST-001A.md)
+
+Retrospective self-application manifest reconstructing the v1.1.0 development and release as an evidence-bound application of STATE Engineering to the engineering of STATE Engineering itself. Its overall assessment is `SUPPORTED`; it is a development-history case and does not become normative merely by being published here.
 
 ## Historical continuity
 
@@ -69,6 +73,12 @@ v1.0.0
 Post-v1.0 development backlog
         ↓
 Candidate v1.1.0
+        ↓
+WP21 / RG6 release integrity
+        ↓
+Owner Acceptance / WP23
+        ↓
+v1.1.0
 ```
 
 The published `v1.0.0` and `v1.0.0-rc.1` Git tags remain immutable historical release identifiers.
@@ -91,6 +101,6 @@ After this correction, these top-level numbers and purposes shall not be casuall
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-SA 4.0  
-Version: 1.0.0  
+Version: 1.1.0  
 Initial publication: 2026-08-13  
-Last modified: 2026-08-13
+Last modified: 2026-08-14
