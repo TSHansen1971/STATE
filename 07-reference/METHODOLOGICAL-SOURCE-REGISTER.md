@@ -2,18 +2,19 @@
 
 > **Document:** `07-reference/METHODOLOGICAL-SOURCE-REGISTER.md`  
 > **Title:** Methodological Source Register  
-> **Version:** 0.1  
+> **Version:** 0.2  
 > **Status:** Working Reference  
 > **Created:** 2026-08-11  
-> **Last modified:** 2026-08-11  
+> **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
+
 This register records directly relevant methodological source material that informs STATE Engineering principles and rationale.
 
-It is not a compliance crosswalk.
+It is **not a compliance crosswalk**.
 
-External sources may inform STATE requirements, but the source structure does not become the structure of STATE Engineering.
+External sources may inform STATE requirements, but the external source structure does not become the structure of STATE Engineering.
 
 ## Source inclusion rule
 
@@ -25,35 +26,66 @@ A source concept may be absorbed into the universal STATE core only when it is:
 4. compatible with STATE's actor-independent state-transition model; and
 5. not dependent for its validity on a particular jurisdiction, mission, organization or sector.
 
-## NIST SP 800-53 — SA-8 Security and Privacy Engineering Principles
+Broad compliance aggregation and meta-framework mapping are outside the purpose of this register.
 
-**Methodological use:** generally applicable systems-security engineering principles relevant to specification, architecture, development, modification, traceability, least privilege, secure failure, procedural rigor, documentation and secure system modification.
+## NIST SP 800-53 Rev. 5 — SA-8 Security and Privacy Engineering Principles
 
-**STATE treatment:** relevant engineering principles are absorbed into coherent STATE-native foundational properties, universal engineering principles and logical practices. STATE is not structured as an external-control mapping.
+**Authoritative source:**  
+https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
 
-## OWASP secure software development and design guidance
+**Current source basis for this STATE revision:** NIST SP 800-53 Rev. 5 material including the current Release 5.2.0 publication set.
 
-**Methodological use:** generally applicable secure-software design and development principles and patterns, including secure-by-design reasoning, explicit trust and attack-surface reasoning, secure defaults, threat-oriented design, validation, testing and remediation.
+**Methodological use:** the 33 SA-8 engineering principles provide directly relevant general systems-security engineering input concerning abstraction, modularity, dependency structure, minimized sharing, least privilege, trust, secure evolvability, continuous protection, metadata, accountability, secure defaults, failure and recovery, human factors, repeatable procedure, procedural rigor, secure modification, documentation and minimization.
 
-**STATE treatment:** relevant method and pattern guidance may inform the Conceptual, Logical, Physical and Assurance layers where it expresses generally applicable secure-engineering practice.
+**STATE treatment:** all 33 principles are explicitly accounted for in the methodological absorption record in `02-what-conceptual/05-universal-engineering-principles.md`. They are absorbed into twelve STATE-native Universal Engineering Principles and the Secure Modification Foundational Property.
 
-## Publicly applicable NATO engineering principles and requirements
+This absorption record demonstrates methodological provenance. It does not assert blanket conformance to every control or contextual requirement in the source publication.
 
-**Methodological use:** publicly available, generally applicable engineering principles relevant to requirements discipline, lifecycle coherence, traceability, secure engineering, testing, verification, system integrity and controlled modification.
+## OWASP Secure by Design
 
-**STATE treatment:** only generally applicable engineering content is eligible for the universal method core. Mission-specific, organizational, operational or other context-bound requirements remain outside the universal STATE core and may be introduced through Tailoring where relevant.
+**Authoritative source:**  
+https://owasp.org/www-project-secure-by-design-framework/
+
+**Methodological use:** generally applicable secure-design principles and patterns, including security as an architectural property, explicit boundaries, least privilege, secure defaults, resilience, controlled communication, observability and iterative review when designs materially change.
+
+**STATE treatment:** these concepts reinforce Secure Engineering by Construction and inform UEP-01, UEP-03, UEP-04, UEP-06, UEP-07, UEP-09 and UEP-10 where the guidance is generally applicable.
+
+The STATE core does not absorb domain-specific regulatory examples merely because they appear in the source material.
+
+## OWASP Threat Modeling
+
+**Authoritative source:**  
+https://owasp.org/www-community/Threat_Modeling
+
+**Methodological use:** threat-oriented analysis as a means of identifying and reasoning about threats and mitigations in the context of something of value.
+
+**STATE treatment:** threat modeling is an available verification and design practice when the risk, architecture or transition warrants it. It is not mandatory for every transition merely by name; Tailoring and Assurance determine the required depth.
+
+## NATO Alliance Digital Strategy
+
+**Authoritative source:**  
+https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2026/01/13/alliance-digital-strategy
+
+**Methodological use:** publicly stated engineering principles relevant to continuous verification, least privilege, secure handling, resilient engineering and digital integration.
+
+**STATE treatment:** only generally applicable engineering concepts are candidates for the universal STATE core. Mission-, alliance-, organizational- or operationally specific requirements remain context-bound and are not universalized by STATE.
 
 ## Register discipline
 
-The purpose of this register is to preserve methodological provenance: why a STATE requirement or pattern exists and which directly relevant engineering knowledge informed it.
+The purpose of this register is to preserve methodological provenance:
 
-The register does not make external frameworks the organizing structure of STATE Engineering.
+- which directly relevant engineering knowledge informed a STATE principle;
+- why the principle belongs in a general engineering method;
+- where the principle is absorbed into STATE;
+- which source-specific contextual material is deliberately not universalized.
+
+A STATE requirement remains a STATE requirement. Source provenance explains its engineering basis without transferring the external source's architecture into the method.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.1  
+Version: 0.2  
 Initial publication: 2026-08-11  
-Last modified: 2026-08-11
+Last modified: 2026-08-13
