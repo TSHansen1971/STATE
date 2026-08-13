@@ -34,6 +34,7 @@ Repository paths are treated as durable public identifiers after publication and
 3. [`STOCHASTIC-ACTOR-AND-AI-EVIDENCE-PATTERNS-001A.md`](STOCHASTIC-ACTOR-AND-AI-EVIDENCE-PATTERNS-001A.md) — non-normative Evidence and Verification patterns for stochastic and AI realization using general STATE semantics.
 4. [`TAILORING-PROFILES-BY-CONTROL-INTENSITY-001A.md`](TAILORING-PROFILES-BY-CONTROL-INTENSITY-001A.md) — illustrative low, standard and high-control Tailoring profiles showing Semantic Compression without Control Deletion.
 5. [`templates/`](templates/README.md) — reusable non-normative operational templates mapped explicitly to existing STATE Work Product and Tailoring semantics.
+6. [`pilot/`](pilot/README.md) — empirical pilot package for bounded externally inspectable STATE validation cases.
 
 
 ---
