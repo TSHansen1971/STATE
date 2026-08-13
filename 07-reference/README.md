@@ -2,51 +2,53 @@
 
 > **Document:** `07-reference/README.md`  
 > **Title:** Reference  
-> **Version:** 0.12  
+> **Version:** 0.13  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
+The Reference layer is the stable lookup and interpretation surface for applying STATE Engineering consistently.
 
-The Reference layer is the stable lookup surface for applying STATE Engineering consistently.
+## Normative interpretation and method integrity
 
-## Current reference material
+- [`NORMATIVE-LANGUAGE.md`](NORMATIVE-LANGUAGE.md) — mandatory language, permissions, capability language, document precedence and identifier stability.
+- [`NORMATIVE-ELEMENT-REGISTER.md`](NORMATIVE-ELEMENT-REGISTER.md) — registry of current STATE identifier namespaces and governing sources.
+- [`METHOD-TRACEABILITY-MODEL.md`](METHOD-TRACEABILITY-MODEL.md) — internal traceability from Foundational Properties through method controls to Conformance.
+- [`ROLE-AUTHORITY-CATALOGUE.md`](ROLE-AUTHORITY-CATALOGUE.md) — compact canonical Role and Authority Domain catalogue.
+- [`GLOSSARY.md`](GLOSSARY.md) — consolidated current method vocabulary.
 
-- [`GLOSSARY.md`](GLOSSARY.md) — normative working terminology.
-- [`STATE-CYCLE-REFERENCE.md`](STATE-CYCLE-REFERENCE.md) — P0–P9 cycle and G0–G9 gate reference.
-- [`TRANSITION-CONTRACT-REFERENCE.md`](TRANSITION-CONTRACT-REFERENCE.md) — Transition Contract and Work Package reference.
-- [`VERIFICATION-ACCEPTANCE-REFERENCE.md`](VERIFICATION-ACCEPTANCE-REFERENCE.md) — Verification and Acceptance reference.
-- [`BASELINE-RELEASE-PROVENANCE-REFERENCE.md`](BASELINE-RELEASE-PROVENANCE-REFERENCE.md) — P9, Release and provenance reference.
-- [`PHYSICAL-REALIZATION-REFERENCE.md`](PHYSICAL-REALIZATION-REFERENCE.md) — Physical Realization reference.
-- [`TAILORING-REFERENCE.md`](TAILORING-REFERENCE.md) — Tailoring reference.
-- [`ASSURANCE-REFERENCE.md`](ASSURANCE-REFERENCE.md) — Assurance reference.
-- [`CONFORMANCE-MODEL.md`](CONFORMANCE-MODEL.md) — normative internal STATE Conformance Model.
-- [`CONFORMANCE-REFERENCE.md`](CONFORMANCE-REFERENCE.md) — compact Conformance reference.
-- [`STATE-CONFORMANCE-CHECKLIST.md`](STATE-CONFORMANCE-CHECKLIST.md) — practical internal assessment checklist.
-- [`WORK-PRODUCT-CATALOGUE.md`](WORK-PRODUCT-CATALOGUE.md) — canonical logical Work Product classes.
-- [`EVIDENCE-CATALOGUE.md`](EVIDENCE-CATALOGUE.md) — Evidence Classes and Evidence-Quality Properties.
-- [`DOCUMENT-METADATA-TEMPLATE.md`](DOCUMENT-METADATA-TEMPLATE.md) — visible metadata and publication-footer contract.
-- [`METHODOLOGICAL-SOURCE-REGISTER.md`](METHODOLOGICAL-SOURCE-REGISTER.md) — methodological source provenance.
+## Operational reference material
 
-## Planned reference material
+- [`STATE-CYCLE-REFERENCE.md`](STATE-CYCLE-REFERENCE.md)
+- [`TRANSITION-CONTRACT-REFERENCE.md`](TRANSITION-CONTRACT-REFERENCE.md)
+- [`VERIFICATION-ACCEPTANCE-REFERENCE.md`](VERIFICATION-ACCEPTANCE-REFERENCE.md)
+- [`BASELINE-RELEASE-PROVENANCE-REFERENCE.md`](BASELINE-RELEASE-PROVENANCE-REFERENCE.md)
+- [`PHYSICAL-REALIZATION-REFERENCE.md`](PHYSICAL-REALIZATION-REFERENCE.md)
+- [`TAILORING-REFERENCE.md`](TAILORING-REFERENCE.md)
+- [`ASSURANCE-REFERENCE.md`](ASSURANCE-REFERENCE.md)
+- [`WORK-PRODUCT-CATALOGUE.md`](WORK-PRODUCT-CATALOGUE.md)
+- [`EVIDENCE-CATALOGUE.md`](EVIDENCE-CATALOGUE.md)
 
-The Reference layer may later expand with:
+## Conformance
 
-- role and authority catalogue;
-- reusable templates;
-- pattern catalogue;
-- anti-pattern catalogue;
-- worked reference examples.
+- [`CONFORMANCE-MODEL.md`](CONFORMANCE-MODEL.md)
+- [`CONFORMANCE-REFERENCE.md`](CONFORMANCE-REFERENCE.md)
+- [`STATE-CONFORMANCE-CHECKLIST.md`](STATE-CONFORMANCE-CHECKLIST.md)
 
-Internal STATE Conformance material does not establish an external certification scheme.
+## Publication and provenance
+
+- [`DOCUMENT-METADATA-TEMPLATE.md`](DOCUMENT-METADATA-TEMPLATE.md)
+- [`METHODOLOGICAL-SOURCE-REGISTER.md`](METHODOLOGICAL-SOURCE-REGISTER.md)
+
+The Reference layer does not establish an external certification or compliance scheme.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.12  
+Version: 0.13  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

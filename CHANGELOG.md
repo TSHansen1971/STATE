@@ -2,7 +2,7 @@
 
 > **Document:** `CHANGELOG.md`  
 > **Title:** STATE Engineering — Change Log  
-> **Version:** 0.12  
+> **Version:** 0.13  
 > **Status:** Active  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -15,6 +15,10 @@ Editorial scratch material and private manuscript notes are explicitly excluded.
 
 | Date | Version | Component | Change Type | Description |
 |---|---:|---|---|---|
+| 2026-08-13 | 0.13 | Method Specification | Reference Stabilization | Publishes Method Specification 013A without adding new lifecycle, Role, Authority, Work Product or Conformance semantics. |
+| 2026-08-13 | 0.13 | Normative Language | Reference Extension | Establishes normative language, document precedence and stable-identifier rules. |
+| 2026-08-13 | 0.13 | Reference | Consolidation | Publishes the Normative Element Register, consolidated glossary and Role / Authority catalogue. |
+| 2026-08-13 | 0.13 | Traceability | Method Integrity | Establishes internal method traceability from Foundational Properties through controls to Conformance. |
 | 2026-08-13 | 0.12 | Method Specification | Conformance Revision | Publishes Method Specification 012A and establishes the internal STATE Conformance Model. |
 | 2026-08-13 | 0.12 | Conformance | Normative Extension | Defines three Conformance scopes, sixteen Conformance Requirements, criterion dispositions and three overall statuses. |
 | 2026-08-13 | 0.12 | Conformance Assessment | Normative Extension | Defines sixteen Conformance Assessment Record fields without introducing a new Work Product class. |
@@ -78,6 +82,6 @@ Future entries will document normative revisions, clarifications, structural ext
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.12  
+Version: 0.13  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13
