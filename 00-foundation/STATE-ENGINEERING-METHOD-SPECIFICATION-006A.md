@@ -3,7 +3,7 @@
 > **Document:** `00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-006A.md`  
 > **Title:** STATE Engineering Method Specification 006A  
 > **Version:** 0.6  
-> **Status:** Current Foundational Specification  
+> **Status:** Historical Superseded Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

@@ -3,7 +3,7 @@
 > **Document:** `03-how-logical/01-the-state-cycle.md`  
 > **Title:** The STATE Cycle  
 > **Version:** 0.8  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

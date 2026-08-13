@@ -3,7 +3,7 @@
 > **Document:** `04-with-what-physical/README.md`  
 > **Title:** WITH WHAT — Physical Layer  
 > **Version:** 0.9  
-> **Status:** Working Draft  
+> **Status:** Current Documentation
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

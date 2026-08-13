@@ -3,7 +3,7 @@
 > **Document:** `02-what-conceptual/05-universal-engineering-principles.md`  
 > **Title:** Universal Engineering Principles  
 > **Version:** 0.3  
-> **Status:** Foundational Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

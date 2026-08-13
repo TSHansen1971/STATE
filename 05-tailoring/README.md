@@ -3,7 +3,7 @@
 > **Document:** `05-tailoring/README.md`  
 > **Title:** Tailoring  
 > **Version:** 0.12  
-> **Status:** Working Draft  
+> **Status:** Current Documentation
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

@@ -3,7 +3,7 @@
 > **Document:** `05-tailoring/02-tailoring-decision-model.md`  
 > **Title:** Tailoring Decision Model  
 > **Version:** 0.10  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

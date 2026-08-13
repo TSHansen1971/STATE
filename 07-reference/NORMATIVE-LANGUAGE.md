@@ -3,7 +3,7 @@
 > **Document:** `07-reference/NORMATIVE-LANGUAGE.md`  
 > **Title:** Normative Language and Precedence  
 > **Version:** 0.13  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

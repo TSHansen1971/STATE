@@ -15,6 +15,7 @@ Editorial scratch material and private manuscript notes are explicitly excluded.
 
 | Date | Version | Component | Change Type | Description |
 |---|---:|---|---|---|
+| 2026-08-13 | 0.14 | Release Readiness | Stabilization | Normalizes superseded/current document status metadata, removes Working-status debt, and closes explicit CON-16 method traceability without changing method semantics. |
 | 2026-08-13 | 0.13 | Method Specification | Reference Stabilization | Publishes Method Specification 013A without adding new lifecycle, Role, Authority, Work Product or Conformance semantics. |
 | 2026-08-13 | 0.13 | Normative Language | Reference Extension | Establishes normative language, document precedence and stable-identifier rules. |
 | 2026-08-13 | 0.13 | Reference | Consolidation | Publishes the Normative Element Register, consolidated glossary and Role / Authority catalogue. |

@@ -3,9 +3,9 @@
 > **Document:** `02-what-conceptual/01-the-state-model.md`  
 > **Title:** The STATE Model  
 > **Version:** 0.1  
-> **Status:** Working Draft  
+> **Status:** Current Documentation
 > **Created:** 2026-08-11  
-> **Last modified:** 2026-08-11  
+> **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
@@ -77,4 +77,4 @@ This separation allows the realization actor to be replaced without silently red
 CC BY-NC-ND 4.0  
 Version: 0.1  
 Initial publication: 2026-08-11  
-Last modified: 2026-08-11
+Last modified: 2026-08-13

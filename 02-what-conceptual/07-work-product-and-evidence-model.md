@@ -3,7 +3,7 @@
 > **Document:** `02-what-conceptual/07-work-product-and-evidence-model.md`  
 > **Title:** Work Product and Evidence Model  
 > **Version:** 0.4  
-> **Status:** Foundational Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

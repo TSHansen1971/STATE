@@ -3,7 +3,7 @@
 > **Document:** `02-what-conceptual/06-role-authority-responsibility-model.md`  
 > **Title:** Role, Authority and Responsibility Model  
 > **Version:** 0.3  
-> **Status:** Foundational Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

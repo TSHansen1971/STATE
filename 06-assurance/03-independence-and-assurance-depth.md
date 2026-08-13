@@ -3,7 +3,7 @@
 > **Document:** `06-assurance/03-independence-and-assurance-depth.md`  
 > **Title:** Independence and Assurance Depth  
 > **Version:** 0.11  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

@@ -3,7 +3,7 @@
 > **Document:** `06-assurance/02-assurance-case-and-confidence.md`  
 > **Title:** Assurance Case and Confidence  
 > **Version:** 0.11  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

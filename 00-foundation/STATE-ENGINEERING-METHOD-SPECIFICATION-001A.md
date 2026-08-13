@@ -3,9 +3,9 @@
 > **Document:** `00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-001A.md`  
 > **Title:** STATE Engineering Method Specification 001A  
 > **Version:** 0.1  
-> **Status:** Foundational Working Specification  
+> **Status:** Historical Superseded Specification
 > **Created:** 2026-08-11  
-> **Last modified:** 2026-08-11  
+> **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
@@ -193,4 +193,4 @@ A change that affects a relevant security property, authority boundary, trust re
 CC BY-NC-ND 4.0  
 Version: 0.1  
 Initial publication: 2026-08-11  
-Last modified: 2026-08-11
+Last modified: 2026-08-13

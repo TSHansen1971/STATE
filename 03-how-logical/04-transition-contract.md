@@ -3,7 +3,7 @@
 > **Document:** `03-how-logical/04-transition-contract.md`  
 > **Title:** Transition Contract  
 > **Version:** 0.6  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

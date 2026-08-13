@@ -3,7 +3,7 @@
 > **Document:** `07-reference/METHODOLOGICAL-SOURCE-REGISTER.md`  
 > **Title:** Methodological Source Register  
 > **Version:** 0.2  
-> **Status:** Working Reference  
+> **Status:** Reference
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

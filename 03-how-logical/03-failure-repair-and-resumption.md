@@ -3,7 +3,7 @@
 > **Document:** `03-how-logical/03-failure-repair-and-resumption.md`  
 > **Title:** Failure, Repair and Resumption  
 > **Version:** 0.5  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

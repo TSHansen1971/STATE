@@ -3,7 +3,7 @@
 > **Document:** `03-how-logical/05-work-package-model.md`  
 > **Title:** Work Package Model  
 > **Version:** 0.6  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

@@ -3,7 +3,7 @@
 > **Document:** `05-tailoring/03-scaling-profiles.md`  
 > **Title:** STATE Scaling Profiles  
 > **Version:** 0.10  
-> **Status:** Reference Working Specification  
+> **Status:** Reference
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

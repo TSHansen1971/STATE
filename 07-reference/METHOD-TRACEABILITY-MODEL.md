@@ -3,7 +3,7 @@
 > **Document:** `07-reference/METHOD-TRACEABILITY-MODEL.md`  
 > **Title:** Method Traceability Model  
 > **Version:** 0.13  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  
@@ -62,7 +62,7 @@ These relationships do not create a new external dependency model.
 | `FP-06` Separation of Role, Actor, Capability and Authority | LR model, Authority Grant, Effective / Authorized Execution Envelopes | `CON-04` |
 | `FP-07` Candidate before Authority | P4, P8, P9, Candidate identity, Acceptance, Baseline Establishment | `CON-06`, `CON-11` |
 | `FP-08` Traceability by Construction | WP model, Evidence model, PV provenance, Transition Record | `CON-08`, `CON-13` |
-| `FP-09` Evidence-Based Acceptance | P6-P8, VR, EC/EQ, AR/AS | `CON-07`, `CON-08`, `CON-09`, `CON-10` |
+| `FP-09` Evidence-Based Acceptance | P6-P8, VR, EC/EQ, AR/AS, Assurance | `CON-07`, `CON-08`, `CON-09`, `CON-10`, `CON-16` |
 | `FP-10` Secure Engineering by Construction | Secure Engineering Foundation, UEP set, CC-07, VA-11 | `CON-14` |
 | `FP-11` Explicit Failure | F-01..F-12, Verification outcomes, Acceptance outcomes, P9 / Release failure results | `CON-12` |
 | `FP-12` Secure Modification | UEP-06, UEP-10, security-relevant Verification and provenance | `CON-14`, `CON-15` |

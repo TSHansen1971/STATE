@@ -3,7 +3,7 @@
 > **Document:** `03-how-logical/README.md`  
 > **Title:** HOW — Logical Layer  
 > **Version:** 0.8  
-> **Status:** Working Draft  
+> **Status:** Current Documentation
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

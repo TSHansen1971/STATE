@@ -3,7 +3,7 @@
 > **Document:** `00-foundation/README.md`  
 > **Title:** Foundation  
 > **Version:** 0.13  
-> **Status:** Working Draft  
+> **Status:** Current Documentation
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

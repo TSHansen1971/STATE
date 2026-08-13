@@ -3,7 +3,7 @@
 > **Document:** `02-what-conceptual/03-role-actor-capability-authority.md`  
 > **Title:** Role, Responsibility, Actor, Capability and Authority  
 > **Version:** 0.3  
-> **Status:** Foundational Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

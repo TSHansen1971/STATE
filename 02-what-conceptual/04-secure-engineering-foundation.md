@@ -3,7 +3,7 @@
 > **Document:** `02-what-conceptual/04-secure-engineering-foundation.md`  
 > **Title:** Secure Engineering Foundation  
 > **Version:** 0.2  
-> **Status:** Foundational Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

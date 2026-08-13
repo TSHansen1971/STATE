@@ -3,7 +3,7 @@
 > **Document:** `06-assurance/README.md`  
 > **Title:** Assurance  
 > **Version:** 0.12  
-> **Status:** Working Draft  
+> **Status:** Current Documentation
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

@@ -3,7 +3,7 @@
 > **Document:** `05-tailoring/01-tailoring-model.md`  
 > **Title:** Tailoring Model  
 > **Version:** 0.10  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

@@ -3,9 +3,9 @@
 > **Document:** `01-why-contextual/README.md`  
 > **Title:** WHY — Contextual Layer  
 > **Version:** 0.1  
-> **Status:** Working Draft  
+> **Status:** Current Documentation
 > **Created:** 2026-08-11  
-> **Last modified:** 2026-08-11  
+> **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
@@ -26,4 +26,4 @@ The layer addresses delegated realization, growth in implementation capacity, li
 CC BY-NC-ND 4.0  
 Version: 0.1  
 Initial publication: 2026-08-11  
-Last modified: 2026-08-11
+Last modified: 2026-08-13

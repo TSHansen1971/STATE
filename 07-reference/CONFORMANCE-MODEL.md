@@ -3,7 +3,7 @@
 > **Document:** `07-reference/CONFORMANCE-MODEL.md`  
 > **Title:** STATE Conformance Model  
 > **Version:** 0.12  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

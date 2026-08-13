@@ -3,7 +3,7 @@
 > **Document:** `04-with-what-physical/01-physical-realization-model.md`  
 > **Title:** Physical Realization Model  
 > **Version:** 0.9  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

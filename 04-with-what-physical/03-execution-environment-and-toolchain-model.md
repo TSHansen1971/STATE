@@ -3,7 +3,7 @@
 > **Document:** `04-with-what-physical/03-execution-environment-and-toolchain-model.md`  
 > **Title:** Execution Environment and Toolchain Model  
 > **Version:** 0.9  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

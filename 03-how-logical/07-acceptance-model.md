@@ -3,7 +3,7 @@
 > **Document:** `03-how-logical/07-acceptance-model.md`  
 > **Title:** Acceptance Model  
 > **Version:** 0.7  
-> **Status:** Normative Working Specification  
+> **Status:** Normative Specification
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  
