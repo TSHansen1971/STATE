@@ -2,13 +2,12 @@
 
 > **Document:** `03-how-logical/01-the-state-cycle.md`  
 > **Title:** The STATE Cycle  
-> **Version:** 0.5  
+> **Version:** 0.6  
 > **Status:** Normative Working Specification  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
-
 
 The STATE Cycle is the canonical logical process for moving from one Authoritative State to another.
 
@@ -469,6 +468,21 @@ The invariant is not “one phase at a time.”
 
 The invariant is that no later claim assumes an earlier control condition that has not actually been established.
 
+
+## Transition Contract relationship
+
+The P0–P3 sequence progressively establishes the governing Transition Contract.
+
+P4–P7 execute and evidence the authorized Contract.
+
+P8 decides whether the Candidate satisfies the Contract's authorized Acceptance basis.
+
+P9 establishes the resulting accepted state as authoritative.
+
+Where execution is decomposed into multiple Work Packages, all packages remain subordinate to the same Transition Contract unless they are explicitly established as separate Transitions.
+
+Package-level completion and verification shall not be substituted for Transition-level Acceptance.
+
 ## Canonical cycle rule
 
 > **A Candidate State shall not become authoritative by implementation success, verification success, evidence accumulation or Acceptance alone. The state becomes authoritative only after explicit baseline establishment at P9.**
@@ -478,6 +492,6 @@ The invariant is that no later claim assumes an earlier control condition that h
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.5  
+Version: 0.6  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

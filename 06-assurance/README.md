@@ -2,7 +2,7 @@
 
 > **Document:** `06-assurance/README.md`  
 > **Title:** Assurance  
-> **Version:** 0.5  
+> **Version:** 0.6  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -10,56 +10,67 @@
 > **Co-authors:** None
 
 
-Assurance addresses whether a STATE Transition, its evidence, its role arrangement, its gate progression and its resulting claims deserve trust.
+Assurance addresses whether a STATE Transition, its evidence, role arrangement, gate progression, Work Package decomposition and resulting claims deserve trust.
 
 Assurance is not identical to testing.
 
-Testing may produce Evidence Items. Verification evaluates specified claims. Acceptance authorizes state. Assurance evaluates the sufficiency, independence and trustworthiness of that overall basis.
-
 ## Process assurance
-
-Was the required STATE control process followed with appropriate rigor?
 
 Relevant questions include:
 
+- was the governing Transition Contract sufficiently explicit;
+- were material Contract amendments authorized and traceable;
 - were required gate conditions actually established;
-- were gate outcomes inferred from evidence or merely assumed because activity continued;
-- did authority remain valid through the Transition;
-- were logical role distinctions preserved;
+- did Work Package decomposition preserve Transition-level control;
+- did authority remain valid through execution;
 - did repair or resumption begin at a justified phase.
 
 ## Transition assurance
 
-Is the Evidence Set sufficient to support the claims made about the Transition?
+Is the Evidence Set sufficient to support the claims made about this specific Transition?
 
 This includes whether:
 
 - claims are explicit;
 - Verification Records identify methods, observations and limitations;
 - Evidence Items are bound to the correct Baseline and Candidate;
-- candidate revisions are not confused;
+- package-local evidence is not misrepresented as integrated evidence;
+- Candidate revisions are not confused;
 - negative evidence is preserved where relevant;
-- production, verification, evidence stewardship and Acceptance are separated to the degree required.
+- production, verification, evidence stewardship and Acceptance are separated to the required degree.
+
+## Work Package assurance
+
+Where a Transition uses multiple Work Packages, Assurance considers:
+
+- whether each package inherits from one current Transition Contract;
+- whether Mutation Envelopes are bounded;
+- whether dependencies are explicit enough;
+- whether concurrent mutation is sufficiently isolated;
+- whether integration creates new claims requiring verification;
+- whether package-level PASS is being incorrectly substituted for integrated Candidate PASS;
+- whether package completion is being incorrectly treated as Acceptance.
+
+## Contract amendment assurance
+
+Material Contract amendments should be evaluated for:
+
+- appropriate authority;
+- traceability;
+- effect on prior gate validity;
+- effect on Work Packages;
+- effect on verification basis;
+- effect on existing evidence.
+
+An amendment performed only to make a failed Candidate appear compliant is not a valid assurance basis.
 
 ## Resulting-state assurance
 
-Is there sufficient basis to trust the relevant properties claimed for the accepted state?
-
-P9 is especially important here: Acceptance evidence alone does not establish that the accepted state was correctly established as the new Authoritative State.
-
-## Gate assurance
-
-A gate may be automated or physically combined with other gates, but Assurance considers whether:
-
-- its conditions were explicit;
-- the evaluator had appropriate capability;
-- required authority was delegated;
-- relevant evidence was preserved;
-- ambiguity produced escalation rather than silent progression.
+P9 remains decisive: Acceptance evidence alone does not establish that the accepted state was correctly established as the new Authoritative State.
 
 ## Evidence-quality assurance
 
-Evidence quality is evaluated through applicable properties defined by the Evidence Model:
+Evidence quality remains evaluated through:
 
 - relevance;
 - identity;
@@ -71,19 +82,13 @@ Evidence quality is evaluated through applicable properties defined by the Evide
 - timeliness;
 - preservation.
 
-## Role-separation assurance
-
-Logical role separation is always required.
-
-Physical separation between actors is required only when the assurance objective cannot be achieved through combined assignment.
-
-Assurance requirements are proportionate to consequence, uncertainty, reversibility, exposure and the cost of being wrong.
+Assurance requirements remain proportionate to consequence, uncertainty, reversibility, exposure and the cost of being wrong.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.5  
+Version: 0.6  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

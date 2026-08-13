@@ -2,7 +2,7 @@
 
 > **Document:** `00-foundation/README.md`  
 > **Title:** Foundation  
-> **Version:** 0.5  
+> **Version:** 0.6  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -14,10 +14,11 @@ This section contains the documents that define the authority, structure and cur
 
 ## Current authoritative specification
 
-1. [`STATE-ENGINEERING-METHOD-SPECIFICATION-005A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-005A.md) — current foundational specification, including the canonical ten-phase STATE Cycle and Transition Gates.
+1. [`STATE-ENGINEERING-METHOD-SPECIFICATION-006A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-006A.md) — current foundational specification, including the Transition Contract and Work Package Model.
 
 ## Historical specifications
 
+- [`STATE-ENGINEERING-METHOD-SPECIFICATION-005A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-005A.md) — canonical STATE Cycle revision.
 - [`STATE-ENGINEERING-METHOD-SPECIFICATION-004A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-004A.md) — Work Product and Evidence Model revision.
 - [`STATE-ENGINEERING-METHOD-SPECIFICATION-003A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-003A.md) — Role, Authority and Responsibility Model revision.
 - [`STATE-ENGINEERING-METHOD-SPECIFICATION-002A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-002A.md) — universal engineering foundation revision.
@@ -27,13 +28,11 @@ This section contains the documents that define the authority, structure and cur
 
 - [`BOOK-ARCHITECTURE-001A.md`](BOOK-ARCHITECTURE-001A.md) — Git-documentation architecture for the method corpus.
 
-The Foundation layer governs the interpretation of the explanatory layers that follow.
-
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.5  
+Version: 0.6  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

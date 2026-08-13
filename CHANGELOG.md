@@ -2,7 +2,7 @@
 
 > **Document:** `CHANGELOG.md`  
 > **Title:** STATE Engineering — Change Log  
-> **Version:** 0.5  
+> **Version:** 0.6  
 > **Status:** Active  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -15,6 +15,11 @@ Editorial scratch material and private manuscript notes are explicitly excluded.
 
 | Date | Version | Component | Change Type | Description |
 |---|---:|---|---|---|
+| 2026-08-13 | 0.6 | Method Specification | Logical Revision | Publishes Method Specification 006A and establishes the Transition Contract and Work Package Model. |
+| 2026-08-13 | 0.6 | Transition Contract | Control Extension | Defines sixteen Transition Contract fields, progressive P0–P3 establishment and controlled amendment semantics. |
+| 2026-08-13 | 0.6 | Work Package Model | Execution Extension | Defines bounded package execution, package states, dependencies, concurrency, integration and promotion to separate Transition. |
+| 2026-08-13 | 0.6 | Assurance | Integration Clarification | Establishes package-level versus integrated evidence and verification distinctions. |
+| 2026-08-13 | 0.6 | Reference | Reference Extension | Publishes the Transition Contract and Work Package compact reference. |
 | 2026-08-13 | 0.5 | Method Specification | Logical Revision | Publishes Method Specification 005A and establishes the canonical ten-phase STATE Cycle. |
 | 2026-08-13 | 0.5 | HOW — Logical | Normative Extension | Defines P0–P9 phase inputs, activities, outputs, role relationships and logical dependencies. |
 | 2026-08-13 | 0.5 | Transition Gates | Control Extension | Establishes G0–G9 gate semantics and automated-gate requirements. |
@@ -43,6 +48,6 @@ Future entries will document normative revisions, clarifications, structural ext
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.5  
+Version: 0.6  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13
