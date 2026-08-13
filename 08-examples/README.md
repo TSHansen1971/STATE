@@ -30,6 +30,7 @@ Repository paths are treated as durable public identifiers after publication and
 ## Current examples
 
 1. [`COMPLETE-WORKED-STATE-TRANSITION-001A.md`](COMPLETE-WORKED-STATE-TRANSITION-001A.md) — complete illustrative P0–P9 agentic software-refactoring Transition with Verification failure, controlled repair and explicit boundary refusal.
+2. [`AUTHORITY-GRANT-OPERATIONAL-PATTERNS-001A.md`](AUTHORITY-GRANT-OPERATIONAL-PATTERNS-001A.md) — non-normative operational patterns showing bounded Authority Grants for human, automated, AI, mixed and supplier Actors.
 
 
 ---
