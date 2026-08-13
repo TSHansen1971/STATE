@@ -2,7 +2,7 @@
 
 > **Document:** `00-foundation/README.md`  
 > **Title:** Foundation  
-> **Version:** 0.3  
+> **Version:** 0.4  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -14,10 +14,11 @@ This section contains the documents that define the authority, structure and cur
 
 ## Current authoritative specification
 
-1. [`STATE-ENGINEERING-METHOD-SPECIFICATION-003A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-003A.md) — current foundational method specification, including the canonical Role, Authority and Responsibility Model.
+1. [`STATE-ENGINEERING-METHOD-SPECIFICATION-004A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-004A.md) — current foundational method specification, including the Work Product and Evidence Model.
 
 ## Historical specifications
 
+- [`STATE-ENGINEERING-METHOD-SPECIFICATION-003A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-003A.md) — Role, Authority and Responsibility Model revision.
 - [`STATE-ENGINEERING-METHOD-SPECIFICATION-002A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-002A.md) — universal engineering foundation revision.
 - [`STATE-ENGINEERING-METHOD-SPECIFICATION-001A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-001A.md) — initial public method specification.
 
@@ -32,6 +33,6 @@ The Foundation layer governs the interpretation of the explanatory layers that f
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.3  
+Version: 0.4  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

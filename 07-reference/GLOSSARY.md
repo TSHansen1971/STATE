@@ -2,7 +2,7 @@
 
 > **Document:** `07-reference/GLOSSARY.md`  
 > **Title:** STATE Engineering Glossary  
-> **Version:** 0.3  
+> **Version:** 0.4  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -20,13 +20,17 @@ An authorized decision that a Candidate State has sufficient evidential support 
 
 The authority to decide whether a Candidate State is accepted, rejected, requires repair or remains inconclusive.
 
+## Acceptance Record
+
+The Work Product that records the authorized decision about a Candidate State and the evidence basis for that decision.
+
 ## Actor
 
 The human, synthetic or hybrid entity assigned to perform a Role.
 
 ## Actor Assignment
 
-The binding of an actual actor to one or more logical roles and, where applicable, Authority Grants.
+The Work Product that binds an actual actor to one or more logical roles and applicable Authority Grants.
 
 ## Actor Independence
 
@@ -38,7 +42,7 @@ The authority to establish or approve structural rules, architectural boundaries
 
 ## Assurance
 
-The evaluation of whether a process, transition, evidence set, role arrangement or resulting-state claim has a sufficient and trustworthy basis.
+The evaluation of whether a process, Transition, Evidence Set, role arrangement or resulting-state claim has a sufficient and trustworthy basis.
 
 ## Assurance Role
 
@@ -50,7 +54,7 @@ The legitimate permission to decide, approve, delegate or modify within a define
 
 ## Authority Boundary
 
-The explicit limit of what a role or actor may decide, approve or change within a defined context.
+The explicit limit of what a Role or Actor may decide, approve or change within a defined context.
 
 ## Authority Domain
 
@@ -58,7 +62,7 @@ A category of legitimate engineering decision right defined by STATE.
 
 ## Authority Grant
 
-An explicit or explicitly inherited assignment of authority to a role or actor for a bounded scope and set of conditions.
+The Work Product or referenced authority object establishing bounded decision or mutation authority.
 
 ## Authoritative State
 
@@ -68,17 +72,33 @@ A sufficiently identified system state accepted as valid for a defined purpose a
 
 The specific Authoritative State selected as the input state for a defined Transition.
 
+## Baseline Establishment Record
+
+The Work Product establishing an accepted state as the next Authoritative State.
+
+## Baseline Record
+
+The Work Product identifying the Authoritative State selected as input to a Transition.
+
 ## Baseline Custodianship Role
 
 The logical role responsible for preserving authoritative-state identity and continuity and for preventing an unaccepted candidate from silently becoming the baseline.
 
 ## Capability
 
-What an actor is technically, cognitively, organizationally or operationally able to do.
+What an Actor is technically, cognitively, organizationally or operationally able to do.
 
 ## Candidate State
 
 A produced system state that has not yet been accepted as authoritative.
+
+## Claim–Evidence Binding
+
+The explicit relationship between an engineering claim and the Evidence Items used to support or challenge it.
+
+## Deviation and Escalation Record
+
+The conditional Work Product preserving material deviation, authority uncertainty, requested scope expansion, verification limitation or related escalation.
 
 ## Evidence
 
@@ -88,9 +108,29 @@ Observable information used to support or challenge a claim about a system state
 
 The STATE property requiring Acceptance to be supported by evidence appropriate to the claim being accepted.
 
+## Evidence Class
+
+A canonical category describing the kind of engineering claim an Evidence Item can support.
+
+## Evidence Item
+
+An identifiable observation, artifact, record or measurement used to support or challenge an engineering claim.
+
+## Evidence Set
+
+The Work Product binding relevant Evidence Items to one or more engineering claims.
+
 ## Evidence Stewardship Role
 
 The logical role responsible for preserving evidence identity, linkage, provenance and availability.
+
+## Evidence Sufficiency
+
+The degree to which the available Evidence Set provides enough basis for the strength and consequence of a claim.
+
+## Evidence-Quality Property
+
+A property used to evaluate whether evidence is fit for its intended claim, including relevance, identity, integrity, provenance, sufficiency, reproducibility, independence, timeliness and preservation.
 
 ## Foundational Property
 
@@ -106,11 +146,11 @@ A relevant property that is required to remain true through a Transition.
 
 ## Least Authority
 
-The principle that a role, actor, component or execution context should receive only the authority necessary to perform its assigned function.
+The principle that a Role, Actor, component or execution context should receive only the authority necessary to perform its assigned function.
 
 ## Logical Role Separation
 
-The requirement that distinct STATE functions remain conceptually separate even when one physical actor performs multiple roles.
+The requirement that distinct STATE functions remain conceptually separate even when one physical Actor performs multiple roles.
 
 ## Methodological Provenance
 
@@ -118,7 +158,7 @@ The traceable relationship between a STATE principle or rule and the directly re
 
 ## Provenance
 
-The traceable origin and transformation history of a state, artifact, evidence item or release.
+The traceable origin and transformation history of a state, artifact, Evidence Item or release.
 
 ## Realization Role
 
@@ -128,13 +168,17 @@ The logical role responsible for producing the Candidate State within the author
 
 The authority to authorize distribution, deployment or other release of an accepted state when release is a decision distinct from Acceptance.
 
+## Release Record
+
+The conditional Work Product recording release authorization, released identity and provenance when release is distinct from Acceptance.
+
 ## Responsibility
 
 What a Role is accountable for producing, preserving, evaluating, deciding or controlling.
 
 ## Role
 
-A defined logical function within the engineering method, independent of the actor assigned to perform it.
+A defined logical function within the engineering method, independent of the Actor assigned to perform it.
 
 ## Secure Engineering by Construction
 
@@ -146,7 +190,7 @@ A security-relevant property that is required to remain true through a Transitio
 
 ## Specification
 
-An operational expression of intended change, constraints, relevant invariants and acceptance basis.
+An operational expression of intended change, constraints, relevant invariants and Acceptance basis.
 
 ## Specification Role
 
@@ -172,19 +216,35 @@ The authority to define or approve what is allowed to change within a specific T
 
 The explicit scope within which a Transition is authorized to operate.
 
+## Transition Intent and Specification
+
+The Work Product defining intended outcome, constraints, invariants, non-goals and Acceptance basis for a Transition.
+
+## Transition Record
+
+The central Work Product connecting baseline, specification, authority, Actor Assignments, mutation, verification, evidence, decision and resulting state.
+
 ## Universal Engineering Principle
 
 A STATE-native principle expressing generally applicable engineering behavior used across abstraction levels to preserve the Foundational Properties.
 
+## Verification Record
+
+The Work Product recording the claim under verification, method, conditions, observations, Evidence Items, conclusion and limitations.
+
 ## Verification Role
 
 The logical role responsible for evaluating claims about the Candidate State using verification methods appropriate to those claims.
+
+## Work Product
+
+An identifiable information object produced, maintained or consumed by STATE roles to control, perform, verify, evidence or authorize a Transition.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.3  
+Version: 0.4  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

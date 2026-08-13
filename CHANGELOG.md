@@ -2,7 +2,7 @@
 
 > **Document:** `CHANGELOG.md`  
 > **Title:** STATE Engineering — Change Log  
-> **Version:** 0.3  
+> **Version:** 0.4  
 > **Status:** Active  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -15,6 +15,10 @@ Editorial scratch material and private manuscript notes are explicitly excluded.
 
 | Date | Version | Component | Change Type | Description |
 |---|---:|---|---|---|
+| 2026-08-13 | 0.4 | Method Specification | Foundational Revision | Publishes Method Specification 004A and establishes the Work Product and Evidence Model. |
+| 2026-08-13 | 0.4 | Conceptual Layer | Information-Model Extension | Defines eleven canonical logical Work Product classes, ten Evidence Classes and nine Evidence-Quality Properties. |
+| 2026-08-13 | 0.4 | Assurance | Evidence Clarification | Establishes claim–evidence binding, evidence sufficiency and evidence-quality assurance. |
+| 2026-08-13 | 0.4 | Reference | Catalogue Extension | Publishes the Work Product Catalogue and Evidence Catalogue. |
 | 2026-08-13 | 0.3 | Method Specification | Foundational Revision | Publishes Method Specification 003A and establishes the canonical Role, Authority and Responsibility Model. |
 | 2026-08-13 | 0.3 | Conceptual Layer | Governance Extension | Defines five authority domains, six logical roles, Authority Grants, Actor Assignments and actor-independent role governance. |
 | 2026-08-13 | 0.3 | Assurance | Structural Clarification | Establishes logical role separation, proportional physical independence and separation-of-duties requirements. |
@@ -34,6 +38,6 @@ Future entries will document normative revisions, clarifications, structural ext
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.3  
+Version: 0.4  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

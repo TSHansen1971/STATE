@@ -2,7 +2,7 @@
 
 > **Document:** `02-what-conceptual/README.md`  
 > **Title:** WHAT — Conceptual Layer  
-> **Version:** 0.3  
+> **Version:** 0.4  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -14,7 +14,7 @@ The Conceptual layer defines what STATE Engineering is independently of any part
 
 Its governing question is:
 
-> **What concepts, properties, roles, responsibilities and authority relationships must exist for a controlled STATE transition to be described and governed unambiguously?**
+> **What concepts, properties, roles, responsibilities, authority relationships, work products and evidence relationships must exist for a controlled STATE transition to be described and governed unambiguously?**
 
 ## Contents
 
@@ -24,14 +24,17 @@ Its governing question is:
 4. [`04-secure-engineering-foundation.md`](04-secure-engineering-foundation.md) — secure engineering as a cross-cutting property of the method.
 5. [`05-universal-engineering-principles.md`](05-universal-engineering-principles.md) — the STATE-native universal engineering principles.
 6. [`06-role-authority-responsibility-model.md`](06-role-authority-responsibility-model.md) — canonical authority domains, logical roles, delegation and role-combination rules.
+7. [`07-work-product-and-evidence-model.md`](07-work-product-and-evidence-model.md) — canonical logical work products, claim–evidence binding, evidence classes and evidence-quality properties.
 
-The Conceptual layer remains actor-independent. Local, inshore, offshore, supplier, automated, AI and hybrid realizations belong to actor assignment and the Physical layer rather than to the definition of the logical role itself.
+The Conceptual layer remains actor-independent and technology-independent.
+
+Logical work products describe information obligations. They do not require a particular document format, repository platform, ticket system or file-per-record implementation.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.3  
+Version: 0.4  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

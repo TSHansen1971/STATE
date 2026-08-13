@@ -2,30 +2,37 @@
 
 > **Document:** `07-reference/README.md`  
 > **Title:** Reference  
-> **Version:** 0.1  
+> **Version:** 0.4  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
-> **Last modified:** 2026-08-11  
+> **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
+
 The Reference layer is the stable lookup surface for applying STATE Engineering consistently.
 
-It will contain:
+## Current reference material
 
-- normative glossary;
+- [`GLOSSARY.md`](GLOSSARY.md) — normative working terminology.
+- [`WORK-PRODUCT-CATALOGUE.md`](WORK-PRODUCT-CATALOGUE.md) — canonical logical Work Product classes.
+- [`EVIDENCE-CATALOGUE.md`](EVIDENCE-CATALOGUE.md) — canonical Evidence Classes and Evidence-Quality Properties.
+- [`DOCUMENT-METADATA-TEMPLATE.md`](DOCUMENT-METADATA-TEMPLATE.md) — visible metadata and publication-footer contract.
+- [`METHODOLOGICAL-SOURCE-REGISTER.md`](METHODOLOGICAL-SOURCE-REGISTER.md) — methodological source provenance.
+
+## Planned reference material
+
+The Reference layer will later expand with:
+
 - normative requirements index;
 - STATE cycle reference;
 - role and authority catalogue;
-- work-product catalogue;
-- evidence catalogue;
 - verification catalogue;
 - pattern catalogue;
 - anti-pattern catalogue;
 - conformance material;
 - templates and checklists;
-- worked reference examples;
-- methodological source and rationale register.
+- worked reference examples.
 
 Reference material shall support the method without replacing the explanatory WHY, WHAT, HOW and WITH WHAT layers.
 
@@ -34,6 +41,6 @@ Reference material shall support the method without replacing the explanatory WH
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.1  
+Version: 0.4  
 Initial publication: 2026-08-11  
-Last modified: 2026-08-11
+Last modified: 2026-08-13
