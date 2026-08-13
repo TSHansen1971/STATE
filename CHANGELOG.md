@@ -5,13 +5,27 @@
 > **Version:** 0.13  
 > **Status:** Current Documentation  
 > **Created:** 2026-08-11  
-> **Last modified:** 2026-08-13
+> **Last modified:** 2026-08-14
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
 Entries reflect normative releases, clarifications, structural additions and public documentation milestones.
 
 Editorial scratch material and private manuscript notes are explicitly excluded.
+
+## v1.1.0 — Accepted release
+
+**Date:** 2026-08-14
+
+**State:** Accepted public release.
+
+Owner Acceptance promoted Candidate commit `73c3fb4a9fcf7caa4f89acc840d7c856e4b63f2b` after WP21 completed with 24 PASS / 0 FAIL / 0 INCONCLUSIVE and RG6 passed Release Integrity.
+
+The immutable `v1.1.0-rc.1` tag preserves the accepted Candidate identity.
+
+The stable annotated `v1.1.0` tag identifies the bounded WP23 promotion state.
+
+WP23 introduces no normative method-semantic change.
 
 ## v1.1.0 Release Candidate preparation
 
@@ -50,7 +64,7 @@ The `0.14` Release Readiness entry is a stabilization milestone preserved for pr
 
 No new public `0.x` corpus identity shall be allocated. Beginning with an accepted `v1.1.0` release, release SemVer and public corpus version are the same identity.
 
-The active `v1.1.0` work remains Candidate until explicit owner-controlled promotion. WP03 therefore reconciles identity without recording `v1.1.0` as an accepted release.
+The historical WP03 statement that v1.1.0 remained Candidate applied before WP23. WP23 has now established `v1.1.0` as the accepted public release.
 
 | Date | Version | Component | Change Type | Description |
 |---|---:|---|---|---|
@@ -124,4 +138,4 @@ Future entries will document normative revisions, clarifications, structural ext
 CC BY-SA 4.0  
 Version: 0.13  
 Initial publication: 2026-08-11  
-Last modified: 2026-08-13
+Last modified: 2026-08-14

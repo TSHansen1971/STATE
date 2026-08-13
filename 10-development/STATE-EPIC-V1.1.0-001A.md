@@ -4,18 +4,18 @@
 > **Title:** STATE Engineering v1.1.0 — Post-v1.0 Consolidation, Demonstration and Operationalization Epic  
 > **Version:** 001A
 > **Status:** Current Documentation
-> **Development state:** Candidate
+> **Development state:** Completed — v1.1.0 released
 > **Created:** 2026-08-13  
-> **Last modified:** 2026-08-13
+> **Last modified:** 2026-08-14
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
 
 **Epic ID:** `STATE-EPIC-V1.1.0-001A`  
 **Backlog ID:** `STATE-BACKLOG-V1.1.0-001A`  
-**Status of this epic:** Candidate  
+**Status of this epic:** Complete  
 **Target:** First post-v1.0 release  
-**Target release:** `v1.1.0`
+**Accepted release:** `v1.1.0`
 **Authoritative starting baseline:** `v1.0.0` / commit `23068ad4628c10001aa13b9963ed629b39645235`  
 **Baseline specification:** `STATE-ENGINEERING-METHOD-SPECIFICATION-013A`  
 **Baseline corpus identity:** `0.13`  
@@ -921,6 +921,37 @@ Realization shall not publish the tag without explicit Transition / Acceptance a
 
 Only the owner may authorize promotion.
 
+### WP23 owner decision — 2026-08-14
+
+**Decision:** ACCEPTED AND PROMOTED.
+
+Accepted Candidate commit:
+
+`73c3fb4a9fcf7caa4f89acc840d7c856e4b63f2b`
+
+Published Candidate tag:
+
+`v1.1.0-rc.1`
+
+RC tag object:
+
+`0724b5e34e03064cb24500f7836aefb02789d257`
+
+Stable release:
+
+`v1.1.0`
+
+Owner Acceptance statement SHA-256:
+
+`9b67c0899d810767f3abf999c6d6feb531f0c7d72a894a036666222f8d836b42`
+
+Questions 1–9 are PASS on the accepted WP21 / RG6 evidence basis.
+
+Question 10 is YES by explicit owner Acceptance.
+
+WP23 authorizes only the bounded release-state transformation required for stable publication. It introduces no new normative method semantics.
+
+
 ## 7. Proposed execution order
 
 1. `WP01` — Baseline capture
@@ -1054,4 +1085,4 @@ That distinction is the intended outcome of the post-v1.0 epic.
 CC BY-SA 4.0  
 Version: 001A  
 Initial publication: 2026-08-13  
-Last modified: 2026-08-13
+Last modified: 2026-08-14

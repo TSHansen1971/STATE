@@ -5,7 +5,7 @@
 > **Version:** 001A
 > **Status:** Current Documentation
 > **Created:** 2026-08-13
-> **Last modified:** 2026-08-13
+> **Last modified:** 2026-08-14
 > **Author:** Tor-Ståle Hansen
 > **Co-authors:** None
 
@@ -42,6 +42,22 @@ The repository reserves:
 Published Git release tags remain immutable and are not controlled through directory changes.
 
 
+## v1.1.0 — Accepted stable release
+
+Owner-controlled WP23 promotes the accepted Candidate to stable release `v1.1.0`.
+
+Stable release documentation and public promotion Evidence are under:
+
+`09-releases/v1.1.0/`
+
+The accepted Candidate remains independently identified by:
+
+- tag: `v1.1.0-rc.1`;
+- Candidate commit: `73c3fb4a9fcf7caa4f89acc840d7c856e4b63f2b`;
+- RC annotated tag object: `0724b5e34e03064cb24500f7836aefb02789d257`.
+
+The stable `v1.1.0` annotated tag is the authoritative stable release identity.
+
 ## v1.1.0-rc.1 Candidate preparation
 
 WP22 prepares a Candidate release state for owner Acceptance.
@@ -66,4 +82,4 @@ The immutable Candidate identity is the WP22 commit established after all Releas
 CC BY-SA 4.0  
 Version: 001A  
 Initial publication: 2026-08-13  
-Last modified: 2026-08-13
+Last modified: 2026-08-14

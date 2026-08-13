@@ -5,7 +5,7 @@
 > **Version:** 001A
 > **Status:** Reference
 > **Created:** 2026-08-13
-> **Last modified:** 2026-08-13
+> **Last modified:** 2026-08-14
 > **Author:** Tor-Ståle Hansen
 > **Co-authors:** None
 
@@ -17,8 +17,28 @@ This index provides the public verification entry point for original STATE Engin
 
 | Release identity | Evidence directory | Tag state |
 |---|---|---|
+| `v1.1.0` | `09-releases/v1.1.0/` | Owner-promoted immutable annotated tag |
+| `v1.1.0-rc.1` | `09-releases/v1.1.0-rc.1/` | Accepted immutable Release Candidate tag |
 | `v1.0.0` | `09-releases/v1.0.0/` | Existing immutable annotated tag |
 | `v1.0.0-rc.1` | `09-releases/v1.0.0-rc.1/` | Existing immutable annotated tag |
+
+## 2.1 v1.1.0 promotion Evidence
+
+The v1.1.0 release uses a forward promotion-evidence model.
+
+The public stable-release directory contains:
+
+- the exact owner Acceptance statement and its SHA-256;
+- the promotion record;
+- release manifest;
+- release note;
+- release Evidence package.
+
+The stable annotated tag binds these release artifacts and the accepted Candidate evidence.
+
+Owner Acceptance statement SHA-256:
+
+`9b67c0899d810767f3abf999c6d6feb531f0c7d72a894a036666222f8d836b42`
 
 ## 3. Verification model
 
@@ -53,4 +73,4 @@ This suffix exists only to distinguish immutable evidence payloads from editable
 CC BY-SA 4.0  
 Version: 001A  
 Initial publication: 2026-08-13  
-Last modified: 2026-08-13
+Last modified: 2026-08-14

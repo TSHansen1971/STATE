@@ -5,7 +5,7 @@
 > **Version:** 0.13
 > **Status:** Current Documentation
 > **Created:** 2026-08-11
-> **Last modified:** 2026-08-13
+> **Last modified:** 2026-08-14
 > **Author:** Tor-Ståle Hansen
 > **Co-authors:** None
 
@@ -39,18 +39,21 @@ The method makes intent, scope, Authority, identity, Verification, Evidence and 
 
 ### 3. What is the current release?
 
-The current accepted public release is **`v1.0.0`**.
+The current accepted public release is **`v1.1.0`**.
 
-The active development target is **`v1.1.0`**, but it remains Candidate until explicit owner Acceptance and promotion.
+The accepted Release Candidate is preserved as **`v1.1.0-rc.1`**.
+
+The v1.1.0 release is the owner-promoted successor to `v1.0.0`.
 
 ### 4. What specification is current?
 
-Two identities matter:
+The current integrated normative specification for accepted release `v1.1.0` is:
 
-- accepted release `v1.0.0` is bound to `STATE-ENGINEERING-METHOD-SPECIFICATION-013A`;
-- the current integrated **development** specification is [`STATE-ENGINEERING-METHOD-SPECIFICATION-014A`](00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-014A.md), which is a Normative Specification in the active v1.1 Candidate corpus.
+[`STATE-ENGINEERING-METHOD-SPECIFICATION-014A`](00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-014A.md)
 
-Development status does not silently change the accepted public release.
+Historical release `v1.0.0` remains bound to `STATE-ENGINEERING-METHOD-SPECIFICATION-013A`.
+
+Release SemVer and stable document identifiers remain distinct identities.
 
 ### 5. How does v1.0.0 map to corpus 0.13 / 013A?
 
@@ -191,7 +194,7 @@ A bounded path for a new reader is:
 
 1. [`01-why-contextual/01-the-control-problem.md`](01-why-contextual/01-the-control-problem.md) — why the control problem exists.
 2. [`01-why-contextual/02-method-positioning.md`](01-why-contextual/02-method-positioning.md) — what STATE is and is not.
-3. [`00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-014A.md`](00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-014A.md) — current integrated development specification.
+3. [`00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-014A.md`](00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-014A.md) — current integrated specification.
 4. [`03-how-logical/01-the-state-cycle.md`](03-how-logical/01-the-state-cycle.md) — P0–P9 logical Transition.
 5. [`07-reference/ROLE-AUTHORITY-CATALOGUE.md`](07-reference/ROLE-AUTHORITY-CATALOGUE.md) — Role, Actor, Capability and Authority.
 6. [`07-reference/WORK-PRODUCT-CATALOGUE.md`](07-reference/WORK-PRODUCT-CATALOGUE.md) — canonical Work Product classes.
@@ -221,4 +224,4 @@ See [`CHANGELOG.md`](CHANGELOG.md) for publication history.
 CC BY-SA 4.0  
 Version: 0.13  
 Initial publication: 2026-08-11  
-Last modified: 2026-08-13
+Last modified: 2026-08-14

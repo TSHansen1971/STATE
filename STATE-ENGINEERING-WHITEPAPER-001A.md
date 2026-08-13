@@ -5,7 +5,7 @@
 > **Version:** 001A
 > **Status:** Current Documentation
 > **Created:** 2026-08-13
-> **Last modified:** 2026-08-13
+> **Last modified:** 2026-08-14
 > **Author:** Tor-Ståle Hansen
 > **Co-authors:** None
 
@@ -13,15 +13,19 @@
 
 This paper is explanatory.
 
-The current integrated development specification is `STATE-ENGINEERING-METHOD-SPECIFICATION-014A`.
+The current integrated normative specification is `STATE-ENGINEERING-METHOD-SPECIFICATION-014A`.
 
-Where this paper and the current normative corpus differ, the normative corpus governs.
+Where this paper and the normative corpus differ, the normative corpus governs.
 
-The current accepted public release remains `v1.0.0`, whose historical identity is:
+The current accepted public release is `v1.1.0`.
+
+Its accepted Release Candidate is preserved as `v1.1.0-rc.1` at Candidate commit:
+
+`73c3fb4a9fcf7caa4f89acc840d7c856e4b63f2b`
+
+The historical predecessor remains:
 
 `v1.0.0 → corpus 0.13 → STATE-ENGINEERING-METHOD-SPECIFICATION-013A`
-
-The active development target is `v1.1.0`. It is not an accepted release until explicit owner Acceptance and promotion.
 
 ## 2. The engineering problem
 
@@ -238,4 +242,4 @@ The purpose of v1.1 development is operationalization and demonstrability withou
 CC BY-SA 4.0  
 Version: 001A  
 Initial publication: 2026-08-13  
-Last modified: 2026-08-13
+Last modified: 2026-08-14
