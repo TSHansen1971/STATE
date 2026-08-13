@@ -2,118 +2,482 @@
 
 > **Document:** `03-how-logical/01-the-state-cycle.md`  
 > **Title:** The STATE Cycle  
-> **Version:** 0.1  
-> **Status:** Working Draft  
+> **Version:** 0.5  
+> **Status:** Normative Working Specification  
 > **Created:** 2026-08-11  
-> **Last modified:** 2026-08-11  
+> **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
-The canonical STATE cycle is the logical control sequence through which an authoritative system state may become another authoritative system state.
 
-## Phase 0 — Establish Authority
+The STATE Cycle is the canonical logical process for moving from one Authoritative State to another.
 
-Identify the authoritative system, baseline and governing requirements.
+It contains ten phases, identified P0 through P9.
 
-**Output:** Authoritative Baseline.
+The cycle is invariant at the logical level. Tailoring may combine physical activities, automate gates, consolidate Work Products or omit non-applicable optional detail, but it shall preserve the required control semantics.
 
-## Phase 1 — Specify Intent
+## Canonical cycle
 
-State what is intended to become true, what constraints apply and what constitutes an acceptable result.
+```text
+CURRENT AUTHORITATIVE STATE
+          │
+          ▼
+P0  Establish Authority and Baseline
+          │  G0 Authority & Baseline Gate
+          ▼
+P1  Specify Intent
+          │  G1 Specification Gate
+          ▼
+P2  Define Transition Boundary
+          │  G2 Boundary Gate
+          ▼
+P3  Inspect Baseline and Establish Context
+          │  G3 Readiness Gate
+          ▼
+P4  Produce Candidate
+          │  G4 Candidate Identity Gate
+          ▼
+P5  Execute and Observe
+          │  G5 Observation Gate
+          ▼
+P6  Verify Claims
+          │  G6 Verification Gate
+          ▼
+P7  Assemble Evidence
+          │  G7 Evidence Gate
+          ▼
+P8  Decide Acceptance
+          │  G8 Acceptance Gate
+          ▼
+P9  Establish New Baseline
+          │  G9 Baseline Establishment Gate
+          ▼
+NEW AUTHORITATIVE STATE
+```
 
-**Output:** Authorized Change Specification.
+Release may follow P9 as a separate authorized act when deployment or distribution is distinct from baseline establishment.
 
-## Phase 2 — Define the Transition Boundary
+## P0 — Establish Authority and Baseline
 
-Define what the transition may affect and what remains outside authorized scope.
+### Purpose
 
-**Output:** Authorized Transition Boundary.
+Establish the legitimate starting point and governance basis for the Transition.
 
-## Phase 3 — Perform Bounded Inspection
+### Minimum inputs
 
-Acquire sufficient implementation context to act correctly without replacing implementation with unbounded analysis.
+- governing intent or change need;
+- current authoritative-state information;
+- applicable authority source.
 
-**Output:** Implementation Context.
+### Required activities
 
-## Phase 4 — Produce the Candidate
+- identify the Authoritative State that will serve as Baseline;
+- establish or reference applicable Authority Grants;
+- establish required Actor Assignments to the degree needed to begin specification;
+- identify known architecture or governance constraints.
 
-Perform the authorized transformation.
+### Primary Work Products
 
-**Output:** Candidate State.
+- WP-02 Authority Grant;
+- WP-03 Actor Assignment;
+- WP-04 Baseline Record;
+- initial WP-05 Transition Record.
 
-## Phase 5 — Execute and Observe
+### Primary roles / authority
 
-Build, execute, analyze or otherwise exercise the candidate as required by the claims being evaluated.
+- Baseline Custodianship Role;
+- applicable Intent, Architecture or Transition Authority.
 
-**Output:** Execution Evidence.
+### Output
 
-## Phase 6 — Verify
+A sufficiently identified and authorized starting condition.
 
-Evaluate the candidate against specification, invariants, contracts, security-relevant properties and regression requirements.
+### Gate
 
-**Output:** Verification Result.
+**G0 — Authority & Baseline Gate**
 
-## Phase 7 — Assemble Evidence
+Progress requires sufficient identity of the Baseline and sufficient authority to define the intended Transition.
 
-Bind the relevant observations, identities and verification results to the candidate and baseline.
+## P1 — Specify Intent
 
-**Output:** Evidence Package or equivalent evidence record.
+### Purpose
 
-## Phase 8 — Accept, Reject or Require Repair
+Convert governing intent into an operational statement of the desired Transition.
 
-An authorized decision process determines whether the candidate may become authoritative.
+### Required activities
 
-Valid outcomes include:
+- define intended outcome;
+- define relevant non-goals;
+- identify constraints;
+- identify known invariants;
+- identify acceptance claims or acceptance basis;
+- record material assumptions and unresolved questions.
+
+### Primary Work Products
+
+- WP-01 Transition Intent and Specification;
+- WP-05 Transition Record.
+
+### Primary role
+
+- Specification Role.
+
+### Output
+
+An operational Transition specification.
+
+### Gate
+
+**G1 — Specification Gate**
+
+Progress requires sufficient clarity to distinguish intended change from unintended change and to define the basis for later verification and acceptance.
+
+## P2 — Define Transition Boundary
+
+### Purpose
+
+Translate the specification into a bounded authorization for mutation.
+
+### Required activities
+
+- identify what may change;
+- identify what shall not change;
+- identify relevant architecture and security boundaries;
+- establish permitted mutation classes;
+- establish escalation conditions;
+- confirm or amend Transition Authority.
+
+### Primary Work Products
+
+- WP-01 Transition Intent and Specification;
+- WP-02 Authority Grant;
+- WP-05 Transition Record;
+- WP-11 Deviation and Escalation Record if unresolved conditions arise.
+
+### Primary role / authority
+
+- Specification Role;
+- Transition Authority;
+- Architecture Authority where architectural boundaries are implicated.
+
+### Output
+
+Authorized Transition Boundary.
+
+### Gate
+
+**G2 — Boundary Gate**
+
+Progress requires a boundary sufficiently explicit to determine whether a proposed action is inside, outside or uncertain relative to authority.
+
+## P3 — Inspect Baseline and Establish Context
+
+### Purpose
+
+Acquire enough factual implementation context to act without replacing implementation with indefinite inspection.
+
+### Required activities
+
+- inspect the Baseline within authorized read scope;
+- confirm relevant dependency, environment and architecture facts;
+- identify implementation surfaces;
+- test material assumptions;
+- identify conditions that invalidate specification or boundary assumptions.
+
+### Primary Work Products
+
+- WP-05 Transition Record;
+- environment and identity Evidence Items;
+- WP-11 where a discovered condition requires escalation.
+
+### Primary roles
+
+- Realization Role;
+- Specification Role where clarification is needed.
+
+### Output
+
+Sufficient implementation context.
+
+### Governing rule
+
+> **Inspect enough to act; do not inspect instead of acting.**
+
+### Gate
+
+**G3 — Readiness Gate**
+
+Progress requires enough reliable context to produce a Candidate within the existing authority and boundary.
+
+If inspection invalidates authority, scope or specification, return to P0, P1 or P2 as appropriate.
+
+## P4 — Produce Candidate
+
+### Purpose
+
+Perform the authorized mutation and produce an identifiable Candidate State.
+
+### Required activities
+
+- implement within the Transition Boundary;
+- preserve required invariants;
+- capture transformation identity;
+- report out-of-bound conditions rather than silently expanding scope;
+- establish Candidate State identity.
+
+### Primary Work Products
+
+- WP-05 Transition Record;
+- transformation Evidence Items;
+- Candidate State identity;
+- WP-11 where deviations occur.
+
+### Primary role
+
+- Realization Role.
+
+### Output
+
+Identifiable Candidate State.
+
+### Gate
+
+**G4 — Candidate Identity Gate**
+
+Progress requires an identifiable candidate whose origin and relevant transformation from Baseline can be reconstructed.
+
+A produced candidate is not authoritative.
+
+## P5 — Execute and Observe
+
+### Purpose
+
+Expose the Candidate State to the relevant execution or analytical conditions and capture observations.
+
+### Required activities
+
+- execute, build, analyze or otherwise exercise the candidate as required by the claims;
+- capture relevant conditions;
+- preserve observations as Evidence Items;
+- distinguish observations from conclusions.
+
+### Primary Work Products
+
+- WP-06 Verification Record, initiated;
+- WP-07 Evidence Set, initiated;
+- construction, behavioral, environment or security Evidence Items as applicable.
+
+### Primary roles
+
+- Verification Role;
+- Realization Role may support execution without owning the verification conclusion.
+
+### Output
+
+Execution and observation evidence.
+
+### Gate
+
+**G5 — Observation Gate**
+
+Progress requires sufficient observable information to evaluate the claims scheduled for verification.
+
+An execution failure may immediately support FAIL for one or more claims.
+
+## P6 — Verify Claims
+
+### Purpose
+
+Evaluate specified claims about the Candidate State.
+
+### Required activities
+
+For each relevant claim, record:
+
+- claim;
+- verification method;
+- conditions;
+- observation;
+- Evidence Items;
+- conclusion;
+- limitations.
+
+### Valid outcomes
+
+- PASS;
+- FAIL;
+- INCONCLUSIVE;
+- another explicitly specified claim outcome where the verification model requires it.
+
+### Primary Work Products
+
+- WP-06 Verification Record;
+- WP-07 Evidence Set.
+
+### Primary role
+
+- Verification Role.
+
+### Output
+
+Verification results bound to evidence.
+
+### Gate
+
+**G6 — Verification Gate**
+
+Progress to evidence assembly requires that required claims have explicit outcomes and that unverified claims are visible rather than silently assumed.
+
+FAIL does not become PASS by weakening the claim after execution without authorized specification change.
+
+## P7 — Assemble Evidence
+
+### Purpose
+
+Create a decision-ready evidentiary basis.
+
+### Required activities
+
+- bind Evidence Items to the correct Baseline, Candidate, claims and Verification Records;
+- evaluate evidence quality;
+- preserve relevant negative evidence;
+- identify residual limitations;
+- establish Evidence Set identity.
+
+### Primary Work Products
+
+- WP-07 Evidence Set;
+- completed WP-06 Verification Records;
+- WP-11 where material limitations require escalation.
+
+### Primary roles
+
+- Evidence Stewardship Role;
+- Assurance Role where required.
+
+### Output
+
+Decision-ready Evidence Set.
+
+### Gate
+
+**G7 — Evidence Gate**
+
+Progress requires evidence sufficient for the decision being requested.
+
+Evidence volume is not the gate criterion. Claim relevance and sufficiency are.
+
+## P8 — Decide Acceptance
+
+### Purpose
+
+Make the authorized decision about the Candidate State.
+
+### Required decision basis
+
+- Candidate identity;
+- acceptance claims;
+- Verification Records;
+- Evidence Set;
+- known deviations and limitations;
+- applicable Assurance assessment.
+
+### Valid decisions
 
 - **ACCEPT**
 - **REJECT**
 - **REPAIR REQUIRED**
 - **INCONCLUSIVE**
 
-**Output:** Acceptance Decision.
+### Primary Work Products
 
-## Phase 9 — Establish the New Baseline
+- WP-08 Acceptance Record;
+- WP-11 where decision conditions require escalation or accepted deviation.
 
-If accepted, identify the resulting state and establish it as the next authoritative baseline.
+### Primary authority
 
-**Output:** New Authoritative State.
+- Acceptance Authority.
 
-## Canonical flow
+### Output
 
-```text
-AUTHORITATIVE STATE
-        ↓
-SPECIFY
-        ↓
-BOUND
-        ↓
-INSPECT
-        ↓
-PRODUCE
-        ↓
-EXECUTE
-        ↓
-VERIFY
-        ↓
-EVIDENCE
-        ↓
-DECIDE
-    ┌───┴──────────────┐
- ACCEPT          REJECT / REPAIR /
-    │             INCONCLUSIVE
-    ↓
-NEW AUTHORITATIVE STATE
-```
+Explicit Acceptance decision.
 
-A failed candidate does not become a baseline by default.
+### Gate
 
-The previous authoritative state remains authoritative until an accepted transition establishes a replacement.
+**G8 — Acceptance Gate**
+
+Only ACCEPT permits progression to P9.
+
+REJECT, REPAIR REQUIRED and INCONCLUSIVE leave the previous Authoritative State unchanged.
+
+## P9 — Establish New Baseline
+
+### Purpose
+
+Convert an accepted Candidate State into the next Authoritative State.
+
+### Required activities
+
+- verify the accepted Candidate identity;
+- establish resulting authoritative-state identity;
+- link previous Baseline, Transition and Acceptance Record;
+- record effective baseline status;
+- preserve authoritative-state continuity.
+
+### Primary Work Products
+
+- WP-09 Baseline Establishment Record;
+- completed WP-05 Transition Record.
+
+### Primary role
+
+- Baseline Custodianship Role.
+
+### Output
+
+New Authoritative State.
+
+### Gate
+
+**G9 — Baseline Establishment Gate**
+
+The Transition completes only when the accepted state has been explicitly established as authoritative.
+
+If baseline establishment fails, the previous Authoritative State remains authoritative even though the Candidate may already have an ACCEPT decision.
+
+## Optional post-cycle release
+
+Release is not part of the invariant P0–P9 cycle.
+
+Where distribution, deployment or publication requires a distinct decision:
+
+- Release Authority acts on the accepted and established state;
+- WP-10 Release Record is created;
+- released artifact or deployed state is traced back to the accepted state to the degree required by the release claim.
+
+A release failure does not retroactively erase Acceptance or baseline establishment unless the applicable governance model explicitly defines such coupling.
+
+## Phase progression rule
+
+Phases define logical dependencies, not mandatory wall-clock sequencing.
+
+Activities may overlap physically when this does not violate dependency, authority, evidence or assurance constraints.
+
+For example, evidence capture may begin during P3 or P4 even though the decision-ready Evidence Set is assembled at P7.
+
+The invariant is not “one phase at a time.”
+
+The invariant is that no later claim assumes an earlier control condition that has not actually been established.
+
+## Canonical cycle rule
+
+> **A Candidate State shall not become authoritative by implementation success, verification success, evidence accumulation or Acceptance alone. The state becomes authoritative only after explicit baseline establishment at P9.**
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.1  
+Version: 0.5  
 Initial publication: 2026-08-11  
-Last modified: 2026-08-11
+Last modified: 2026-08-13

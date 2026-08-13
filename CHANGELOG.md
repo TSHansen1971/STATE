@@ -2,7 +2,7 @@
 
 > **Document:** `CHANGELOG.md`  
 > **Title:** STATE Engineering — Change Log  
-> **Version:** 0.4  
+> **Version:** 0.5  
 > **Status:** Active  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -15,6 +15,11 @@ Editorial scratch material and private manuscript notes are explicitly excluded.
 
 | Date | Version | Component | Change Type | Description |
 |---|---:|---|---|---|
+| 2026-08-13 | 0.5 | Method Specification | Logical Revision | Publishes Method Specification 005A and establishes the canonical ten-phase STATE Cycle. |
+| 2026-08-13 | 0.5 | HOW — Logical | Normative Extension | Defines P0–P9 phase inputs, activities, outputs, role relationships and logical dependencies. |
+| 2026-08-13 | 0.5 | Transition Gates | Control Extension | Establishes G0–G9 gate semantics and automated-gate requirements. |
+| 2026-08-13 | 0.5 | Failure Control | Recovery Extension | Defines failure classes, repair loops, earliest-invalidated-phase resumption and boundary-breach handling. |
+| 2026-08-13 | 0.5 | Reference | Reference Extension | Publishes the compact STATE Cycle Reference. |
 | 2026-08-13 | 0.4 | Method Specification | Foundational Revision | Publishes Method Specification 004A and establishes the Work Product and Evidence Model. |
 | 2026-08-13 | 0.4 | Conceptual Layer | Information-Model Extension | Defines eleven canonical logical Work Product classes, ten Evidence Classes and nine Evidence-Quality Properties. |
 | 2026-08-13 | 0.4 | Assurance | Evidence Clarification | Establishes claim–evidence binding, evidence sufficiency and evidence-quality assurance. |
@@ -38,6 +43,6 @@ Future entries will document normative revisions, clarifications, structural ext
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.4  
+Version: 0.5  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

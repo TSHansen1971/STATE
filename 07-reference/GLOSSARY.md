@@ -2,7 +2,7 @@
 
 > **Document:** `07-reference/GLOSSARY.md`  
 > **Title:** STATE Engineering Glossary  
-> **Version:** 0.4  
+> **Version:** 0.5  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -14,11 +14,15 @@ This glossary establishes the current working vocabulary of STATE Engineering.
 
 ## Acceptance
 
-An authorized decision that a Candidate State has sufficient evidential support to become authoritative for a defined purpose.
+An authorized decision about whether a Candidate State has sufficient basis to progress toward authoritative status.
 
 ## Acceptance Authority
 
 The authority to decide whether a Candidate State is accepted, rejected, requires repair or remains inconclusive.
+
+## Acceptance Gate
+
+G8 of the STATE Cycle, at which Acceptance Authority records ACCEPT, REJECT, REPAIR REQUIRED or INCONCLUSIVE.
 
 ## Acceptance Record
 
@@ -30,11 +34,11 @@ The human, synthetic or hybrid entity assigned to perform a Role.
 
 ## Actor Assignment
 
-The Work Product that binds an actual actor to one or more logical roles and applicable Authority Grants.
+The Work Product that binds an actual Actor to one or more logical Roles and applicable Authority Grants.
 
 ## Actor Independence
 
-The property by which STATE defines roles, responsibilities, authority and control obligations independently of the nature of the actor assigned to perform them.
+The property by which STATE defines Roles, responsibilities, authority and control obligations independently of the nature of the Actor assigned to perform them.
 
 ## Architecture Authority
 
@@ -42,23 +46,11 @@ The authority to establish or approve structural rules, architectural boundaries
 
 ## Assurance
 
-The evaluation of whether a process, Transition, Evidence Set, role arrangement or resulting-state claim has a sufficient and trustworthy basis.
-
-## Assurance Role
-
-The logical role responsible for evaluating the adequacy of control, verification, evidence sufficiency and independence for the applicable assurance objective.
+The evaluation of whether a process, Transition, gate progression, Evidence Set, role arrangement or resulting-state claim has a sufficient and trustworthy basis.
 
 ## Authority
 
 The legitimate permission to decide, approve, delegate or modify within a defined boundary.
-
-## Authority Boundary
-
-The explicit limit of what a Role or Actor may decide, approve or change within a defined context.
-
-## Authority Domain
-
-A category of legitimate engineering decision right defined by STATE.
 
 ## Authority Grant
 
@@ -66,51 +58,47 @@ The Work Product or referenced authority object establishing bounded decision or
 
 ## Authoritative State
 
-A sufficiently identified system state accepted as valid for a defined purpose and suitable to serve as the basis for further controlled work.
+A sufficiently identified system state accepted and explicitly established as valid for a defined purpose.
 
 ## Baseline
 
 The specific Authoritative State selected as the input state for a defined Transition.
 
+## Baseline Establishment
+
+The explicit act that makes an accepted Candidate State the next Authoritative State.
+
+## Baseline Establishment Gate
+
+G9 of the STATE Cycle, which verifies that the accepted state has been explicitly established as authoritative.
+
 ## Baseline Establishment Record
 
 The Work Product establishing an accepted state as the next Authoritative State.
 
-## Baseline Record
+## Boundary Breach
 
-The Work Product identifying the Authoritative State selected as input to a Transition.
+A discovered condition in which a required or attempted action lies outside the authorized Transition Boundary.
 
-## Baseline Custodianship Role
+## Candidate Revision
 
-The logical role responsible for preserving authoritative-state identity and continuity and for preventing an unaccepted candidate from silently becoming the baseline.
-
-## Capability
-
-What an Actor is technically, cognitively, organizationally or operationally able to do.
+A materially distinct Candidate State produced during repair or further realization and requiring identity sufficient to prevent evidence confusion with another candidate.
 
 ## Candidate State
 
-A produced system state that has not yet been accepted as authoritative.
+A produced system state that has not yet completed explicit baseline establishment.
 
 ## Claim–Evidence Binding
 
 The explicit relationship between an engineering claim and the Evidence Items used to support or challenge it.
 
-## Deviation and Escalation Record
-
-The conditional Work Product preserving material deviation, authority uncertainty, requested scope expansion, verification limitation or related escalation.
-
 ## Evidence
 
 Observable information used to support or challenge a claim about a system state, Transition, process or artifact.
 
-## Evidence-Based Acceptance
+## Evidence Gate
 
-The STATE property requiring Acceptance to be supported by evidence appropriate to the claim being accepted.
-
-## Evidence Class
-
-A canonical category describing the kind of engineering claim an Evidence Item can support.
+G7 of the STATE Cycle, which determines whether the evidentiary basis is decision-ready for the requested Acceptance decision.
 
 ## Evidence Item
 
@@ -120,21 +108,13 @@ An identifiable observation, artifact, record or measurement used to support or 
 
 The Work Product binding relevant Evidence Items to one or more engineering claims.
 
-## Evidence Stewardship Role
+## Gate
 
-The logical role responsible for preserving evidence identity, linkage, provenance and availability.
+A logical decision condition that establishes whether the control conditions required for progression are sufficiently satisfied.
 
-## Evidence Sufficiency
+## Inconclusive
 
-The degree to which the available Evidence Set provides enough basis for the strength and consequence of a claim.
-
-## Evidence-Quality Property
-
-A property used to evaluate whether evidence is fit for its intended claim, including relevance, identity, integrity, provenance, sufficiency, reproducibility, independence, timeliness and preservation.
-
-## Foundational Property
-
-A constitutive property that must remain present for an engineering process to retain the defining character of STATE Engineering.
+A valid engineering outcome indicating that available verification or evidence is insufficient to establish the required conclusion.
 
 ## Intent Authority
 
@@ -142,19 +122,11 @@ The authority to establish or approve intended outcomes, priorities and intent-l
 
 ## Invariant
 
-A relevant property that is required to remain true through a Transition.
+A relevant property required to remain true through a Transition.
 
-## Least Authority
+## Phase
 
-The principle that a Role, Actor, component or execution context should receive only the authority necessary to perform its assigned function.
-
-## Logical Role Separation
-
-The requirement that distinct STATE functions remain conceptually separate even when one physical Actor performs multiple roles.
-
-## Methodological Provenance
-
-The traceable relationship between a STATE principle or rule and the directly relevant engineering knowledge that informed its rationale.
+A canonical logical segment of the STATE Cycle defined by purpose, required control conditions and output.
 
 ## Provenance
 
@@ -162,89 +134,65 @@ The traceable origin and transformation history of a state, artifact, Evidence I
 
 ## Realization Role
 
-The logical role responsible for producing the Candidate State within the authorized Transition Boundary.
+The logical Role responsible for producing the Candidate State within the authorized Transition Boundary.
 
-## Release Authority
+## Release
 
-The authority to authorize distribution, deployment or other release of an accepted state when release is a decision distinct from Acceptance.
+A distinct post-cycle act that distributes, deploys or publishes an accepted and established state when separate Release Authority is required.
 
-## Release Record
+## Repair
 
-The conditional Work Product recording release authorization, released identity and provenance when release is distinct from Acceptance.
+An authorized mutation intended to correct a failed or unacceptable Candidate State without silently changing the governing intent or authority.
 
-## Responsibility
+## Resume Point
 
-What a Role is accountable for producing, preserving, evaluating, deciding or controlling.
+A reconstructed cycle position whose preceding gate conditions remain valid and from which a Transition can safely continue after interruption.
 
 ## Role
 
 A defined logical function within the engineering method, independent of the Actor assigned to perform it.
 
-## Secure Engineering by Construction
-
-The foundational property by which generally applicable secure-engineering principles are intrinsic to the ordinary STATE method rather than appended as a separate late lifecycle.
-
-## Security Invariant
-
-A security-relevant property that is required to remain true through a Transition.
-
 ## Specification
 
 An operational expression of intended change, constraints, relevant invariants and Acceptance basis.
 
-## Specification Role
+## STATE Cycle
 
-The logical role responsible for transforming approved intent and constraints into a sufficiently operational specification for a Transition.
-
-## Structured Trust
-
-The principle that trust should be explicit, bounded, decomposable and justified at the level where it is required.
+The canonical P0–P9 logical process that carries a Transition from authorized Baseline through Candidate production, verification, evidence, Acceptance and explicit baseline establishment.
 
 ## Traceability
 
-The ability to reconstruct relevant relationships among intent, baseline, authorization, transformation, verification, evidence, decision and resulting state.
+The ability to reconstruct relevant relationships among intent, Baseline, authorization, transformation, verification, evidence, decision and resulting state.
 
 ## Transition
 
-A controlled transformation from a defined input system state toward a Candidate State.
-
-## Transition Authority
-
-The authority to define or approve what is allowed to change within a specific Transition.
+A controlled transformation from a defined Authoritative State toward a Candidate State and, if accepted and established, a new Authoritative State.
 
 ## Transition Boundary
 
 The explicit scope within which a Transition is authorized to operate.
 
-## Transition Intent and Specification
+## Transition Gate
 
-The Work Product defining intended outcome, constraints, invariants, non-goals and Acceptance basis for a Transition.
+A gate controlling logical progression between STATE Cycle phases.
 
-## Transition Record
+## Verification
 
-The central Work Product connecting baseline, specification, authority, Actor Assignments, mutation, verification, evidence, decision and resulting state.
+The evaluation of an explicit claim using an identified method, observation basis and evidence.
 
-## Universal Engineering Principle
+## Verification Gate
 
-A STATE-native principle expressing generally applicable engineering behavior used across abstraction levels to preserve the Foundational Properties.
-
-## Verification Record
-
-The Work Product recording the claim under verification, method, conditions, observations, Evidence Items, conclusion and limitations.
-
-## Verification Role
-
-The logical role responsible for evaluating claims about the Candidate State using verification methods appropriate to those claims.
+G6 of the STATE Cycle, which requires required claims to have explicit outcomes and visible limitations.
 
 ## Work Product
 
-An identifiable information object produced, maintained or consumed by STATE roles to control, perform, verify, evidence or authorize a Transition.
+An identifiable information object produced, maintained or consumed by STATE Roles to control, perform, verify, evidence or authorize a Transition.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.4  
+Version: 0.5  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13
