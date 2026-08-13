@@ -11,9 +11,25 @@
 
 ## Purpose
 
-This directory is the stable repository namespace for STATE Engineering release records and, where explicitly authorized, public release evidence.
+This directory is the stable repository namespace for STATE Engineering release records and authorized public release evidence.
 
-Its creation does **not** constitute publication of v1.0.0 release evidence and does not resolve owner decision D5. WP01 shall first capture the observable evidence state. WP04 shall then resolve publication or private-retention treatment without recreating missing artifacts or presenting substitutes as originals.
+Owner decision D5 is resolved as **Path A — publish original hash-bound release evidence**.
+
+The original evidence for `v1.0.0` and `v1.0.0-rc.1` is now published under release-specific directories and is verifiable directly against the existing immutable annotated Git tags.
+
+## Public evidence entry point
+
+See:
+
+`STATE-RELEASE-EVIDENCE-INDEX-001A.md`
+
+## Evidence-payload rule
+
+Files under a release-specific `original/` directory are immutable evidence payloads, not editable current method documents.
+
+They shall not be modified to satisfy later documentation formatting or metadata rules. Where an original text artifact would otherwise be mistaken for current Markdown documentation, the repository appends `.original` to the filename while preserving the exact original bytes.
+
+No recreated or modified substitute shall be represented as original release evidence.
 
 ## Namespace boundary
 
@@ -23,7 +39,7 @@ The repository reserves:
 - `09-releases/` for release records and authorized public release evidence;
 - `10-development/` for method-development history, epics and controlled planning material.
 
-Published Git release tags remain immutable and are not controlled through directory renaming.
+Published Git release tags remain immutable and are not controlled through directory changes.
 
 ---
 

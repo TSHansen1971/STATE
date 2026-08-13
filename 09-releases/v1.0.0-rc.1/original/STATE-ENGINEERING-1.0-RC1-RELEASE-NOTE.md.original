@@ -1,0 +1,70 @@
+# STATE Engineering 1.0-RC1 — Release Candidate 1
+
+> **Document:** External release evidence / STATE-ENGINEERING-1.0-RC1-RELEASE-NOTE.md  
+> **Title:** STATE Engineering 1.0-RC1 — Release Candidate 1  
+> **Version:** 1.0-RC1  
+> **Status:** Release Candidate  
+> **Created:** 2026-08-13  
+> **Last modified:** 2026-08-13  
+> **Author:** Tor-Ståle Hansen  
+> **Co-authors:** None
+
+STATE Engineering 1.0-RC1 is the first release candidate of the consolidated STATE Engineering method.
+
+## Release identity
+
+- Release ID: `STATE-ENGINEERING-1.0-RC1`
+- Git tag: `v1.0.0-rc.1`
+- Authoritative method state: `23068ad4628c10001aa13b9963ed629b39645235`
+- Branch at establishment: `main`
+- Current integrated specification: `00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-013A.md`
+
+## Readiness basis
+
+The release candidate is established from the exact state that passed:
+
+- `STATE-METHOD-READINESS-016A`
+- readiness: `READY_FOR_1_0_RELEASE_CANDIDATE`
+- blockers: `0`
+- stabilization actions: `0`
+- total findings: `0`
+- readiness evidence SHA-256: `da30e11fc44b7f65c55229c97c9231a62e21749e4944d988a823793a7365b2a2`
+
+The release-establishment script independently re-verifies the principal readiness contracts before creating the release tag.
+
+## Method population
+
+- Markdown documents: 69
+- registered namespaces: 41
+- registered canonical identifiers: 440
+- consolidated glossary terms: 173
+- current integrated specifications: 1
+- historical superseded specifications: 12
+- documents with Working status: 0
+- explicit Conformance traceability: CON-01 through CON-16
+
+## Release artifact
+
+- source archive: `STATE-ENGINEERING-1.0-RC1-source.tar.gz`
+- source archive SHA-256: `2736ab792236e042823b4f5b708f96f37a06de0c82b10394c1a3135d9d93d3e9`
+- source archive bytes: 120989
+- manifest: `STATE-ENGINEERING-1.0-RC1-MANIFEST.sha256`
+- manifest SHA-256: `5bd4569b137383696c5114a12d49642b9025c94ce6f5320f7bee8bd9327d5d05`
+- manifest entries: 70
+
+## Release semantics
+
+This is a **release candidate**, not the final stable 1.0 release.
+
+The release action does not modify the method corpus. It assigns an immutable release identity to the already-audited Authoritative State.
+
+The stable 1.0 release remains a separate future Release decision.
+
+---
+
+© Tor-Ståle Hansen, https://x.com/TSHansen1971
+
+CC BY-NC-ND 4.0  
+Version: 1.0-RC1  
+Initial publication: 2026-08-13  
+Last modified: 2026-08-13

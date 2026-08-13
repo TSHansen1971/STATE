@@ -1,0 +1,61 @@
+# STATE Engineering 1.0 — Stable Promotion Record
+
+> **Document:** External release evidence / STATE-ENGINEERING-1.0.0-PROMOTION-RECORD.md  
+> **Title:** STATE Engineering 1.0 — Stable Promotion Record  
+> **Version:** 1.0.0  
+> **Status:** Stable Promotion Record  
+> **Created:** 2026-08-13  
+> **Last modified:** 2026-08-13  
+> **Author:** Tor-Ståle Hansen  
+> **Co-authors:** None
+
+## Promotion decision
+
+The exact Authoritative State released as **STATE-ENGINEERING-1.0-RC1** is promoted to the first stable **STATE Engineering 1.0** release.
+
+No method content changed between RC1 and stable promotion.
+
+## Promotion basis
+
+- RC1 tag: `v1.0.0-rc.1`
+- RC1 tag object: `a4c3a8a7d4e0347fdbc0dcdbf91164b59e9d6220`
+- RC1 released commit: `23068ad4628c10001aa13b9963ed629b39645235`
+- RC1 integrity review: `STATE-METHOD-RC-REVIEW-018A`
+- RC1 review conclusion: `RC1_RELEASE_INTEGRITY_VERIFIED`
+- RC1 review evidence SHA-256: `c3d7be932c2bf17209b315c550727e48e5d0af8607301ce220942b88ae8a6c52`
+
+## State identity
+
+```text
+STATE Engineering 1.0-RC1
+        ↓ integrity reviewed
+same Authoritative State
+        ↓ explicit Release decision
+STATE Engineering 1.0
+```
+
+Both release identities resolve to the same immutable method state:
+
+`23068ad4628c10001aa13b9963ed629b39645235`
+
+This is intentional.
+
+Stable promotion is a Release decision over an already accepted and verified state, not a new Candidate production step.
+
+## Promotion result
+
+```text
+stable_1_0_promotion=AUTHORIZED
+method_corpus_mutation=NONE
+new_candidate=NONE
+released_state=23068ad4628c10001aa13b9963ed629b39645235
+```
+
+---
+
+© Tor-Ståle Hansen, https://x.com/TSHansen1971
+
+CC BY-NC-ND 4.0  
+Version: 1.0.0  
+Initial publication: 2026-08-13  
+Last modified: 2026-08-13

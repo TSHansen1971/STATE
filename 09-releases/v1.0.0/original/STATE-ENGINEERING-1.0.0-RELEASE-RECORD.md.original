@@ -1,0 +1,52 @@
+# STATE-ENGINEERING-1.0.0 — Stable Release Record
+
+> **Document:** External release evidence / STATE-ENGINEERING-1.0.0-RELEASE-RECORD.md  
+> **Title:** STATE-ENGINEERING-1.0.0 — Stable Release Record  
+> **Version:** 1.0.0  
+> **Status:** Stable Release Record  
+> **Created:** 2026-08-13  
+> **Last modified:** 2026-08-13  
+> **Author:** Tor-Ståle Hansen  
+> **Co-authors:** None
+
+## Release Record
+
+| Field | Value |
+|---|---|
+| RL-01 Release Identity | `STATE-ENGINEERING-1.0.0` |
+| RL-02 Authoritative State Identity | `23068ad4628c10001aa13b9963ed629b39645235` |
+| RL-03 Release Authority | Explicit execution of the hash-gated stable-promotion work package by the repository operator |
+| RL-04 Release Target | First stable public STATE Engineering 1.0 release identity |
+| RL-05 Released Object Identity | Annotated Git tag `v1.0.0` resolving to `23068ad4628c10001aa13b9963ed629b39645235` |
+| RL-06 Release Transformation | Stable release packaging only; method corpus unchanged |
+| RL-07 Transformation Environment | Clean verified repository on branch `main` |
+| RL-08 Verification Basis | `STATE-METHOD-RC-REVIEW-018A` plus independent stable-release precondition verification in `STATE-METHOD-RELEASE-019A` |
+| RL-09 Provenance Evidence | RC1 tag, RC1 review evidence, Git commit identity, stable annotated tag, source manifest and stable evidence package |
+| RL-10 Integrity Evidence | source SHA-256 `20e8f04e91cd2810061479f9333be05ce50a48a7135df80cf651998dbcf5c3a4`; manifest SHA-256 `5bd4569b137383696c5114a12d49642b9025c94ce6f5320f7bee8bd9327d5d05`; RC review SHA-256 `c3d7be932c2bf17209b315c550727e48e5d0af8607301ce220942b88ae8a6c52` |
+| RL-11 Effective Release Condition | Successful remote stable tag establishment resolving exactly to the RC1-reviewed Authoritative State |
+| RL-12 Release Result | STABLE RELEASE ESTABLISHED if final verification passes |
+| RL-13 Release Constraints | Identifies STATE Engineering 1.0; later revisions require new controlled transitions and release identities |
+| RL-14 Supersession Relationship | Promotes `STATE-ENGINEERING-1.0-RC1` to stable release without superseding or deleting the immutable RC1 identity |
+
+## Promotion invariant
+
+```text
+RC1 released commit
+=
+RC1 reviewed commit
+=
+stable 1.0 released commit
+=
+23068ad4628c10001aa13b9963ed629b39645235
+```
+
+No new Candidate State is produced by the promotion itself.
+
+---
+
+© Tor-Ståle Hansen, https://x.com/TSHansen1971
+
+CC BY-NC-ND 4.0  
+Version: 1.0.0  
+Initial publication: 2026-08-13  
+Last modified: 2026-08-13

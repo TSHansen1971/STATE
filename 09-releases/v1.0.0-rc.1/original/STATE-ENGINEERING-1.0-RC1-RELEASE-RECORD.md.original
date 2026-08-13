@@ -1,0 +1,57 @@
+# STATE-ENGINEERING-1.0-RC1 — Release Record
+
+> **Document:** External release evidence / STATE-ENGINEERING-1.0-RC1-RELEASE-RECORD.md  
+> **Title:** STATE-ENGINEERING-1.0-RC1 — Release Record  
+> **Version:** 1.0-RC1  
+> **Status:** Release Record  
+> **Created:** 2026-08-13  
+> **Last modified:** 2026-08-13  
+> **Author:** Tor-Ståle Hansen  
+> **Co-authors:** None
+
+## Release Record
+
+| Field | Value |
+|---|---|
+| RL-01 Release Identity | `STATE-ENGINEERING-1.0-RC1` |
+| RL-02 Authoritative State Identity | `23068ad4628c10001aa13b9963ed629b39645235` |
+| RL-03 Release Authority | Explicit execution of the hash-gated release-establishment work package by the repository operator |
+| RL-04 Release Target | Public Git repository release-candidate identity |
+| RL-05 Released Object Identity | Annotated Git tag `v1.0.0-rc.1` resolving to `23068ad4628c10001aa13b9963ed629b39645235` |
+| RL-06 Release Transformation | Git source archive generation only; method corpus unchanged |
+| RL-07 Transformation Environment | Repository state verified clean on branch `main` |
+| RL-08 Verification Basis | `STATE-METHOD-READINESS-016A` plus independent pre-release verification in `STATE-METHOD-RELEASE-017A` |
+| RL-09 Provenance Evidence | Git commit identity, annotated tag, source manifest and evidence package |
+| RL-10 Integrity Evidence | source SHA-256 `2736ab792236e042823b4f5b708f96f37a06de0c82b10394c1a3135d9d93d3e9`; manifest SHA-256 `5bd4569b137383696c5114a12d49642b9025c94ce6f5320f7bee8bd9327d5d05` |
+| RL-11 Effective Release Condition | Successful remote tag establishment resolving exactly to the audited state |
+| RL-12 Release Result | RELEASE CANDIDATE ESTABLISHED if final verification passes |
+| RL-13 Release Constraints | Release candidate only; stable 1.0 is not established |
+| RL-14 Supersession Relationship | First 1.0 release candidate; no prior 1.0 candidate superseded |
+
+## Acceptance and readiness basis
+
+The release target is the exact Authoritative State for which the whole-method re-audit reported:
+
+```text
+readiness=READY_FOR_1_0_RELEASE_CANDIDATE
+blockers=0
+stabilization_actions=0
+total_findings=0
+```
+
+No method-corpus mutation is performed to manufacture the release identity.
+
+## Authority boundary
+
+The annotated tag authorizes identification of this state as **STATE Engineering 1.0-RC1**.
+
+It does not establish the later stable **STATE Engineering 1.0** release.
+
+---
+
+© Tor-Ståle Hansen, https://x.com/TSHansen1971
+
+CC BY-NC-ND 4.0  
+Version: 1.0-RC1  
+Initial publication: 2026-08-13  
+Last modified: 2026-08-13

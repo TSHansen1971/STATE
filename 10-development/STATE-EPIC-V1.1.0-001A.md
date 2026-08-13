@@ -6,7 +6,7 @@
 > **Status:** Current Documentation
 > **Development state:** Candidate
 > **Created:** 2026-08-13  
-> **Last modified:** 2026-08-13  
+> **Last modified:** 2026-08-13
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
@@ -193,16 +193,19 @@ WP20 remains responsible for controlled corpus integration.
 
 ### D5 — v1.0.0 release-evidence publication
 
-**Decision:** PENDING WP01 EVIDENCE.
+**Decision:** ACCEPTED — PATH A.
 
-WP01 shall first establish what original release evidence, release references and hash bindings are actually observable.
+On 2026-08-13, after WP01 baseline capture, exact hash-bound evidence location and bounded publication-safety inspection, the owner authorized publication of the original v1.0.0 and v1.0.0-rc.1 release-evidence artifacts.
 
-After that evidence is known, the owner shall select one of the bounded WP04 paths:
+The authorization requires:
 
-1. publish the original hash-bound release evidence where publication is authorized; or
-2. retain it privately and explicitly scope public claims accordingly.
+1. original artifact bytes to remain unchanged;
+2. each published payload to recompute to the SHA-256 commitment already recorded in the applicable immutable Git tag;
+3. no recreated or modified substitute to be presented as original evidence;
+4. review-level local path and author e-mail occurrences in the original evidence to remain unchanged because redaction would invalidate the tag-bound hashes;
+5. release tags themselves to remain immutable.
 
-No substitute artifact may be presented as the original evidence merely because it describes the same event.
+WP04 implements this decision through the public `09-releases/` evidence namespace.
 
 ## 6. Workstream structure
 

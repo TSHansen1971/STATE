@@ -1,0 +1,72 @@
+# STATE Engineering 1.0
+
+> **Document:** External release evidence / STATE-ENGINEERING-1.0.0-RELEASE-NOTE.md  
+> **Title:** STATE Engineering 1.0  
+> **Version:** 1.0.0  
+> **Status:** Stable Release  
+> **Created:** 2026-08-13  
+> **Last modified:** 2026-08-13  
+> **Author:** Tor-Ståle Hansen  
+> **Co-authors:** None
+
+STATE Engineering 1.0 is the first stable release of the STATE Engineering method.
+
+## Stable release identity
+
+- Release ID: `STATE-ENGINEERING-1.0.0`
+- Release version: `1.0.0`
+- Git tag: `v1.0.0`
+- Authoritative method state: `23068ad4628c10001aa13b9963ed629b39645235`
+- Current integrated specification: `00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-013A.md`
+
+## Promotion provenance
+
+The stable release promotes the exact state previously published as:
+
+- `STATE-ENGINEERING-1.0-RC1`
+- RC1 tag: `v1.0.0-rc.1`
+- RC1 tag object: `a4c3a8a7d4e0347fdbc0dcdbf91164b59e9d6220`
+
+The RC1 release was subsequently verified by:
+
+- `STATE-METHOD-RC-REVIEW-018A`
+- conclusion: `RC1_RELEASE_INTEGRITY_VERIFIED`
+- review evidence SHA-256: `c3d7be932c2bf17209b315c550727e48e5d0af8607301ce220942b88ae8a6c52`
+
+No method-corpus mutation occurs between RC1 and stable 1.0.
+
+## Stable method population
+
+- Markdown documents: 69
+- source files: 70
+- registered namespaces: 41
+- registered canonical identifiers: 440
+- consolidated glossary terms: 173
+- current integrated specifications: 1
+- historical superseded specifications: 12
+- documents with Working status: 0
+- explicit Conformance traceability: CON-01 through CON-16
+
+## Stable source artifact
+
+- source archive: `STATE-ENGINEERING-1.0.0-source.tar.gz`
+- source archive SHA-256: `20e8f04e91cd2810061479f9333be05ce50a48a7135df80cf651998dbcf5c3a4`
+- source archive bytes: 121003
+- source manifest: `STATE-ENGINEERING-1.0.0-MANIFEST.sha256`
+- source manifest SHA-256: `5bd4569b137383696c5114a12d49642b9025c94ce6f5320f7bee8bd9327d5d05`
+- source manifest entries: 70
+
+## Release semantics
+
+The stable release tag identifies the same Authoritative State as RC1.
+
+This preserves the integrity of the audited and independently reviewed method state rather than manufacturing a new release state through metadata-only mutation of the method corpus.
+
+---
+
+© Tor-Ståle Hansen, https://x.com/TSHansen1971
+
+CC BY-NC-ND 4.0  
+Version: 1.0.0  
+Initial publication: 2026-08-13  
+Last modified: 2026-08-13
