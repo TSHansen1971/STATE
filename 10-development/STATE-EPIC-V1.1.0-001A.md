@@ -157,13 +157,17 @@ This decision authorizes WP03 to implement the forward public-version policy aft
 
 ### D2 — Next specification identifier
 
-**Decision:** PENDING EVIDENCE.
+**Decision:** ACCEPTED — `014A`.
 
-The next public specification identifier shall not be inferred or guessed.
+The established public Specification sequence is `001A` through `013A`.
 
-WP01 shall inventory repository-observable specification identifiers. The owner shall additionally account for any privately consumed specification-namespace identifiers before WP07 begins.
+The pre-WP07 identifier inventory verified that this sequence is complete in the current repository and across the complete Git history, and that `STATE-ENGINEERING-METHOD-SPECIFICATION-014A` had not previously been used or referenced as a Specification identifier.
 
-No privately consumed identifier may be silently reused.
+`014A` is therefore the next valid public Specification identifier.
+
+No separate private Specification namespace is assumed or required by this decision.
+
+A consumed Specification identifier shall not be silently reused.
 
 ### D3 — Documentation licence
 
@@ -412,7 +416,7 @@ It shall identify:
 
 ### Prohibition
 
-No privately consumed specification identifier may be reused.
+No consumed specification identifier may be reused.
 
 ---
 

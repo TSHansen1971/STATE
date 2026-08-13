@@ -17,9 +17,9 @@ This repository is the canonical public documentation source for the STATE Engin
 
 The current integrated normative specification is:
 
-[`00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-013A.md`](00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-013A.md)
+[`00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-014A.md`](00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-014A.md)
 
-Revision 013A is a reference-stabilization revision. It does not add a new lifecycle stage, Work Product class, Authority Domain, logical Role or Conformance Requirement.
+Revision 014A is the current integrated Candidate specification for v1.1 development. It consolidates the bounded WP06 Sufficiency Governance change without adding a lifecycle phase, STATE Cycle phase, Transition Gate, Foundational Property, Authority Domain, logical Role, Work Product class or Conformance Requirement.
 
 ## Release and corpus identity
 
@@ -30,6 +30,8 @@ Its authoritative historical identity mapping is:
 `v1.0.0 → corpus 0.13 → STATE-ENGINEERING-METHOD-SPECIFICATION-013A`
 
 The active development target is `v1.1.0`, but it remains Candidate and is **not** the current accepted release.
+
+The current integrated specification in that active Candidate development corpus is `STATE-ENGINEERING-METHOD-SPECIFICATION-014A`.
 
 The historical `0.x` corpus-version sequence is closed. Beginning with an accepted `v1.1.0` release, STATE uses release SemVer as the single public corpus version. Stable document identifiers such as `013A` remain independent of release SemVer.
 

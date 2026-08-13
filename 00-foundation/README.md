@@ -5,7 +5,7 @@
 > **Version:** 0.13  
 > **Status:** Current Documentation
 > **Created:** 2026-08-11  
-> **Last modified:** 2026-08-13  
+> **Last modified:** 2026-08-13
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
@@ -13,11 +13,11 @@ This section contains the integrated method specifications and foundation archit
 
 ## Current authoritative specification
 
-1. [`STATE-ENGINEERING-METHOD-SPECIFICATION-013A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-013A.md) — current integrated specification and normative-reference stabilization revision.
+1. [`STATE-ENGINEERING-METHOD-SPECIFICATION-014A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-014A.md) — current integrated Candidate specification, consolidating the bounded WP06 Sufficiency Governance change.
 
 ## Historical integrated specifications
 
-Specifications 001A through 012A remain preserved as method history.
+Specifications 001A through 013A remain preserved as method history. Specification 013A remains the integrated specification bound to the accepted `v1.0.0` release.
 
 A historical specification does not override the current integrated specification.
 

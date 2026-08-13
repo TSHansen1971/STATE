@@ -3,7 +3,7 @@
 > **Document:** `00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-013A.md`  
 > **Title:** STATE Engineering Method Specification 013A  
 > **Version:** 0.13  
-> **Status:** Normative Specification  
+> **Status:** Historical Superseded Specification  
 > **Created:** 2026-08-13  
 > **Last modified:** 2026-08-13  
 > **Author:** Tor-Ståle Hansen  

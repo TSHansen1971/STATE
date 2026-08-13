@@ -45,6 +45,8 @@ Example:
 
 The `013A` identifier is not a SemVer release number and shall not be inferred from, renumbered to match or conflated with a release version.
 
+The next current integrated development specification is `014A`; that identifier is likewise a stable document identity, not release `v1.1.0`.
+
 ### 2.4 Document Version metadata
 
 The visible per-document `Version` field is document-local revision metadata unless a document explicitly defines a different meaning.
@@ -89,7 +91,7 @@ The owner accepted the following forward policy for STATE v1.1 development:
 
 ## 5. Current identity state during v1.1 development
 
-At this WP03 state:
+At the current post-WP07 Candidate development state:
 
 | Identity | Value |
 |---|---|
@@ -97,6 +99,8 @@ At this WP03 state:
 | Authoritative v1.0.0 commit | `23068ad4628c10001aa13b9963ed629b39645235` |
 | Historical released corpus identity | `0.13` |
 | Released integrated specification | `STATE-ENGINEERING-METHOD-SPECIFICATION-013A` |
+| Current integrated development specification | `STATE-ENGINEERING-METHOD-SPECIFICATION-014A` |
+| Current development specification identifier | `014A` |
 | Active development target | `v1.1.0` |
 | Development target state | Candidate |
 | Accepted `v1.1.0` release | Not yet established |
