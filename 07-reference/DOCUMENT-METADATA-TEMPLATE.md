@@ -47,6 +47,22 @@ Visible header metadata shall use the field order shown above. The optional `Dev
 
 The visible header `Version` value and footer `Version` value shall be identical within the same document.
 
+## Version identity rule
+
+The visible per-document `Version` field is document-local revision metadata unless the document explicitly defines another meaning.
+
+It shall not be treated as the repository release identity or public corpus identity merely because an older document-local value resembles a historical corpus version.
+
+Release and corpus identity are controlled separately:
+
+- the authoritative historical v1.0.0 mapping is `v1.0.0 → corpus 0.13 → Specification 013A`;
+- the historical `0.x` corpus-version sequence is closed;
+- beginning with an accepted `v1.1.0` release, public corpus version equals release SemVer;
+- stable document identifiers remain independent of release SemVer;
+- `Development state: Candidate` does not establish an accepted release.
+
+The canonical interpretation is defined in `VERSION-RELEASE-AND-DOCUMENT-IDENTITY.md`.
+
 ## Whitespace rule
 
 Metadata shall use consistent Markdown spacing. Tabs are not permitted in metadata. Trailing spaces shall be absent except where exactly two spaces are intentionally used for a Markdown hard break.

@@ -5,7 +5,7 @@
 > **Version:** 0.13  
 > **Status:** Current Documentation
 > **Created:** 2026-08-11  
-> **Last modified:** 2026-08-13  
+> **Last modified:** 2026-08-13
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
@@ -20,6 +20,22 @@ The current integrated normative specification is:
 [`00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-013A.md`](00-foundation/STATE-ENGINEERING-METHOD-SPECIFICATION-013A.md)
 
 Revision 013A is a reference-stabilization revision. It does not add a new lifecycle stage, Work Product class, Authority Domain, logical Role or Conformance Requirement.
+
+## Release and corpus identity
+
+The current **accepted public release** is `v1.0.0`.
+
+Its authoritative historical identity mapping is:
+
+`v1.0.0 → corpus 0.13 → STATE-ENGINEERING-METHOD-SPECIFICATION-013A`
+
+The active development target is `v1.1.0`, but it remains Candidate and is **not** the current accepted release.
+
+The historical `0.x` corpus-version sequence is closed. Beginning with an accepted `v1.1.0` release, STATE uses release SemVer as the single public corpus version. Stable document identifiers such as `013A` remain independent of release SemVer.
+
+Per-document `Version` metadata is document-local revision metadata and shall not be used by itself to infer release identity.
+
+See [`07-reference/VERSION-RELEASE-AND-DOCUMENT-IDENTITY.md`](07-reference/VERSION-RELEASE-AND-DOCUMENT-IDENTITY.md) for the identity rules.
 
 ## Method architecture
 

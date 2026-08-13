@@ -5,13 +5,27 @@
 > **Version:** 0.13  
 > **Status:** Current Documentation  
 > **Created:** 2026-08-11  
-> **Last modified:** 2026-08-13  
+> **Last modified:** 2026-08-13
 > **Author:** Tor-Ståle Hansen  
 > **Co-authors:** None
 
 Entries reflect normative releases, clarifications, structural additions and public documentation milestones.
 
 Editorial scratch material and private manuscript notes are explicitly excluded.
+
+## Version-identity interpretation
+
+The historical `0.x` values below are preserved publication and development labels from the pre-SemVer corpus history. They shall not all be interpreted as accepted release identities.
+
+The authoritative v1.0.0 mapping is:
+
+`v1.0.0 → corpus 0.13 → STATE-ENGINEERING-METHOD-SPECIFICATION-013A`
+
+The `0.14` Release Readiness entry is a stabilization milestone preserved for provenance; it does not replace the authoritative released-corpus identity `0.13`.
+
+No new public `0.x` corpus identity shall be allocated. Beginning with an accepted `v1.1.0` release, release SemVer and public corpus version are the same identity.
+
+The active `v1.1.0` work remains Candidate until explicit owner-controlled promotion. WP03 therefore reconciles identity without recording `v1.1.0` as an accepted release.
 
 | Date | Version | Component | Change Type | Description |
 |---|---:|---|---|---|
