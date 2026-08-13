@@ -2,7 +2,7 @@
 
 > **Document:** `00-foundation/README.md`  
 > **Title:** Foundation  
-> **Version:** 0.10  
+> **Version:** 0.11  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -14,10 +14,11 @@ This section contains the documents that define the authority, structure and cur
 
 ## Current authoritative specification
 
-1. [`STATE-ENGINEERING-METHOD-SPECIFICATION-010A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-010A.md) — current foundational specification, including the Tailoring Model, Tailoring Invariants and Scaling Profiles.
+1. [`STATE-ENGINEERING-METHOD-SPECIFICATION-011A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-011A.md) — current foundational specification, including the Assurance Model, Assurance Case and Assurance Depth.
 
 ## Historical specifications
 
+- [`STATE-ENGINEERING-METHOD-SPECIFICATION-010A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-010A.md) — Tailoring revision.
 - [`STATE-ENGINEERING-METHOD-SPECIFICATION-009A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-009A.md) — Physical Realization revision.
 - [`STATE-ENGINEERING-METHOD-SPECIFICATION-008A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-008A.md) — Baseline Establishment, Release and Provenance revision.
 - [`STATE-ENGINEERING-METHOD-SPECIFICATION-007A.md`](STATE-ENGINEERING-METHOD-SPECIFICATION-007A.md) — Verification and Acceptance revision.
@@ -33,6 +34,6 @@ This section contains the documents that define the authority, structure and cur
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.10  
+Version: 0.11  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

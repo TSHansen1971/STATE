@@ -2,7 +2,7 @@
 
 > **Document:** `06-assurance/README.md`  
 > **Title:** Assurance  
-> **Version:** 0.10  
+> **Version:** 0.11  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -10,76 +10,61 @@
 > **Co-authors:** None
 
 
-Assurance addresses whether a STATE Transition and its selected Tailoring deserve the required degree of trust.
+Assurance defines how STATE evaluates whether claims, controls, evidence, decisions and resulting state transitions deserve the required degree of trust.
 
-## Tailoring assurance
+Its governing question is:
 
-Assurance evaluates whether the chosen Tailoring remains inside the Tailoring Envelope.
+> **Is the basis for this claim or decision sufficiently strong for the consequence and uncertainty involved?**
 
-Relevant questions include:
+## Contents
 
-- are all Foundational Properties preserved;
-- are Tailoring Invariants preserved;
-- is physical compression being mistaken for removal of control;
-- are combined Roles still logically distinguishable;
-- does gate automation preserve gate semantics and Authority;
-- is Verification depth sufficient for the Required Claims;
-- is evidence depth sufficient for the Acceptance decision;
-- is environment identity sufficient for the claim;
-- are Actor and tool common-cause failures understood;
-- is Release control proportionate to the release claim.
+1. [`01-assurance-model.md`](01-assurance-model.md) — Assurance Objectives, Assurance Conclusions and the relationship among Verification, Evidence, Acceptance and Assurance.
+2. [`02-assurance-case-and-confidence.md`](02-assurance-case-and-confidence.md) — Assurance Case structure, confidence reasoning, weaknesses, challenge and residual uncertainty.
+3. [`03-independence-and-assurance-depth.md`](03-independence-and-assurance-depth.md) — independence, common-cause failure, Assurance Depth and proportional strengthening.
 
-## Over-tailoring assurance
+## Core distinctions
 
-More process is not automatically more Assurance.
+```text
+Verification
+= evaluates an explicit engineering claim
 
-Assurance should challenge controls that:
+Acceptance
+= makes an authorized decision about a Candidate
 
-- add ceremony without improving evidence or control;
-- duplicate records without increasing traceability;
-- delay feedback;
-- create stale documentation;
-- obscure real decision authority.
+Assurance
+= evaluates whether the basis for the claim or decision deserves the required trust
+```
 
-## Under-tailoring assurance
+Assurance does not grant Authority.
 
-Assurance should challenge Tailoring that:
+Assurance does not rewrite Verification Results.
 
-- removes known Baseline identity;
-- weakens Authority boundaries;
-- turns Candidate into assumed Authority;
-- suppresses FAIL or INCONCLUSIVE;
-- relies on package-level PASS for system claims;
-- removes decision-relevant negative evidence;
-- weakens security-relevant verification;
-- destroys provenance required by the claim.
+Assurance does not convert insufficient evidence into sufficient evidence by declaration.
 
-## Profile assurance
+## Cross-cutting scope
 
-Reference profiles are starting points.
+Assurance may evaluate:
 
-Assurance considers whether:
+- specification;
+- Authority;
+- Transition Boundary;
+- Physical Realization;
+- Tailoring;
+- Verification;
+- Evidence;
+- Acceptance;
+- Baseline Establishment;
+- Release;
+- provenance;
+- recovery and failure handling.
 
-- profile assumptions match the actual Transition;
-- any deviation is justified;
-- re-tailoring triggers have occurred;
-- claim-specific strengthening is required.
-
-## Re-tailoring assurance
-
-When context changes materially, the Assurance basis shall consider whether prior Tailoring remains sufficient.
-
-Tailoring is therefore not a one-time administrative label.
-
-It remains a live control decision across the Transition.
-
-Assurance remains proportional to consequence, uncertainty, reversibility, exposure, substitution risk and the cost of being wrong.
+Assurance is therefore cross-cutting rather than an additional P10 phase.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.10  
+Version: 0.11  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

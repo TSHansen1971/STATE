@@ -2,7 +2,7 @@
 
 > **Document:** `07-reference/GLOSSARY.md`  
 > **Title:** STATE Engineering Glossary  
-> **Version:** 0.10  
+> **Version:** 0.11  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -12,63 +12,63 @@
 
 This glossary establishes the current working vocabulary of STATE Engineering.
 
-## Control Deletion
+## Assurance
 
-Removal of a required STATE control semantic under the guise of simplification. Control Deletion is not conformant Tailoring.
+The structured evaluation of whether the control, verification, evidence, independence and uncertainty basis supporting a defined engineering claim or decision is sufficient for the applicable consequence and Assurance Objective.
 
-## Downward Tailoring
+## Assurance Basis
 
-Reduction in physical representation or control depth while remaining inside the Tailoring Envelope.
+The claims, controls, Verification Records, Evidence, Authority, Tailoring, environment, challenge and provenance used to support an Assurance Conclusion.
 
-## Inherited Tailoring
+## Assurance Case
 
-Application of an established Tailoring profile or policy to a Transition whose context remains within the profile's assumptions.
+The reconstructable structured argument connecting an Assurance Objective and scope to the claims, control basis, evidence, challenge, weaknesses, residual uncertainty and conclusion used to justify confidence.
 
-## Re-tailoring
+## Assurance Challenge
 
-Reassessment of the selected Tailoring when material context change invalidates or weakens the original Tailoring basis.
+A deliberate attempt to identify why an engineering claim, evidence basis or confidence argument may be wrong.
 
-## Scaling Profile
+## Assurance Conclusion
 
-A non-mandatory reference pattern illustrating a coherent physical realization of STATE at a particular control depth or execution context.
+SUFFICIENT, INSUFFICIENT or INCONCLUSIVE for a defined Assurance Objective and scope.
 
-## Semantic Compression
+## Assurance Debt
 
-Physical combination of multiple logical STATE control objects or stages into a smaller number of physical records, operations or mechanisms while preserving their logical distinctions.
+A known unresolved weakness in the trust basis that remains explicit for future action and does not relabel a failed Required Claim.
 
-## Tailoring
+## Assurance Deficiency
 
-The authorized selection of representation, depth, automation, separation and evidence controls within the Tailoring Envelope while preserving the defining semantics of STATE Engineering.
+A weakness that reduces justified confidence in an Assurance Basis.
 
-## Tailoring Authority
+## Assurance Depth
 
-The authority to establish or approve a Tailoring decision for a defined scope.
+The selected strength of evaluation, challenge, evidence and independence required to justify confidence for an Assurance Objective.
 
-## Tailoring Decision
+## Assurance Objective
 
-The controlled decision defining how STATE will be physically and procedurally realized for a Transition or class of Transitions.
+A defined trust question whose adequacy is being evaluated by Assurance.
 
-## Tailoring Envelope
+## Confidence
 
-The permitted range of physical and procedural variation within which Foundational Properties and required control semantics remain intact.
+Justified belief in the adequacy of an Assurance Basis for a defined objective and scope.
 
-## Tailoring Factor
+## Independence Theater
 
-A context property used to determine appropriate control depth, such as consequence, complexity, uncertainty, reversibility, security relevance or distribution.
+Additional Actor, approval, reviewer or process separation that does not materially challenge the relevant common-cause failure source.
 
-## Tailoring Invariant
+## Residual Uncertainty
 
-A non-tailorable operational semantic that shall remain true across all conformant STATE realizations.
+Material uncertainty remaining after practical Verification and Assurance activity.
 
-## Upward Tailoring
+## Tailoring Adequacy
 
-Increase in control depth, independence, evidence, isolation or verification because context requires stronger Assurance.
+Confidence that the selected Tailoring remains within the Tailoring Envelope and preserves required STATE semantics.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.10  
+Version: 0.11  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

@@ -2,7 +2,7 @@
 
 > **Document:** `README.md`  
 > **Title:** STATE Engineering  
-> **Version:** 0.10  
+> **Version:** 0.11  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -21,79 +21,83 @@ STATE is documented through four abstraction levels:
 | Level | Abstraction | Governing question |
 |---|---|---|
 | **WHY** | Contextual | Why does STATE Engineering exist, and what control problem makes it necessary? |
-| **WHAT** | Conceptual | What concepts, properties, roles, authority structures, Work Products and evidence relationships define STATE? |
-| **HOW** | Logical | How is a controlled Transition governed from Baseline through Candidate, Verification, Acceptance and Baseline Establishment? |
-| **WITH WHAT** | Physical | With what actors, hardware, software, environments, toolchains and execution mechanisms is the logical method realized? |
+| **WHAT** | Conceptual | What concepts and properties define STATE? |
+| **HOW** | Logical | How is a controlled Transition governed? |
+| **WITH WHAT** | Physical | With what actors, environments and tools is the logical method realized? |
 
-The four abstraction levels are governed across application by **Tailoring**, **Assurance** and **Reference**.
+These are governed across application by **Tailoring**, **Assurance** and **Reference**.
 
-## Tailoring
+## Assurance
 
-Tailoring adapts the physical depth, representation and control intensity of STATE to the actual engineering context.
+Assurance asks whether the control basis for a claim, decision or state transition deserves the required degree of trust.
 
-Tailoring may change:
+STATE Assurance does not create truth, Authority or correctness.
 
-- Work Product granularity;
-- whether several logical records share one physical representation;
-- whether gates are manual, automated or hybrid;
-- how many physical Actors realize the logical Roles;
-- verification depth;
-- independence depth;
-- environment identity depth;
-- evidence volume and preservation depth;
-- isolation mechanisms;
-- Work Package decomposition;
-- release controls.
+It evaluates the strength of the basis on which those things are being asserted.
 
-Tailoring may not remove the semantics that make the method STATE.
-
-## Semantic compression
-
-STATE explicitly permits **Semantic Compression**:
+The canonical Assurance relationship is:
 
 ```text
-Many logical control objects
+ASSURANCE OBJECTIVE
         ↓
-one compact physical representation
+CLAIMS / DECISIONS IN SCOPE
+        ↓
+CONTROL BASIS
+        ↓
+VERIFICATION + EVIDENCE
+        ↓
+INDEPENDENT CHALLENGE WHERE REQUIRED
+        ↓
+WEAKNESSES + RESIDUAL UNCERTAINTY
+        ↓
+ASSURANCE CONCLUSION
 ```
 
-provided the logical distinctions remain reconstructable.
+## Assurance conclusion
 
-For example, one small Transition record may physically contain:
+STATE defines three canonical Assurance Conclusions:
 
-- specification;
-- Authority Grant reference;
-- Actor Assignment;
-- Baseline identity;
-- verification result;
-- evidence references;
-- Acceptance decision;
-- Baseline Establishment identity.
+```text
+SUFFICIENT
+INSUFFICIENT
+INCONCLUSIVE
+```
 
-This can be fully conformant.
+These are not Verification Results and are not Acceptance decisions.
 
-The opposite is **Control Deletion**: removing the underlying control obligation merely because a separate document is inconvenient.
+```text
+Verification PASS ≠ Assurance SUFFICIENT
+Assurance SUFFICIENT ≠ ACCEPT
+ACCEPT ≠ ESTABLISHED
+```
 
-Control Deletion is not Tailoring.
+## Assurance Case
 
-## Tailoring Envelope
+An **Assurance Case** is the reconstructable structured reasoning that connects an Assurance Objective to the claims, evidence, challenge, weaknesses, uncertainty and conclusion that support it.
 
-The **Tailoring Envelope** is the permitted range of physical and procedural variation within which the Foundational Properties and required control semantics remain intact.
+An Assurance Case may be one sentence for a compact low-consequence Transition or a substantial structured body of evidence for a high-consequence Transition.
 
-A small one-person change and a distributed high-assurance Transition may therefore look very different physically while implementing the same method.
+It is a logical composition, not a new mandatory Work Product class.
 
-## Scaling principle
+## Independence
 
-STATE scales by changing **depth and representation**, not by changing the meaning of:
+Independence is a means of challenging common-cause error.
 
-- Authority;
-- Candidate;
-- Verification;
-- Evidence;
-- Acceptance;
-- Baseline Establishment;
-- failure;
-- provenance.
+More independence is not automatically more Assurance.
+
+Useful independence is independence from the failure source relevant to the claim.
+
+Two reviewers, agents or tools that share the same assumptions, model, oracle, environment or data may provide less independent challenge than their count suggests.
+
+## Assurance depth
+
+Assurance depth is selected through Tailoring.
+
+It increases where consequence, uncertainty, security relevance, irreversibility, distribution, autonomy, provenance need or external dependency require a stronger trust basis.
+
+The goal is not maximal process.
+
+The goal is a sufficient trust basis for the claim and decision.
 
 ## Repository map
 
@@ -102,8 +106,8 @@ STATE scales by changing **depth and representation**, not by changing the meani
 - [`02-what-conceptual/`](02-what-conceptual/) — conceptual models.
 - [`03-how-logical/`](03-how-logical/) — logical method.
 - [`04-with-what-physical/`](04-with-what-physical/) — physical realization.
-- [`05-tailoring/`](05-tailoring/) — Tailoring model, decisions and scaling profiles.
-- [`06-assurance/`](06-assurance/) — assurance and trust.
+- [`05-tailoring/`](05-tailoring/) — Tailoring.
+- [`06-assurance/`](06-assurance/) — Assurance Model, Assurance Case, confidence and independence.
 - [`07-reference/`](07-reference/) — compact reference.
 
 See [`CHANGELOG.md`](CHANGELOG.md) for publication history.
@@ -113,6 +117,6 @@ See [`CHANGELOG.md`](CHANGELOG.md) for publication history.
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.10  
+Version: 0.11  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

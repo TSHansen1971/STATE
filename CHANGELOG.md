@@ -2,7 +2,7 @@
 
 > **Document:** `CHANGELOG.md`  
 > **Title:** STATE Engineering — Change Log  
-> **Version:** 0.10  
+> **Version:** 0.11  
 > **Status:** Active  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -15,6 +15,11 @@ Editorial scratch material and private manuscript notes are explicitly excluded.
 
 | Date | Version | Component | Change Type | Description |
 |---|---:|---|---|---|
+| 2026-08-13 | 0.11 | Method Specification | Assurance Revision | Publishes Method Specification 011A and establishes the Assurance Model, Assurance Case and Assurance Depth. |
+| 2026-08-13 | 0.11 | Assurance | Normative Extension | Defines twelve Assurance Objectives, three Assurance Conclusions and ten Assurance Sufficiency Properties. |
+| 2026-08-13 | 0.11 | Assurance Case | Normative Extension | Defines sixteen Assurance Case fields, confidence reasoning, challenge, weaknesses and residual uncertainty. |
+| 2026-08-13 | 0.11 | Independence | Normative Extension | Defines eight Assurance Independence Patterns, ten Assurance Depth Dimensions and Assurance Debt semantics. |
+| 2026-08-13 | 0.11 | Reference | Reference Extension | Publishes the Assurance compact reference. |
 | 2026-08-13 | 0.10 | Method Specification | Tailoring Revision | Publishes Method Specification 010A and establishes the Tailoring Model, Invariants and Scaling Profiles. |
 | 2026-08-13 | 0.10 | Tailoring | Normative Extension | Defines twelve Tailoring Invariants, Semantic Compression, Control Deletion and the Tailoring Envelope. |
 | 2026-08-13 | 0.10 | Tailoring Decision | Normative Extension | Defines twelve Tailoring Factors, sixteen Tailoring Decision fields and twelve re-tailoring triggers. |
@@ -68,6 +73,6 @@ Future entries will document normative revisions, clarifications, structural ext
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.10  
+Version: 0.11  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13
