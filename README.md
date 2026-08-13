@@ -2,7 +2,7 @@
 
 > **Document:** `README.md`  
 > **Title:** STATE Engineering  
-> **Version:** 0.8  
+> **Version:** 0.9  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -22,108 +22,109 @@ STATE is documented through four abstraction levels:
 |---|---|---|
 | **WHY** | Contextual | Why does STATE Engineering exist, and what control problem makes it necessary? |
 | **WHAT** | Conceptual | What concepts, properties, roles, authority structures, Work Products and evidence relationships define STATE? |
-| **HOW** | Logical | How is a controlled Transition contracted, executed, verified, accepted, established and, where applicable, released? |
-| **WITH WHAT** | Physical | With what human, synthetic, hybrid, hardware and software capabilities is the logical method realized? |
+| **HOW** | Logical | How is a controlled Transition governed from Baseline through Candidate, Verification, Acceptance and Baseline Establishment? |
+| **WITH WHAT** | Physical | With what actors, hardware, software, environments, toolchains and execution mechanisms is the logical method realized? |
 
 The method is governed across implementation by Tailoring, Assurance and Reference.
 
-## P9 — Baseline establishment
+## Physical realization
 
-Acceptance at P8 authorizes progression.
+The Physical layer binds logical STATE structures to concrete execution capacity.
 
-It does not itself change which state is authoritative.
-
-P9 completes the authority transition:
+The binding is:
 
 ```text
-Previous Authoritative State
-          │
-          ▼
-      Transition
-          │
-          ▼
-   Candidate State
-          │
-       G8 ACCEPT
-          │
-          ▼
-  Accepted Candidate
-          │
-          ▼
-   P9 / G9 Baseline
-     Establishment
-          │
-          ▼
- New Authoritative State
+Logical Role
+    │
+    ▼
+Actor Assignment
+    │
+    ├── Actor capability
+    ├── Authority Grant
+    ├── Execution Environment
+    ├── Tool capability
+    ├── Access / credentials
+    ├── Evidence mechanisms
+    └── Assurance controls
 ```
 
-Baseline establishment preserves an explicit continuity relationship between the prior Authoritative State, the accepted Candidate and the new Authoritative State.
+No physical actor class, hardware platform, operating system, programming language, development environment, repository product, cloud service, local execution model or AI system is constitutive of STATE Engineering.
 
-## Authoritative State Chain
+## Actor realization
 
-STATE treats authoritative history as a chain of controlled state transitions rather than as overwritten history.
+A STATE Role may be realized by, among other patterns:
 
-A previous baseline may become superseded for the active purpose, but it does not cease to have existed.
+- an individual human;
+- a co-located human team;
+- a distributed, inshore, nearshore or offshore team;
+- a specialist supplier;
+- deterministic automation;
+- an AI model used as a bounded execution actor;
+- an autonomous agent or agentic system;
+- a multi-agent system;
+- a hybrid human–synthetic arrangement.
 
-A later return to an earlier state is therefore a **new controlled Transition** from the current Authoritative State toward a Candidate equivalent to or derived from the earlier state.
+These are physical realization patterns, not different STATE methods.
 
-Rollback is not time travel.
+## Capability and authority
 
-## Release
+Physical reach is not authority.
 
-Release remains an optional post-cycle act.
-
-An accepted and established state may be:
-
-- unreleased;
-- released once;
-- released through several channels or artifact variants;
-- superseded before release.
-
-Release Authority is distinct from Acceptance Authority unless explicitly combined.
-
-A released artifact shall be traceable to the accepted and established state to the degree required by the release claim.
-
-## Provenance
-
-STATE provenance connects the relevant authority and transformation chain:
+STATE distinguishes the actor's **Effective Capability Envelope** from the **Authorized Execution Envelope**.
 
 ```text
-Intent
-  ↓
-Baseline
-  ↓
-Transition Contract
-  ↓
-Work Packages / Transformation
-  ↓
-Candidate
-  ↓
-Verification
-  ↓
-Evidence
-  ↓
-Acceptance
-  ↓
-Baseline Establishment
-  ↓
-Authoritative State
-  ↓
-Release, when applicable
+Effective Capability Envelope
+= what the assigned actor + tools + environment + access can actually do
+
+Authorized Execution Envelope
+= the subset the actor is permitted to exercise for the Transition
 ```
 
-Provenance is claim-relative. The required identity depth depends on what is being asserted.
+Therefore:
+
+```text
+AuthorizedExecutionEnvelope
+    ⊆ EffectiveCapabilityEnvelope
+    ∩ TransitionBoundary
+```
+
+Technical ability to mutate more of the system does not widen the Transition Boundary.
+
+## Execution Environment
+
+The Execution Environment includes the relevant hardware, operating system or runtime, toolchain, dependencies, workspace, configuration, credentials, network dependencies, external services and evidence-capture mechanisms under which a STATE activity occurs.
+
+Environment identity is claim-relative. STATE does not require exhaustive capture of irrelevant machine details.
+
+It requires enough identity to support the claims being made.
+
+## Synthetic actors
+
+AI and agentic systems are treated as physical Actor realizations.
+
+Where their characteristics matter, the Actor Assignment may identify:
+
+- model or system identity;
+- provider or local runtime;
+- instruction / context basis;
+- tool permissions;
+- external-service dependencies;
+- persistent or session state;
+- stochastic or configuration settings;
+- evidence-capture mechanisms.
+
+These properties do not create a separate AI variant of STATE.
 
 ## Repository map
 
-- [`00-foundation/`](00-foundation/) — canonical method specification and architecture.
-- [`01-why-contextual/`](01-why-contextual/) — contextual problem and rationale.
+- [`00-foundation/`](00-foundation/) — canonical specification.
+- [`01-why-contextual/`](01-why-contextual/) — contextual problem.
 - [`02-what-conceptual/`](02-what-conceptual/) — conceptual models.
-- [`03-how-logical/`](03-how-logical/) — complete logical Transition control including P9 and release/provenance.
-- [`04-with-what-physical/`](04-with-what-physical/) — physical realization.
+- [`03-how-logical/`](03-how-logical/) — complete logical Transition control.
+- [`04-with-what-physical/`](04-with-what-physical/) — physical realization, Actor patterns, environments and toolchains.
 - [`05-tailoring/`](05-tailoring/) — contextual adaptation.
-- [`06-assurance/`](06-assurance/) — assurance and evidence sufficiency.
-- [`07-reference/`](07-reference/) — glossary, catalogues and compact reference.
+- [`06-assurance/`](06-assurance/) — assurance and trust.
+- [`07-reference/`](07-reference/) — compact reference.
 
 See [`CHANGELOG.md`](CHANGELOG.md) for publication history.
 
@@ -132,6 +133,6 @@ See [`CHANGELOG.md`](CHANGELOG.md) for publication history.
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.8  
+Version: 0.9  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

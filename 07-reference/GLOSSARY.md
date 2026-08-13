@@ -2,7 +2,7 @@
 
 > **Document:** `07-reference/GLOSSARY.md`  
 > **Title:** STATE Engineering Glossary  
-> **Version:** 0.8  
+> **Version:** 0.9  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -12,115 +12,95 @@
 
 This glossary establishes the current working vocabulary of STATE Engineering.
 
-## Acceptance
+## Access
 
-The authorized P8 decision about whether an identified Candidate State may progress toward authoritative status.
+A physical mechanism allowing an Actor or tool to reach, observe or mutate a system surface. Access does not itself establish Authority.
 
-## Accepted Candidate
+## Actor
 
-A Candidate State for which G8 has produced ACCEPT but which has not necessarily completed P9 Baseline Establishment.
+The human, synthetic or hybrid entity assigned to perform a logical STATE Role.
 
-## Authoritative State
+## Actor Independence
 
-A sufficiently identified system state accepted and explicitly established as authoritative for a defined scope and purpose.
+The property by which logical Roles and responsibilities remain defined independently of Actor type.
 
-## Authoritative State Chain
+## Actor Realization Pattern
 
-The traceable sequence of Authoritative States and the controlled Transitions by which authority moved from one state to the next.
+A common physical form through which a logical STATE Role may be performed, such as an individual human, distributed team, supplier, deterministic automation, synthetic Actor or hybrid arrangement.
 
-## Baseline
+## Authorized Execution Envelope
 
-The specific Authoritative State selected as input to a Transition.
+The subset of effective physical capability that may legitimately be exercised under the applicable Authority Grant and Transition Boundary.
 
-## Baseline Establishment
+## Authority
 
-The explicit P9 act that assigns authoritative status to the exact accepted Candidate for a defined scope and purpose.
+The legitimate permission to decide, approve, delegate or mutate within a defined scope.
 
-## Baseline Establishment Record
+## Capability
 
-WP-09, preserving previous state, accepted Candidate, Acceptance, Contract, authority scope, resulting state identity and establishment result.
+What an Actor, tool or environment is actually able to do.
 
-## Baseline Scope
+## Effective Capability Envelope
 
-The defined system, source, artifact, configuration, deployment or other state domain for which an Authoritative State has authority.
+The capabilities actually available through the intersection of Actor capability, tool capability, environment capability and available access.
 
-## Candidate State
+## Environment Drift
 
-A produced system state that has not yet completed Baseline Establishment.
+A material change in hardware, software, configuration, dependency, external service, data or other Execution Environment condition between relevant engineering activities.
 
-## Effective Condition
+## Execution Environment
 
-The time, sequence, event or other condition at which a Baseline Establishment or Release becomes effective.
+The relevant physical and software context in which a STATE Role, Work Package, verification activity, transformation or Release action is performed.
 
-## Establishment Result
+## Externalized State
 
-ESTABLISHED, HOLD or FAILED at P9.
+Material state outside the immediate local environment that can affect execution, such as remote configuration, service-side policy or hosted model version.
 
-## Provenance
+## False Independence
 
-The traceable relationship among origin, authorized transformations, identities, Actors, evidence and decisions explaining how a state or artifact came to exist in its asserted form.
+The appearance of independent verification where Actors or methods still share a material common failure source.
 
-## Provenance Dimension
+## Hybrid Actor Arrangement
 
-A category of provenance information: source, authority, transformation, Actor, environment, evidence, decision or distribution provenance.
+A physical realization in which human and synthetic Actors jointly perform STATE Roles or Work Packages.
 
-## Release
+## Isolation Mechanism
 
-An authorized post-cycle act that makes an identified representation of an established Authoritative State available to a defined target, channel, environment or audience.
+A physical or logical mechanism reducing unintended interference among Work Packages, Actors, environments or mutable state.
 
-## Release Authority
+## Mutation Surface
 
-The authority to distribute, deploy, publish or otherwise release an established state or representation.
+The physical system surface that an Actor or tool can actually change.
 
-## Release Record
+## Physical Realization
 
-WP-10, recording Release identity, source Authoritative State, authority, target, released object, transformation, verification, provenance, integrity and result.
+The concrete assignment of Actors, execution environments, tools, access and evidence mechanisms to the logical Roles and control obligations of a STATE Transition.
 
-## Release Result
+## Physical Realization Binding
 
-RELEASED, HOLD or FAILED.
+The reconstructable relationship among logical Role, Actor Assignment, capability, Authority, Execution Environment, tool capability, access, evidence mechanism and Assurance control.
 
-## Release Transformation
+## Synthetic Actor
 
-A build, packaging, signing, configuration, deployment or other transformation performed between an established Authoritative State and a released representation.
+A non-human computational Actor, such as an AI model, agent or multi-agent system, assigned to perform one or more logical STATE functions.
 
-## Released Object
+## Tool Capability
 
-The exact artifact, package, deployment, publication or other representation made available by a Release.
+The concrete transformation, verification, execution, analysis, release, evidence or coordination capability provided by a physical tool.
 
-## Rollback
+## Toolchain
 
-A colloquial term for reversal or restoration. When the Authoritative State itself has already changed, STATE treats rollback as a new controlled Transition toward a new Authoritative State, even when the resulting content is equivalent to an earlier state.
-
-## Source-to-Artifact Provenance
-
-The evidentiary relationship connecting an accepted source state through establishment and release transformation to a specific released artifact.
-
-## Superseded Authoritative State
-
-A previously authoritative state replaced for the same defined scope by a later established Authoritative State while remaining part of historical provenance.
-
-## Transition
-
-A controlled transformation from one Authoritative State toward a Candidate State and, if accepted and established, a new Authoritative State.
-
-## Verification
-
-The evaluation of an explicit claim about an identified target using an identified method, conditions, observations and evidence.
+The set of physical software tools and dependencies used to author, transform, construct, verify, execute, package or release state.
 
 ## Work Package
 
 A bounded execution/control unit subordinate to one governing Transition Contract.
-
-## Work Product
-
-An identifiable information object produced, maintained or consumed by STATE Roles to control, perform, verify, evidence or authorize a Transition.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.8  
+Version: 0.9  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13

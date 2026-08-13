@@ -2,7 +2,7 @@
 
 > **Document:** `06-assurance/README.md`  
 > **Title:** Assurance  
-> **Version:** 0.8  
+> **Version:** 0.9  
 > **Status:** Working Draft  
 > **Created:** 2026-08-11  
 > **Last modified:** 2026-08-13  
@@ -10,80 +10,103 @@
 > **Co-authors:** None
 
 
-Assurance addresses whether a STATE Transition, its claims, verification, evidence, Acceptance, Baseline Establishment, Release and provenance deserve the required degree of trust.
+Assurance addresses whether a STATE Transition and its Physical Realization deserve the required degree of trust.
 
-## P9 assurance
+## Physical realization assurance
 
-Assurance of Baseline Establishment considers whether:
+Assurance considers whether the assigned physical realization is fit for the logical obligation.
 
-- G8 actually produced ACCEPT;
-- the established target is the exact accepted Candidate;
-- Acceptance and Transition Contract identities correspond;
-- the resulting Authoritative State identity is sufficient;
-- no intervening change invalidated the establishment basis;
-- authority scope and effective condition are explicit;
-- previous authoritative continuity is preserved.
+Relevant questions include:
 
-A strong Acceptance basis cannot compensate for establishing the wrong Candidate.
+- does the Actor have sufficient capability;
+- does the Actor have only appropriate authority;
+- is physical access broader than authority and, if so, is that controlled;
+- is the Execution Environment sufficiently identified;
+- can required evidence actually be captured;
+- do selected tools introduce common-cause failure;
+- does Actor or tool substitution affect prior verification;
+- are external services part of the trusted basis;
+- is isolation sufficient for concurrent or high-consequence work.
 
-## Authoritative State Chain assurance
+## Actor assurance
 
-Assurance considers whether authoritative history is reconstructable without silent overwrite.
+Actor independence does not mean Actor equivalence.
 
-A return to an earlier content state after later authoritative change shall remain distinguishable as a new Transition and resulting Authoritative State.
+Assurance considers Actor-specific failure modes for:
 
-## Release assurance
+- humans;
+- teams;
+- suppliers;
+- deterministic automation;
+- synthetic Actors;
+- autonomous agents;
+- multi-agent systems;
+- hybrid arrangements.
 
-Where Release is distinct, Assurance considers:
+The Actor class does not determine Assurance by itself.
 
-- Release Authority;
-- exact released object identity;
-- relationship to the established Authoritative State;
-- release transformation;
-- transformation environment where relevant;
-- release verification;
-- integrity and provenance evidence;
-- target or channel;
-- effective release condition.
+The relevant capability, failure sources, authority and evidence do.
 
-## Provenance assurance
+## False independence
 
-Provenance sufficiency is claim-relative.
+Different Actors may still share:
 
-For source-to-artifact claims, Assurance considers whether the evidence actually connects:
+- the same model;
+- the same tool;
+- the same environment;
+- the same test oracle;
+- the same source assumption;
+- the same provider;
+- the same data.
 
-- accepted source;
-- established state;
-- transformation;
-- artifact;
-- Release decision.
+Actor count alone is not evidence of independence.
 
-A digest alone may strongly identify an artifact while still being insufficient to establish its complete origin or authority chain.
+## Environment assurance
 
-## Reuse assurance
+Environment Assurance considers:
 
-Prior verification or release evidence may be reused only where the relevant:
+- identity depth;
+- material drift;
+- dependency state;
+- access;
+- mutable and persistent state;
+- remote dependencies;
+- evidence capture;
+- recovery and reset capability.
 
-- source identity;
-- transformation;
-- artifact identity;
-- environment;
-- target assumptions;
-- claim;
+## Tool assurance
 
-remain applicable.
+A tool may be:
 
-## Existing assurance dimensions
+- producer;
+- verifier;
+- evidence source;
+- release transformer;
+- authority mechanism.
 
-Verification adequacy, evidence quality, independence, role separation and Acceptance assurance remain applicable.
+Its role in the trusted basis should be explicit where material.
 
-Assurance requirements remain proportionate to consequence, uncertainty, reversibility, exposure, substitution risk and the cost of being wrong.
+A tool verifying only its own output may require independent corroboration.
+
+## Substitution assurance
+
+Changing Actor, hardware, software, model, tool or environment requires reassessment where the change can affect:
+
+- Candidate identity;
+- verification meaning;
+- evidence comparability;
+- independence;
+- provenance;
+- security;
+- reproducibility.
+
+Assurance remains proportional to consequence, uncertainty, reversibility, exposure, substitution risk and the cost of being wrong.
 
 ---
 
 © Tor-Ståle Hansen, https://x.com/TSHansen1971
 
 CC BY-NC-ND 4.0  
-Version: 0.8  
+Version: 0.9  
 Initial publication: 2026-08-11  
 Last modified: 2026-08-13
